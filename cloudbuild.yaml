@@ -8,8 +8,8 @@ steps:
       - '-c'
       - |
         # Export the bucket name and project ID as environment variables
-        export BUCKET_NAME= api-project-371618.appspot.com
-        export PROJECT_ID= $PROJECT_NUMBER
+        export BUCKET_NAME= "api-project-371618.appspot.com"
+        export PROJECT_ID= "$PROJECT_NUMBER"
         
         # Check which JSON files in the api directory have been modified
         export FILES_CHANGED=$(git diff --name-only HEAD~1 HEAD | grep "^api\/.*\.json$")
@@ -29,5 +29,5 @@ steps:
   
     # Define default substitutions to be used in other fields
     substitutions:
-      _BUCKET_NAME: api-project-371618.appspot.com
+      _BUCKET_NAME: "api-project-371618.appspot.com"
       _FILES_CHANGED: unused
