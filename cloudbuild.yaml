@@ -26,7 +26,4 @@ steps:
   - name: 'ssh'  # Mount the 'ssh' volume to the container to allow access to SSH keys for private repositories
     path: /root/.ssh
     readOnly: true
-
-
-
-  
+    
