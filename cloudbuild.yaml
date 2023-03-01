@@ -3,9 +3,6 @@ steps:
   # Step 1: Run a bash script that checks which JSON files in the api directory have been modified, validate them, and save them to the specified storage bucket
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'bash'
-    substitutions:
-      _BUCKET_NAME: api-project-371618.appspot.com
-      _FILES_CHANGED: unused
     args:
       # Define the bash script that runs the pipeline logic
       - '-c'
@@ -31,3 +28,6 @@ steps:
         done
   
     # Define default substitutions to be used in other fields
+    substitutions:
+      _BUCKET_NAME: api-project-371618.appspot.com
+      _FILES_CHANGED: unused
