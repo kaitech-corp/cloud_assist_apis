@@ -1,0 +1,42 @@
+{
+    "1": {
+        "Question": "What is cloud computing?",
+        "Answer": "Cloud computing is a type of computing that relies on sharing computing resources rather than having local servers or personal devices to handle applications."
+    },
+    "2": {
+        "Question": "What are the benefits of using cloud computing?",
+        "Answer": "Benefits of using cloud computing include increased scalability, cost savings, improved collaboration, enhanced security, and improved business continuity."
+    },
+    "3": {
+        "Question": "What types of cloud services exist?",
+        "Answer": "Types of cloud services include Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS)."
+    },
+    "4": {
+        "Question": "What is the role of a cloud solutions architect?",
+        "Answer": "A cloud solutions architect is responsible for designing and implementing cloud-based solutions that meet customer requirements."
+    },
+    "5": {
+        "Question": "What is the difference between public and private clouds?",
+        "Answer": "Public clouds are owned and operated by a third-party provider and are typically used for cost savings and scalability. Private clouds are owned and operated by an organization and are used for increased security and control."
+    },
+    "6": {
+        "Question": "What is the difference between IaaS and PaaS?",
+        "Answer": "IaaS provides the customer with access to virtualized computing resources, while PaaS provides the customer with a platform that includes additional capabilities such as databases, analytics, and storage."
+    },
+    "7": {
+        "Question": "What is a hybrid cloud?",
+        "Answer": "A hybrid cloud is a combination of public and private clouds that are connected and can be used to share data and resources."
+    },
+    "8": {
+        "Question": "What types of cloud security measures should I consider?",
+        "Answer": "Types of cloud security measures to consider include encryption, authentication, access control, virtual firewalls, and data loss prevention."
+    },
+    "9": {
+        "Question": "What is the best way to deploy a cloud solution?",
+        "Answer": "The best way to deploy a cloud solution is to use a deployment framework that automates the process and ensures that the customer’s requirements are met."
+    },
+    "10": {
+        "Question": "How can I ensure that my cloud solution is cost-effective?",
+        "Answer": "To ensure that a cloud solution is cost-effective, it is important to consider the cost of infrastructure, licensing, and support. Additionally, it is important to consider the cost of the solution over time, such as the cost of scaling and maintenance."
+    }
+}

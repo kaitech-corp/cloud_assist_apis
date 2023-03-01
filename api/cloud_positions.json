@@ -1,0 +1,40 @@
+{
+    "Cloud_Computing_Positions": [
+        {
+            "Position": "Cloud Architect",
+            "Pay_Range": "$120,000 - $210,000",
+            "Requirements": "A Bachelor's degree in computer science, engineering, or a related field, plus a minimum of seven years of professional experience in software development, information systems, computer engineering, or a related field.",
+            "Description": "Cloud Architects are responsible for designing, planning, and implementing cloud computing solutions. They must be adept in a variety of cloud technologies and services, as well as possess an in-depth understanding of their organization’s infrastructure and IT requirements. Cloud Architects must also be able to communicate effectively with stakeholders, partners, and other IT professionals to ensure successful cloud implementation and maintenance."
+        },
+        {
+            "Position": "Cloud Solutions Engineer",
+            "Pay_Range": "$90,000 - $130,000",
+            "Requirements": "A Bachelor's degree in computer science, engineering, or a related field, plus a minimum of five years of professional experience in software development, information systems, computer engineering, or a related field.",
+            "Description": "Cloud Solutions Engineers are responsible for designing, implementing, and maintaining cloud solutions for their organization. They must have a deep understanding of cloud computing platforms and services, as well as the ability to develop custom solutions that meet their organization’s needs. Cloud Solutions Engineers must also be able to work collaboratively with stakeholders, partners, and other IT professionals to ensure successful cloud implementation and maintenance."
+        },
+        {
+            "Position": "Cloud Security Engineer",
+            "Pay_Range": "$90,000 - $165,000",
+            "Requirements": "A Bachelor's degree in computer science, engineering, or a related field, plus a minimum of five years of professional experience in software development, information systems, computer engineering, or a related field.",
+            "Description": "Cloud Security Engineers are responsible for designing, implementing, and maintaining security for cloud-based applications and systems. They must have a deep understanding of cloud computing technologies and security best practices. Cloud Security Engineers must also be able to work collaboratively with stakeholders, partners, and other IT professionals to ensure the security of their organization’s cloud environment."
+        },
+        {
+            "Position": "Cloud Database Administrator",
+            "Pay_Range": "$90,000 - $150,000",
+            "Requirements": "A Bachelor's degree in computer science, engineering, or a related field, plus a minimum of five years of professional experience in software development, information systems, computer engineering, or a related field.",
+            "Description": "Cloud Database Administrators are responsible for designing, configuring, and maintaining cloud-based databases. They must have a deep understanding of cloud computing platforms and databases, as well as the ability to develop custom solutions that meet their organization’s needs. Cloud Database Administrators must also be able to work collaboratively with stakeholders, partners, and other IT professionals to ensure successful cloud implementation and maintenance."
+        },
+        {
+            "Position": "Cloud Systems Administrator",
+            "Pay_Range": "$60,000 - $120,000",
+            "Requirements": "A Bachelor's degree in computer science, engineering, or a related field, plus a minimum of three years of professional experience in software development, information systems, computer engineering, or a related field.",
+            "Description": "Cloud Systems Administrators are responsible for the day-to-day maintenance and administration of cloud-based systems. They must have a deep understanding of cloud computing technologies and systems, as well as the ability to troubleshoot and resolve any issues that may arise. Cloud Systems Administrators must also be able to work collaboratively with stakeholders, partners, and other IT professionals to ensure successful cloud maintenance and operations."
+        },
+        {
+            "Position": "Cloud Developer",
+            "Pay_Range": "$60,000 - $115,000",
+            "Requirements": "A Bachelor's degree in computer science, engineering, or a related field, plus a minimum of three years of professional experience in software development, information systems, computer engineering, or a related field.",
+            "Description": "Cloud Developers are responsible for developing applications and other software solutions for cloud-based systems. They must have a deep understanding of cloud computing technologies, as well as the ability to develop custom solutions that meet their organization’s needs. Cloud Developers must also be able to work collaboratively with stakeholders, partners, and other IT professionals to ensure successful cloud implementation and maintenance."
+        }
+    ]
+}
