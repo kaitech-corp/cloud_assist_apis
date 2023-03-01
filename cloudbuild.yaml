@@ -8,26 +8,26 @@ steps:
       - '-c'
       - |
         # Export the bucket name and project ID as environment variables
-        export BUCKET_NAME= "api-project-371618.appspot.com"
+        export BUCKET_NAME= "_BUCKET_NAME"
         export PROJECT_ID= "$PROJECT_NUMBER"
         
         # Check which JSON files in the api directory have been modified
         export FILES_CHANGED=$(git diff --name-only HEAD~1 HEAD | grep "^api\/.*\.json$")
-        if [ -z "$FILES_CHANGED" ]; then
+        if [ -z "$_FILES_CHANGED" ]; then
           echo 'No JSON files have been modified.'
           exit 0
         fi
         
         # Validate each modified JSON file and save it to the specified storage bucket
-        for file in $FILES_CHANGED; do
+        for file in $_FILES_CHANGED; do
           if ! python -mjson.tool $file >/dev/null 2>&1; then
             echo "Error: $file is not a valid JSON file."
             exit 1
           fi
-          gsutil cp $file gs://$BUCKET_NAME/$file
+          gsutil cp $file gs://$_BUCKET_NAME/$file
         done
   
     # Define default substitutions to be used in other fields
 substitutions:
-  BUCKET_NAME: "api-project-371618.appspot.com"
-  FILES_CHANGED: "api/*.json"
+  _BUCKET_NAME: "api-project-371618.appspot.com"
+  _FILES_CHANGED: "api/*.json"
