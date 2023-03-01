@@ -21,7 +21,7 @@ steps:
         fi
         
         # Validate each modified JSON file and save it to the specified storage bucket
-        for file in $_FILES_CHANGED; do
+        for file in FILES_CHANGED; do
           if ! python -mjson.tool $file >/dev/null 2>&1; then
             echo "Error: $file is not a valid JSON file."
             echo "Skipping $file and continuing to the next file."
