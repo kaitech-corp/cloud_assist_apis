@@ -1,27 +1,33 @@
+# Define the Cloud Build pipeline steps
 steps:
-- name: gcr.io/cloud-builders/gcloud  # Use the gcloud tool in this step
-  entrypoint: 'bash'
-  args:
-  - '-c'
-  - |
-    set -e  # Set the bash script to exit immediately if a command exits with a non-zero status
-    gsutil cp gs://api-project-371618.appspot.com/last_commit.txt /workspace/last_commit.txt || true  # Copy the last_commit.txt file from the specified Cloud Storage bucket to the workspace directory. If the file does not exist, continue without throwing an error
-    LAST_COMMIT=$(cat /workspace/last_commit.txt)  # Read the contents of the last_commit.txt file into the LAST_COMMIT variable
-    echo "Last commit: $LAST_COMMIT"  # Output the value of the LAST_COMMIT variable to the console
-    MODIFIED_FILES=$(git diff --name-only $LAST_COMMIT HEAD api/*.json)  # Get a list of modified files since the last commit that match the specified pattern, and save the list to the MODIFIED_FILES variable
-    if [[ -z "$MODIFIED_FILES" ]]; then  # If the MODIFIED_FILES variable is empty, there are no modified files, so exit without doing anything
-      echo "No modified files found. Exiting."
-      exit 0
-    fi
-    for file in $MODIFIED_FILES; do  # For each file in the MODIFIED_FILES list, do the following:
-      if ! python -m json.tool "$file" > /dev/null; then  # Use Python's json.tool to check if the file is valid JSON. If it is not, throw an error and exit the script
-        echo "File $file is not valid JSON."
-        exit 1
-      fi
-    done
-    gsutil cp -r -f $MODIFIED_FILES gs://api-project-371618.appspot.com/  # Copy the modified files to the specified Cloud Storage bucket, overwriting existing files if necessary
-    echo $COMMIT_SHA > /workspace/last_commit.txt  # Write the commit SHA of the latest commit to the last_commit.txt file in the workspace directory
-    gsutil cp /workspace/last_commit.txt gs://api-project-371618.appspot.com/  # Copy the last_commit.txt file from the workspace directory to the specified Cloud Storage bucket
+  # Step 1: Run a bash script that checks which JSON files in the api directory have been modified, validate them, and save them to the specified storage bucket
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      # Define the bash script that runs the pipeline logic
+      - '-c'
+      - |
+        # Export the bucket name and project ID as environment variables
+        export BUCKET_NAME= api-project-371618.appspot.com
+        export PROJECT_ID= api-project-371618
+        
+        # Check which JSON files in the api directory have been modified
+        export FILES_CHANGED=$(git diff --name-only HEAD~1 HEAD | grep "^api\/.*\.json$")
+        if [ -z "$FILES_CHANGED" ]; then
+          echo 'No JSON files have been modified.'
+          exit 0
+        fi
+        
+        # Validate each modified JSON file and save it to the specified storage bucket
+        for file in $FILES_CHANGED; do
+          if ! python -mjson.tool $file >/dev/null 2>&1; then
+            echo "Error: $file is not a valid JSON file."
+            exit 1
+          fi
+          gsutil cp $file gs://$BUCKET_NAME/$file
+        done
+  
+    # Define default substitutions to be used in other fields
     substitutions:
-      LAST_COMMIT: "main"
-
+      _BUCKET_NAME: api-project-371618.appspot.com
+      _PROJECT_ID: api-project-371618
