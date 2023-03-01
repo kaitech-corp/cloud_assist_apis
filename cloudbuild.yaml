@@ -34,4 +34,4 @@ steps:
 substitutions:
   _BUCKET_NAME: "api-project-371618.appspot.com"
   _FILES_CHANGED: "api/*.json"
-  _PREV_COMMIT: $(git log -n 1 --pretty=format:%H HEAD~1)
+  _PREV_COMMIT: (git log -n 1 --pretty=format:%H HEAD~1)
