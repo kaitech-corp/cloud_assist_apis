@@ -15,7 +15,7 @@ steps:
         # Check which JSON files in the api directory have been modified
         export FILES_CHANGED=$(git diff --name-only)
 
-        if [ -z "$_FILES_CHANGED" ]; then
+        if [ -z "FILES_CHANGED" ]; then
           echo 'No JSON files have been modified.'
           exit 0
         fi
@@ -33,4 +33,4 @@ steps:
     # Define default substitutions to be used in other fields
 substitutions:
   _BUCKET_NAME: "api-project-371618.appspot.com"
-  _FILES_CHANGED: "/*.json"
+  _FILES_CHANGED: "api/*.json"
