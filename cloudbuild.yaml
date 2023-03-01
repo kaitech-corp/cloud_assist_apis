@@ -22,8 +22,4 @@ steps:
     gsutil cp -r -f $MODIFIED_FILES gs://api-project-371618.appspot.com/  # Copy the modified files to the specified Cloud Storage bucket, overwriting existing files if necessary
     echo $COMMIT_SHA > /workspace/last_commit.txt  # Write the commit SHA of the latest commit to the last_commit.txt file in the workspace directory
     gsutil cp /workspace/last_commit.txt gs://api-project-371618.appspot.com/  # Copy the last_commit.txt file from the workspace directory to the specified Cloud Storage bucket
-  volumes:
-  - name: 'ssh'  # Mount the 'ssh' volume to the container to allow access to SSH keys for private repositories
-    path: /root/.ssh
-    readOnly: true
-    
+
