@@ -28,6 +28,6 @@ steps:
         done
   
     # Define default substitutions to be used in other fields
-    # --substitutions:
-    #   _BUCKET_NAME: api-project-371618.appspot.com
-    #   _PROJECT_ID: $PROJECT_NUMBER
+substitutions:
+  _BUCKET_NAME: api-project-371618.appspot.com
+  _FILES_CHANGED: unused
