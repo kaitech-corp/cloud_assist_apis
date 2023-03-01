@@ -11,9 +11,9 @@ steps:
         export BUCKET_NAME= "_BUCKET_NAME"
         
         # Find the previous commit hash using git log
-        export PREV_COMMIT=$_PREV_COMMIT
+        # export PREV_COMMIT=$_PREV_COMMIT
         # Check which JSON files in the api directory have been modified
-        export FILES_CHANGED=$(git diff --name-only $_PREV_COMMIT HEAD | grep "^api\/.*\.json$" | sed 's/^api\///')
+        export FILES_CHANGED=$(git diff --name-only)
 
         if [ -z "$_FILES_CHANGED" ]; then
           echo 'No JSON files have been modified.'
@@ -24,13 +24,14 @@ steps:
         for file in $_FILES_CHANGED; do
           if ! python -mjson.tool $file >/dev/null 2>&1; then
             echo "Error: $file is not a valid JSON file."
-            exit 1
+            echo "Skipping $file and continuing to the next file."
+          else
+            gsutil cp $file gs://$_BUCKET_NAME/$file
           fi
-          gsutil cp $file gs://$_BUCKET_NAME/$file
         done
   
     # Define default substitutions to be used in other fields
 substitutions:
   _BUCKET_NAME: "api-project-371618.appspot.com"
   _FILES_CHANGED: "api/*.json"
-  _PREV_COMMIT: git log -n 1 --pretty=format:%H HEAD^
+  
