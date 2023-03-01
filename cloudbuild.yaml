@@ -9,10 +9,13 @@ steps:
       - |
         # Export the bucket name and project ID as environment variables
         export BUCKET_NAME= "_BUCKET_NAME"
-        export PROJECT_ID= "$PROJECT_NUMBER"
+        # export PROJECT_ID= "$PROJECT_NUMBER"
         
+        # Find the previous commit hash using git log
+        export PREV_COMMIT=$(git log -n 1 --pretty=format:%H HEAD~1)
         # Check which JSON files in the api directory have been modified
-        export FILES_CHANGED=$(git diff --name-only HEAD~1 HEAD | grep "^api\/.*\.json$")
+        export FILES_CHANGED=$(git diff --name-only $PREV_COMMIT HEAD | grep "^api\/.*\.json$")
+
         if [ -z "$_FILES_CHANGED" ]; then
           echo 'No JSON files have been modified.'
           exit 0
