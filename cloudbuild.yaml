@@ -24,7 +24,7 @@ steps:
 
           # Loop through the modified files and copy them to the Cloud Storage bucket
           for file in $modified_files; do
-            gsutil cp /workspace/cloud_assist_apis/api/$file gs://api-project-371618.appspot.com/$file
+            gsutil cp /workspace/cloud_assist_apis-$SHORT_SHA/api/$file gs://api-project-371618.appspot.com/$file
           done
         else
           echo 'No modified JSON files detected.'
