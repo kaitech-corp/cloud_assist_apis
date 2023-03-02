@@ -11,7 +11,7 @@ steps:
       - '-c'
       - |
         cd /workspace/cloud_assist_apis-$SHORT_SHA
-        git init
+        # git init
         git status
         # git diff --name-only HEAD~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///'
         # ls -R
