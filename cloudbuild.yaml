@@ -12,8 +12,7 @@ steps:
       - |
         cd /workspace/cloud_assist_apis-$SHORT_SHA
         git fetch origin master:refs/remotes/origin/master
-        # git diff --name-only HEAD~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///'
-        git diff --name-only
+        git diff --name-only HEAD~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///'
         
 
   # # Step 2: Check if the changes include a JSON file
