@@ -3,7 +3,7 @@ steps:
   # Step 1: Check out the code from GitHub
   - name: 'gcr.io/cloud-builders/git'
     args: ['clone', 'https://github.com/kaitech-corp/$REPO_NAME']
-    dir: '/workspace'
+    dir: '/workspace/$REPO_NAME'
 
   # Step 2: Check if the changes include a JSON file
   - name: 'gcr.io/cloud-builders/gcloud'
