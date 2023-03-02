@@ -13,7 +13,7 @@ steps:
       - |
         # Get a list of modified JSON files in the "api" directory
         echo $modified_files
-        modified_files=$(git diff --name-only HEAD^ HEAD | grep '^api/.*\.json$' | sed 's/^api\///')
+        modified_files=$(git diff --name-only HEAD~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///')
         for file in $modified_files; do
           echo $file
         done
