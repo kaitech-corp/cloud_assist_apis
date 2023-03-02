@@ -13,7 +13,7 @@ steps:
         cd /workspace/cloud_assist_apis-$SHORT_SHA
         git status
         # git diff --name-only HEAD~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///'
-        git diff --name-only HEAD^ HEAD
+        git diff --name-only
         
 
   # # Step 2: Check if the changes include a JSON file
