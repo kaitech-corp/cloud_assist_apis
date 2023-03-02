@@ -16,7 +16,7 @@ steps:
 
         # Get a list of modified JSON files in the "api" directory
         echo $REPO_NAME
-        modified_files=$(git diff --name-only HEAD~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///')
+        modified_files=$(git diff --name-only master~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///')
         if [ -n "$modified_files" ]; then
           echo 'Modified JSON files detected.'
 
@@ -28,4 +28,4 @@ steps:
           echo 'No modified JSON files detected.'
         fi
     env:
-      - 'modified_files=$(git diff --name-only HEAD~1 HEAD | grep \''^api/.*\.json$\'' | sed \''s/^api\///\'')'
+      - 'modified_files=$(git diff --name-only master~1 HEAD | grep \''^api/.*\.json$\'' | sed \''s/^api\///\'')'
