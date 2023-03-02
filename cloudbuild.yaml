@@ -1,36 +1,28 @@
 # Define the Cloud Build pipeline steps
 steps:
-  # Step 1: Run a bash script that checks which JSON files in the api directory have been modified, validate them, and save them to the specified storage bucket
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  # Step 1: Check out the code from GitHub
+  - name: 'gcr.io/cloud-builders/git'
+    args: ['clone', 'https://github.com/kaitech-corp/$REPO_NAME']
+    dir: '/workspace'
+
+  # Step 2: Check if the changes include a JSON file
+  - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
-      # Define the bash script that runs the pipeline logic
       - '-c'
       - |
-        # Export the bucket name and project ID as environment variables
-        export BUCKET_NAME= "_BUCKET_NAME"
-        
-        # Find the previous commit hash using git log
-        # export PREV_COMMIT=$_PREV_COMMIT
-        # Check which JSON files in the api directory have been modified
-        export FILES_CHANGED=$(git diff --name-only)
+        # Get a list of modified JSON files in the "api" directory
+        modified_files=$(git diff --name-only HEAD^ HEAD | grep '^api/.*\.json$' | sed 's/^api\///')
 
-        if [ -z "FILES_CHANGED" ]; then
-          echo 'No JSON files have been modified.'
-          exit 0
+        if [ -n "$modified_files" ]; then
+          echo 'Modified JSON files detected.'
+
+          # Loop through the modified files and copy them to the Cloud Storage bucket
+          for file in $modified_files; do
+            gsutil cp /workspace/$file gs://api-project-371618.appspot.com/$file
+          done
+        else
+          echo 'No modified JSON files detected.'
         fi
-        
-        # Validate each modified JSON file and save it to the specified storage bucket
-        for file in FILES_CHANGED; do
-          if ! python -mjson.tool $file >/dev/null 2>&1; then
-            echo "Error: $file is not a valid JSON file."
-            echo "Skipping $file and continuing to the next file."
-          else
-            gsutil cp $file gs://$_BUCKET_NAME/$file
-          fi
-        done
-  
-    # Define default substitutions to be used in other fields
-substitutions:
-  _BUCKET_NAME: "api-project-371618.appspot.com"
-  _FILES_CHANGED: "api/*.json"
+    env:
+      - 'modified_files=$(git diff --name-only HEAD^ HEAD | grep \''^api/.*\.json$\'' | sed \''s/^api\///\'')'
