@@ -2,8 +2,8 @@
 steps:
   # Step 1: Check out the code from GitHub
   - name: 'gcr.io/cloud-builders/git'
-    args: ['clone', '--depth=1', 'https://github.com/kaitech-corp/$REPO_NAME']
-    dir: '/workspace'
+    args: ['clone', '--depth=1', 'https://github.com/kaitech-corp/$REPO_NAME', '/workspace/$SHORT_SHA']
+    dir: '/workspace/$SHORT_SHA'
   
   # Step 2: Fetch unshallow/full history from repository 
   - name: gcr.io/cloud-builders/git
@@ -15,9 +15,9 @@ steps:
       - '-c'
       - |      
         pwd
-        cd /workspace/cloud_assist_apis-$SHORT_SHA
+        cd /workspace/$SHORT_SHA
         ls
-  # # Step 2: Check if the changes include a JSON file
+  # Step 2: Check if the changes include a JSON file
   # - name: 'gcr.io/cloud-builders/gcloud'
   #   entrypoint: 'bash'
   #   args:
@@ -32,7 +32,7 @@ steps:
 
   #         # Loop through the modified files and copy them to the Cloud Storage bucket
   #         for file in $modified_files; do
-  #           gsutil cp /workspace/cloud_assist_apis-$SHORT_SHA/api/$file gs://api-project-371618.appspot.com/$file
+  #           gsutil cp /workspace/$SHORT_SHA/api/$file gs://api-project-371618.appspot.com/$file
   #         done
   #       else
   #         echo 'No modified JSON files detected.'
