@@ -12,7 +12,9 @@ steps:
       - '-c'
       - |
         # Get a list of modified JSON files in the "api" directory
+        echo $modified_files
         modified_files=$(git diff --name-only HEAD^ HEAD | grep '^api/.*\.json$' | sed 's/^api\///')
+        echo 'After: $modified_files'
 
         if [ -n "$modified_files" ]; then
           echo 'Modified JSON files detected.'
