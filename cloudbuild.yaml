@@ -28,4 +28,4 @@ steps:
           echo 'No modified JSON files detected.'
         fi
     env:
-      - 'modified_files=$(git diff --name-only HEAD^ HEAD | grep \''^api/.*\.json$\'' | sed \''s/^api\///\'')'
+      - 'modified_files=$(git diff --name-only HEAD~1 HEAD | grep \''^api/.*\.json$\'' | sed \''s/^api\///\'')'
