@@ -17,7 +17,7 @@ steps:
   #       pwd
   #       cd /workspace/$SHORT_SHA
   #       ls
-  # Step 2: Check if the changes include a JSON file
+  # Step 3: Check if the changes include JSON files and save them to storage
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
@@ -33,6 +33,7 @@ steps:
           # Loop through the modified files and copy them to the Cloud Storage bucket
           for file in $modified_files; do
             gsutil cp /workspace/$SHORT_SHA/api/$file gs://api-project-371618.appspot.com/$file
+            gsutil acl ch -u AllUsers:R gs://api-project-371618.appspot.com/$file
           done
         else
           echo 'No modified JSON files detected.'
