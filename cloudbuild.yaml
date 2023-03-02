@@ -11,6 +11,9 @@ steps:
     args:
       - '-c'
       - |
+        # Get the latest changes from the remote repository
+        git fetch
+
         # Get a list of modified JSON files in the "api" directory
         echo $REPO_NAME
         modified_files=$(git diff --name-only HEAD~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///')
