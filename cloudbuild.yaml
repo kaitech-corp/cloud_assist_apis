@@ -3,29 +3,38 @@ steps:
   # Step 1: Check out the code from GitHub
   - name: 'gcr.io/cloud-builders/git'
     args: ['clone', 'https://github.com/kaitech-corp/$REPO_NAME']
-    dir: '/workspace/$REPO_NAME'
-
-  # Step 2: Check if the changes include a JSON file
-  - name: 'gcr.io/cloud-builders/gcloud'
+    dir: '/workspace/cloud_assist_apis-$COMMIT_SHA'
+  # Step 2: List all files in the cloned repository
+  - name: 'gcr.io/cloud-builders/git'
     entrypoint: 'bash'
     args:
       - '-c'
       - |
-        # Get the latest changes from the remote repository
-        git fetch
+        cd /workspace/cloud_assist_apis-$COMMIT_SHA
+        git init
+        git status
+        # ls -R
+        
 
-        # Get a list of modified JSON files in the "api" directory
-        echo $REPO_NAME
-        modified_files=$(git diff --name-only master~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///')
-        if [ -n "$modified_files" ]; then
-          echo 'Modified JSON files detected.'
+  # # Step 2: Check if the changes include a JSON file
+  # - name: 'gcr.io/cloud-builders/gcloud'
+  #   entrypoint: 'bash'
+  #   args:
+  #     - '-c'
+  #     - |
+  #       # Get the latest changes from the remote repository
 
-          # Loop through the modified files and copy them to the Cloud Storage bucket
-          for file in $modified_files; do
-            gsutil cp /workspace/$file gs://api-project-371618.appspot.com/$file
-          done
-        else
-          echo 'No modified JSON files detected.'
-        fi
-    env:
-      - 'modified_files=$(git diff --name-only master~1 HEAD | grep \''^api/.*\.json$\'' | sed \''s/^api\///\'')'
+  #       # Get a list of modified JSON files in the "api" directory
+  #       modified_files=$(git diff --name-only HEAD~1 HEAD | grep '^api/.*\.json$' | sed 's/^api\///')
+  #       if [ -n "$modified_files" ]; then
+  #         echo 'Modified JSON files detected.'
+
+  #         # Loop through the modified files and copy them to the Cloud Storage bucket
+  #         for file in $modified_files; do
+  #           gsutil cp /workspace/cloud_assist_apis/$file gs://api-project-371618.appspot.com/$file
+  #         done
+  #       else
+  #         echo 'No modified JSON files detected.'
+  #       fi
+  #   env:
+  #     - 'modified_files=$(git diff --name-only HEAD~1 HEAD | grep \''^api/.*\.json$\'' | sed \''s/^api\///\'')'
