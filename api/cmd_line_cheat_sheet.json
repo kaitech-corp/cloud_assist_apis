@@ -1,7 +1,7 @@
 [
   {
     "topic": "Getting started",
-    "title": "Get going with the gcloud command-line tool",
+    "title": "Get setup with google cloud command lines",
     "commands": 
       {
         "gcloud init": "Initialize, authorize, and configure the gcloud tool.",
@@ -26,7 +26,7 @@
       },
   {
     "topic": "Personalization",
-    "title": "Make the Google Cloud CLI your own; personalize your configuration with properties",
+    "title": "Personalize your configuration with properties",
     "commands": 
       {
         "gcloud config set": "Define a property (like compute/zone) for the current configuration.",
@@ -63,7 +63,7 @@
   },
   {
     "topic": "Identity & Access Management",
-    "title": "Configuring Cloud Identity & Access Management (IAM) preferences and service accounts",
+    "title": "Configuring Cloud Identity & Access Management (IAM)",
     "commands": 
       {
         "gcloud iam list-grantable-roles": "List IAM grantable roles for a resource.",
