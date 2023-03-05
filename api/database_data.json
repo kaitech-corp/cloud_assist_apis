@@ -2,28 +2,41 @@
   {
     "service": "Cloud SQL",
     "description": "A fully-managed database service for MySQL and PostgreSQL",
-    "detail": "Google Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage and administer your relational databases on Google Cloud Platform. It provides a highly available, scalable and secure environment for running your MySQL and PostgreSQL databases in the cloud. It supports relational databases such as MySQL, PostgreSQL and SQL Server, as well as NoSQL databases such as MongoDB and Bigtable.",
+    "detail": "Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage and administer your relational databases on Google Cloud Platform. It provides a highly available, scalable and secure environment for running your MySQL and PostgreSQL databases in the cloud. It supports relational databases such as MySQL, PostgreSQL and SQL Server, as well as NoSQL databases such as MongoDB and Bigtable.",
     "benefits": [
       "Easy to set up, maintain, manage and administer",
       "Highly available, scalable and secure",
       "Supports relational and NoSQL databases"
     ],
-    "cons": ["Limited support for other database types"],
+    "cons": [
+      "Limited availability: Cloud SQL is not available in all regions, which can be a significant disadvantage for users in certain geographic locations. This may limit the flexibility of businesses and developers who need to access their databases from different regions.",
+      "Cost: While Cloud SQL offers a free tier, the pricing can quickly increase as usage and requirements grow. Cloud SQL can be more expensive than other comparable cloud database solutions, which can be a deterrent for small and medium-sized businesses.",
+      "Lack of customization options: Cloud SQL offers limited customization options for users who need more control over their databases. For example, users cannot install custom software or configure the server settings beyond a certain extent, which may limit their ability to optimize their databases for specific use cases."
+    ],
     "useCases": ["Data warehousing", "Real-time analytics", "Data lakes"],
+    "link": "https://cloud.google.com/sql",
     "example": "A company needing a highly available and secure environment for storing and analyzing large datasets would benefit from using Cloud SQL. It allows them to easily manage and maintain their database, while providing scalability and flexibility. The company could use Cloud SQL to store and analyze their data, as well as use other Google Cloud Platform services to process and analyze the data."
   },
   {
     "service": "Cloud Datastore",
     "description": "A fully-managed NoSQL database service",
-    "detail": "Google Cloud Datastore is a fully-managed NoSQL database service for storing non-relational data in the cloud. It provides a highly available and scalable environment for running your NoSQL database in the cloud and supports both structured and unstructured data. It supports a variety of NoSQL databases such as MongoDB, Bigtable, Cassandra and Redis.",
+    "detail": "Cloud Datastore is a fully-managed NoSQL database service for storing non-relational data in the cloud. It provides a highly available and scalable environment for running your NoSQL database in the cloud and supports both structured and unstructured data. It supports a variety of NoSQL databases such as MongoDB, Bigtable, Cassandra and Redis.",
     "benefits": [
       "Easy to set up, maintain, manage and administer",
       "Highly available, scalable and secure",
-      "Supports a variety of NoSQL databases"
+      "Supports a variety of NoSQL databases",
+      "Provides automatic scaling and high availability without any maintenance or setup.",
+      "Supports ACID transactions, allowing for consistent data updates.",
+      "Enables fast and efficient queries through its index-based query system."
     ],
-    "cons": ["Limited support for other database types"],
+    "cons": [
+      "Limited query capabilities: Cloud Datastore has some limitations in terms of querying and indexing data, especially when compared to other NoSQL document database services like MongoDB or Amazon DynamoDB. For example, Datastore only supports indexing up to 200 properties per entity, and querying by inequality (e.g., greater than, less than) on multiple properties is not possible.",
+      "Higher costs for large datasets: Cloud Datastore uses a 'pay-as-you-go' pricing model based on usage, which can become expensive for large datasets or high traffic applications. Additionally, some features like Cloud Datastore backups and Cloud Datastore exports can also increase costs.",
+      "Learning curve for developers: Cloud Datastore uses its own data modeling and querying language called GQL (Google Query Language), which can be different from other databases and require some learning curve for developers who are not familiar with it. Also, compared to other cloud providers, Cloud Datastore has a smaller community and resources available for developers."
+    ],
     "useCases": ["Data warehousing", "Real-time analytics", "Data lakes"],
-    "example": "A company needing to store and analyze large amounts of unstructured data would benefit from using Cloud Datastore. It allows them to easily manage and maintain their data, while providing scalability and flexibility. The company could use Cloud Datastore to store and analyze their data, as well as use other Google Cloud Platform services to process and analyze the data."
+    "link": "https://cloud.google.com/datastore",
+    "example": "A company needing to store and analyze large amounts of unstructured data would benefit from using Cloud Datastore. It allows them to easily manage and maintain their data, while providing scalability and flexibility. The company could use Cloud Datastore to store and analyze their data, as well as use other Cloud Platform services to process and analyze the data."
   },
   {
     "service": "Cloud Spanner",
@@ -35,12 +48,17 @@
       "ACID transactions with SQL queries.",
       "Horizontally scalable."
     ],
-    "cons": ["Limited flexibility when making changes to data models."],
+    "cons": [
+      "Limited Availability: Cloud Spanner is currently only available in a few regions, which may be a limitation for customers who require a presence in other parts of the world. For example, as of March 2023, Spanner is only available in 16 regions, while AWS RDS and Azure SQL Database are available in more than 25 regions.",
+      "High Cost: Spanner can be significantly more expensive than other cloud databases, particularly for smaller workloads. Spanner's pricing model includes costs for storage, read/write operations, and network egress, which can quickly add up. This can make Spanner less attractive for smaller applications or those with more modest budgets.",
+      "Limited Ecosystem: While Google Cloud offers a wide range of tools and services, the Spanner ecosystem is still relatively limited compared to other cloud databases like AWS RDS or Azure SQL Database. This can make it more challenging to find third-party tools or integrations that work seamlessly with Spanner, which may require more development effort or customization to achieve the desired functionality."
+    ],
     "useCases": [
       "Web and mobile applications.",
       "Data warehousing and analytics.",
       "Transactional systems."
     ],
+    "link": "https://cloud.google.com/spanner",
     "example": "A large e-commerce company is looking for a reliable and highly available database solution for their mission-critical applications. Cloud Spanner could provide them with a scalable, transactional database service with ACID transactions, SQL queries, and automatic replication of data across multiple zones for durability. This solution would ensure the company's applications are always available and running smoothly."
   },
   {
@@ -53,14 +71,16 @@
       "Real-time synchronization of data across multiple devices."
     ],
     "cons": [
-      "Limited flexibility when making changes to data models.",
-      "Lack of support for complex queries and transactions."
+      "Pricing: Cloud Firestore is considered to be more expensive compared to some other NoSQL databases available in the market. While Firestore has a generous free tier, its pricing structure can become complicated and expensive as you start scaling your applications.",
+      "Limited querying capabilities: Firestore has some limitations in terms of querying and filtering data compared to other NoSQL databases. For instance, it only supports a limited set of comparison operators and does not support join operations or aggregations.",
+      "Limited geographic availability: While Cloud Firestore is available in multiple regions around the world, it is not available in as many regions as some other cloud providers. This can impact the latency and performance of your application for users in certain regions."
     ],
     "useCases": [
       "Mobile and web applications.",
       "Real-time data synchronization.",
       "Offline data access."
     ],
+    "link": "https://cloud.google.com/firestore",
     "example": "A mobile app development company is looking for a reliable and scalable database service for their mobile and web applications. Cloud Firestore could provide them with a NoSQL document database with a flexible, expressive and scalable data model for storing and syncing data across multiple devices. This solution would ensure their applications have access to the data they need, even when the device is offline."
   },
   {
@@ -74,14 +94,16 @@
       "Encryption for data at rest."
     ],
     "cons": [
-      "Limited flexibility when making changes to data models.",
-      "Lack of support for complex queries and transactions."
+      "Limited availability: While Cloud Bigtable is available in several regions, its availability is still limited compared to other cloud providers such as Amazon Web Services (AWS) and Microsoft Azure, which have a larger number of regions available worldwide.",
+      "Higher pricing: Cloud Bigtable can be more expensive than similar services from other cloud providers, especially for smaller workloads. While Bigtable offers a range of performance and scaling options, customers may find it challenging to optimize their usage and costs.",
+      "Steep learning curve: Cloud Bigtable is a complex system and can be challenging to use for customers who are new to NoSQL databases or distributed systems. Users need to have a solid understanding of the underlying infrastructure, performance tuning, and cluster management to make the most of the service. Compared to other cloud providers, this may make it more difficult for users to get started and achieve their desired outcomes."
     ],
     "useCases": [
       "Large analytical workloads.",
       "Large operational workloads.",
       "Real-time analytics."
     ],
+    "link": "https://cloud.google.com/bigtable",
     "example": "A digital media company is looking for a reliable and scalable database service for their large analytical and operational workloads. Cloud Bigtable could provide them with a fully managed NoSQL database with low-latency and high throughput. This solution would ensure their applications have access to the data they need with scalability, automatic failover, and encryption for data at rest."
   },
   {
@@ -95,8 +117,13 @@
       "High availability.",
       "Built-in encryption for data at rest."
     ],
-    "cons": ["Limited flexibility when making changes to data models."],
+    "cons": [
+      "Limited availability zones: Cloud Memorystore is currently only available in a limited number of regions and availability zones, which may limit its use for organizations that require data storage in specific locations. This can also lead to increased latency if the nearest data center is far away.",
+      "Limited flexibility: Cloud Memorystore only supports Redis, which means that organizations that require other types of in-memory data stores may need to look for alternative solutions. Additionally, Cloud Memorystore does not support running custom Redis modules, which may limit the functionality for some use cases.",
+      "Cost: While Cloud Memorystore offers a free tier with limited capabilities, the cost can quickly add up for organizations with larger data storage requirements. Additionally, Cloud Memorystore charges per hour of usage, which can make it expensive for organizations with highly variable usage patterns."
+    ],
     "useCases": ["Caching.", "Real-time analytics.", "Session management."],
+    "link": "https://cloud.google.com/memorystore",
     "example": "A web hosting company is looking for a reliable and scalable in-memory data store for their web applications. Cloud Memorystore could provide them with a fully managed in-memory data store for Redis with fast, secure access to data and built-in encryption for data at rest. This solution would ensure their applications have access to the data they need with scalability, high availability, and low latency and high throughput."
   },
   {
@@ -111,12 +138,17 @@
       "Point-in-time recovery.",
       "Industry-standard SQL querying and data manipulation."
     ],
-    "cons": ["Limited flexibility when making changes to data models."],
+    "cons": [
+      "Limited availability: Cloud SQL for MySQL is only available in a limited number of regions compared to some other cloud providers. This could limit the choice of where to host the database for some users who require high availability and low latency in specific regions.",
+      "Pricing structure: Cloud SQL for MySQL can be more expensive compared to some other cloud providers. The pricing structure can be confusing to some users, and unexpected charges may arise if they don't understand the pricing model.",
+      "Limited control: Cloud SQL for MySQL provides limited control compared to other cloud providers. Users may not have the ability to customize their database instance as much as they would like, and some advanced features may be restricted. This could be an issue for users who require more control over their database environment."
+    ],
     "useCases": [
       "Web and mobile applications.",
       "Data warehousing and analytics.",
       "Transactional systems."
     ],
+    "link": "https://cloud.google.com/sql/mysql",
     "example": "A software company is looking for a reliable and highly available database solution for their web and mobile applications. Cloud SQL for MySQL could provide them with a fully managed MySQL database with automatic backups, replication, and point-in-time recovery. This solution would ensure their applications have access to the data they need with secure and reliable performance."
   },
   {
@@ -131,12 +163,17 @@
       "Point-in-time recovery.",
       "Industry-standard SQL querying and data manipulation."
     ],
-    "cons": ["Limited flexibility when making changes to data models."],
+    "cons": [
+      "Limited Availability: Cloud SQL for PostgreSQL is only available in a limited number of regions compared to other cloud providers, which can make it difficult for businesses with a global presence to ensure consistent performance and access across all locations.",
+      "Limited Customization: While Cloud SQL for PostgreSQL offers a range of features and capabilities, it may not offer the level of customization and flexibility that some businesses require. This could be particularly problematic for businesses with complex database requirements that need a high level of control over their databases.",
+      "Cost: Cloud SQL for PostgreSQL can be more expensive than some other cloud providers, particularly for businesses with larger or more complex database needs. While the service offers a range of features and capabilities, businesses need to carefully evaluate their usage and budget to ensure that they are getting the best value for their money."
+    ],
     "useCases": [
       "Web and mobile applications.",
       "Data warehousing and analytics.",
       "Transactional systems."
     ],
+    "link": "https://cloud.google.com/sql/postgresql",
     "example": "A software company is looking for a reliable and highly available database solution for their web and mobile applications. Cloud SQL for PostgreSQL could provide them with a fully managed PostgreSQL database with automatic backups, replication, and point-in-time recovery. This solution would ensure their applications have access to the data they need with secure and reliable performance."
   },
   {
@@ -144,17 +181,23 @@
     "description": "Fully managed and highly available cloud storage service.",
     "detail": "Cloud Storage is a fully managed and highly available cloud storage service. It provides a secure, reliable, and durable storage solution with automatic replication and versioning for data protection. It also supports industry-standard APIs for accessing and managing data.",
     "benefits": [
-      "Secure and reliable.",
-      "High availability.",
+      "Scalability: Google Cloud Storage offers unlimited storage capacity, which means that you can store as much data as you need without worrying about running out of space. This makes it ideal for businesses of all sizes that need to store large amounts of data.",
+      "Cost-Effective: Google Cloud Storage is very cost-effective compared to other cloud storage providers. With a pay-as-you-go pricing model, you only pay for the storage you use, and there are no upfront costs or termination fees. Additionally, Google offers a free tier, which allows you to store up to 5GB of data for free.",
+      "Security: Google Cloud Storage provides a high level of security for your data. It uses advanced encryption technologies to ensure that your data is protected both in transit and at rest. Additionally, Google Cloud Storage is compliant with several industry standards and regulations, such as HIPAA and GDPR, which makes it a suitable option for businesses that require high levels of security and compliance.",
       "Automatic replication and versioning.",
       "Industry-standard APIs for accessing and managing data."
     ],
-    "cons": ["Limited flexibility when making changes to data models."],
+    "cons": [
+      "Limited free usage: While some cloud storage providers offer more generous free usage tiers or ongoing free plans, Cloud Storage offers only a limited free tier that expires after 12 months or after consuming a certain amount of storage, API calls, or egress traffic.",
+      "Relatively high pricing for certain features: Cloud Storage's pricing can be higher than some competitors for certain features, such as regional or multi-regional storage, frequent access to data, or network egress. This may be a disadvantage for cost-conscious customers or for workloads with high volumes of data transfer.",
+      "Limited integration with third-party tools: While Cloud Storage offers APIs and SDKs for several programming languages and tools, it may be less integrated with some third-party tools or services compared to other cloud providers, which can limit the ability to use certain features or workflows."
+    ],
     "useCases": [
       "Data archiving.",
       "Data backup and disaster recovery.",
       "Secure data storage."
     ],
+    "link": "https://cloud.google.com/storage",
     "example": "A healthcare company is looking for a reliable and highly available storage solution for their data archiving, backup, and disaster recovery needs. Cloud Storage could provide them with a secure, reliable, and durable storage solution with automatic replication and versioning for data protection. This solution would ensure their data is safe and secure with industry-standard APIs for accessing and managing data."
   },
   {
@@ -162,18 +205,21 @@
     "description": "Fully managed real-time messaging service.",
     "detail": "Cloud Pub/Sub is a fully managed real-time messaging service. It provides a secure, reliable, and scalable messaging platform with global reach, low latency, and automatic encryption for data in transit. It also supports delivery of messages to multiple subscribers in parallel.",
     "benefits": [
-      "Secure and reliable.",
-      "Global reach.",
-      "Low latency.",
-      "Automatic encryption for data in transit.",
-      "Delivery of messages to multiple subscribers in parallel."
+      "Scalability: Pub/Sub is highly scalable, which means it can handle large amounts of data without any performance issues. It is designed to handle millions of messages per second, making it ideal for applications that require high throughput.",
+      "Reliability: Pub/Sub is a highly reliable messaging service, with guarantees for message delivery and ordering. It ensures that messages are delivered exactly once, and in the order in which they were sent. This makes it a reliable option for critical applications that require a high level of reliability.",
+      "Integration: GPub/Sub is well-integrated with other Google Cloud services, such as BigQuery, Dataflow, and Cloud Functions. This allows developers to build complex data processing pipelines using these services without having to worry about managing the underlying infrastructure. Additionally, Cloud Pub/Sub is also compatible with other messaging protocols such as Apache Kafka, which makes it easy to integrate with other systems."
     ],
-    "cons": ["Limited flexibility when making changes to data models."],
+    "cons": [
+      "Complexity: Pub/Sub may be more complex to set up and use compared to other cloud providers, especially for those who are new to the platform. There are many options and configurations available, which can make it overwhelming for beginners.",
+      "Cost: Pub/Sub may be more expensive than other cloud providers, especially for high volume or long-term use. It charges for both data ingestion and egress, which can add up quickly.",
+      "Integration: Pub/Sub may not integrate as easily with other cloud providers or platforms compared to some of its competitors. This may make it difficult for users who want to use multiple cloud providers or services together in their workflows."
+    ],
     "useCases": [
       "Real-time data streaming.",
       "Event-driven architectures.",
       "Message queuing."
     ],
+    "link": "https://cloud.google.com/pubsub",
     "example": "A financial services company is looking for a reliable and scalable real-time messaging service for their real-time data streaming needs. Cloud Pub/Sub could provide them with a secure, reliable, and scalable messaging platform with global reach, low latency, and automatic encryption for data in transit. This solution would ensure their applications have access to the data they need with delivery of messages to multiple subscribers in parallel."
   }
 ]
