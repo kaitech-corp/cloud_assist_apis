@@ -23,7 +23,6 @@
     "link": "https://cloud.google.com/iam",
     "example": "A company that wants to restrict access to its GCP resources to specific employees can use IAM to create custom roles with specific permissions. This allows the company to control who can access its resources and what actions they can perform."
   },
-
   {
     "service": "Cloud Security Command Center",
     "description": "Provides security and risk visibility for your GCP resources, including vulnerabilities, threats, and security-related events.",

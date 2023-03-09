@@ -2,7 +2,7 @@
   {
     "service": "Cloud SQL",
     "description": "A fully-managed database service for MySQL and PostgreSQL",
-    "detail": "Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage and administer your relational databases on Google Cloud Platform. It provides a highly available, scalable and secure environment for running your MySQL and PostgreSQL databases in the cloud. It supports relational databases such as MySQL, PostgreSQL and SQL Server, as well as NoSQL databases such as MongoDB and Bigtable.",
+    "detail": "Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage and administer your relational databases on GCP. It provides a highly available, scalable and secure environment for running your MySQL and PostgreSQL databases in the cloud. It supports relational databases such as MySQL, PostgreSQL and SQL Server, as well as NoSQL databases such as MongoDB and Bigtable.",
     "benefits": [
       "Easy to set up, maintain, manage and administer",
       "Highly available, scalable and secure",
@@ -13,9 +13,13 @@
       "Cost: While Cloud SQL offers a free tier, the pricing can quickly increase as usage and requirements grow. Cloud SQL can be more expensive than other comparable cloud database solutions, which can be a deterrent for small and medium-sized businesses.",
       "Lack of customization options: Cloud SQL offers limited customization options for users who need more control over their databases. For example, users cannot install custom software or configure the server settings beyond a certain extent, which may limit their ability to optimize their databases for specific use cases."
     ],
-    "useCases": ["Data warehousing", "Real-time analytics", "Data lakes"],
+    "useCases": [
+      "Data warehousing",
+      "Real-time analytics",
+      "Data lakes"
+    ],
     "link": "https://cloud.google.com/sql",
-    "example": "A company needing a highly available and secure environment for storing and analyzing large datasets would benefit from using Cloud SQL. It allows them to easily manage and maintain their database, while providing scalability and flexibility. The company could use Cloud SQL to store and analyze their data, as well as use other Google Cloud Platform services to process and analyze the data."
+    "example": "A company needing a highly available and secure environment for storing and analyzing large datasets would benefit from using Cloud SQL. It allows them to easily manage and maintain their database, while providing scalability and flexibility. The company could use Cloud SQL to store and analyze their data, as well as use other GCP services to process and analyze the data."
   },
   {
     "service": "Cloud Datastore",
@@ -34,7 +38,11 @@
       "Higher costs for large datasets: Cloud Datastore uses a 'pay-as-you-go' pricing model based on usage, which can become expensive for large datasets or high traffic applications. Additionally, some features like Cloud Datastore backups and Cloud Datastore exports can also increase costs.",
       "Learning curve for developers: Cloud Datastore uses its own data modeling and querying language called GQL (Google Query Language), which can be different from other databases and require some learning curve for developers who are not familiar with it. Also, compared to other cloud providers, Cloud Datastore has a smaller community and resources available for developers."
     ],
-    "useCases": ["Data warehousing", "Real-time analytics", "Data lakes"],
+    "useCases": [
+      "Data warehousing",
+      "Real-time analytics",
+      "Data lakes"
+    ],
     "link": "https://cloud.google.com/datastore",
     "example": "A company needing to store and analyze large amounts of unstructured data would benefit from using Cloud Datastore. It allows them to easily manage and maintain their data, while providing scalability and flexibility. The company could use Cloud Datastore to store and analyze their data, as well as use other Cloud Platform services to process and analyze the data."
   },
@@ -122,7 +130,11 @@
       "Limited flexibility: Cloud Memorystore only supports Redis, which means that organizations that require other types of in-memory data stores may need to look for alternative solutions. Additionally, Cloud Memorystore does not support running custom Redis modules, which may limit the functionality for some use cases.",
       "Cost: While Cloud Memorystore offers a free tier with limited capabilities, the cost can quickly add up for organizations with larger data storage requirements. Additionally, Cloud Memorystore charges per hour of usage, which can make it expensive for organizations with highly variable usage patterns."
     ],
-    "useCases": ["Caching.", "Real-time analytics.", "Session management."],
+    "useCases": [
+      "Caching.",
+      "Real-time analytics.",
+      "Session management."
+    ],
     "link": "https://cloud.google.com/memorystore",
     "example": "A web hosting company is looking for a reliable and scalable in-memory data store for their web applications. Cloud Memorystore could provide them with a fully managed in-memory data store for Redis with fast, secure access to data and built-in encryption for data at rest. This solution would ensure their applications have access to the data they need with scalability, high availability, and low latency and high throughput."
   },

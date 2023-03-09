@@ -13,7 +13,7 @@
     "cons": [
       "The cost of running applications on Anthos can be higher than running them on traditional infrastructure",
       "The complexity of managing applications across multiple clouds can be difficult to manage",
-      "Risk of vendor lock-in, as organizations may become dependent on Google’s technology stack and services"
+      "Risk of vendor lock-in, as organizations may become dependent on Google\u2019s technology stack and services"
     ],
     "useCases": [
       "Deploy applications on-premise, in multiple clouds, or in a hybrid cloud environment",
@@ -26,7 +26,7 @@
   {
     "service": "Cloud CDN",
     "description": "Accelerate web performance by using this content delivery network.",
-    "detail": "Cloud CDN is a content delivery network (CDN) that accelerates web performance by caching content on Google’s globally distributed edge servers. It uses Google’s network of global Points of Presence (POPs) to cache content closer to users and to deliver it faster. Cloud CDN is integrated with GCP, allowing customers to serve content to end users with lower latency, fewer requests, and lower overall costs.",
+    "detail": "Cloud CDN is a content delivery network (CDN) that accelerates web performance by caching content on Google\u2019s globally distributed edge servers. It uses Google\u2019s network of global Points of Presence (POPs) to cache content closer to users and to deliver it faster. Cloud CDN is integrated with GCP, allowing customers to serve content to end users with lower latency, fewer requests, and lower overall costs.",
     "benefits": [
       "Faster page loads",
       "Improved user experience",
@@ -42,7 +42,7 @@
       "Websites with a global audience"
     ],
     "link": "https://cloud.google.com/cdn",
-    "example": "A company is experiencing slow page load times on their website due to their content being hosted on a single server in their home country. They want to improve the user experience and reduce overall costs.This company can use Cloud CDN to cache their content on Google’s globally distributed edge servers. This will reduce latency, improve user experience, and reduce overall costs by reducing bandwidth costs."
+    "example": "A company is experiencing slow page load times on their website due to their content being hosted on a single server in their home country. They want to improve the user experience and reduce overall costs.This company can use Cloud CDN to cache their content on Google\u2019s globally distributed edge servers. This will reduce latency, improve user experience, and reduce overall costs by reducing bandwidth costs."
   },
   {
     "service": "Compute Engine",
@@ -66,12 +66,12 @@
       "Gaming: Compute Engine can be used to run gaming servers."
     ],
     "link": "https://cloud.google.com/compute",
-    "example": "A company that manufactures and sells consumer electronics wants to develop a web application to help manage their inventory and customer orders. The application needs to be able to scale up and down depending on the number of customers accessing the site. Compute Engine is the ideal solution for this company as it provides the scalability and flexibility needed to meet their requirements. Compute Engine also offers competitive pricing, making it cost-effective for this company. Finally, Compute Engine has built-in security features, ensuring the company’s data is safe and secure."
+    "example": "A company that manufactures and sells consumer electronics wants to develop a web application to help manage their inventory and customer orders. The application needs to be able to scale up and down depending on the number of customers accessing the site. Compute Engine is the ideal solution for this company as it provides the scalability and flexibility needed to meet their requirements. Compute Engine also offers competitive pricing, making it cost-effective for this company. Finally, Compute Engine has built-in security features, ensuring the company\u2019s data is safe and secure."
   },
   {
     "service": "App Engine",
     "description": "Create and host web applications on the GCP with App Engine.",
-    "detail": "App Engine is a platform as a service (PaaS) product offered by Google. It allows developers to easily create and run applications on Google’s infrastructure. App Engine provides a range of services and features, including automatic scaling, load balancing, and application health checks. It also offers support for various programming languages, including Java, Python, and Go.",
+    "detail": "App Engine is a platform as a service (PaaS) product offered by Google. It allows developers to easily create and run applications on Google\u2019s infrastructure. App Engine provides a range of services and features, including automatic scaling, load balancing, and application health checks. It also offers support for various programming languages, including Java, Python, and Go.",
     "benefits": [
       "Easy to use: App Engine is designed to be easy to use, allowing developers to quickly and easily deploy applications without worrying about underlying infrastructure.",
       "Scalability: App Engine automatically scales applications based on user demand, allowing applications to handle sudden spikes in traffic without manual intervention.",
@@ -89,7 +89,7 @@
       "APIs: App Engine can be used to develop and host APIs, allowing developers to easily create and manage API endpoints."
     ],
     "link": "https://cloud.google.com/appengine",
-    "example": "A app developer is faced with a challenge of developing an application that is able to scale quickly and seamlessly. The developer’s solution is to use App Engine to host the application, taking advantage of its automatic scaling, load balancing, and application health checks. The developer can also use App Engine’s support for various programming languages to quickly develop the application. In addition, the developer can use App Engine’s cost-effective pricing model to ensure their costs are kept low."
+    "example": "A app developer is faced with a challenge of developing an application that is able to scale quickly and seamlessly. The developer\u2019s solution is to use App Engine to host the application, taking advantage of its automatic scaling, load balancing, and application health checks. The developer can also use App Engine\u2019s support for various programming languages to quickly develop the application. In addition, the developer can use App Engine\u2019s cost-effective pricing model to ensure their costs are kept low."
   },
   {
     "service": "Cloud Storage",

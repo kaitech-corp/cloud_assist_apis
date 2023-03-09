@@ -70,7 +70,7 @@
   },
   {
     "service": "App Engine",
-    "description": "Create and host web applications on GCP with App Engine.",
+    "description": "Create and host web applications on the GCP with App Engine.",
     "detail": "App Engine is a platform as a service (PaaS) product offered by Google. It allows developers to easily create and run applications on Google\u2019s infrastructure. App Engine provides a range of services and features, including automatic scaling, load balancing, and application health checks. It also offers support for various programming languages, including Java, Python, and Go.",
     "benefits": [
       "Easy to use: App Engine is designed to be easy to use, allowing developers to quickly and easily deploy applications without worrying about underlying infrastructure.",
@@ -99,7 +99,7 @@
       "Cost Savings: Cloud Storage is cost-effective compared to other cloud storage services because of its pay-as-you-go pricing model.",
       "Scalability: Cloud Storage can easily scale up or down depending on your storage needs.",
       "Security: Cloud Storage provides a secure environment for storing and accessing your data.",
-      "Reliability: Cloud Storage is reliable, as it is backed by GCP.",
+      "Reliability: Cloud Storage is reliable, as it is backed by the GCP.",
       "Easy Access: Cloud Storage provides easy access to your data from anywhere in the world."
     ],
     "cons": [
@@ -197,7 +197,7 @@
       "Highly-available: Cloud Dataproc is designed to ensure that your data is always available and accessible, even in the event of an outage."
     ],
     "cons": [
-      "Limited to GCP: Cloud Dataproc is only available on GCP, meaning you cannot use it on other cloud providers.",
+      "Limited to GCP: Cloud Dataproc is only available on the GCP, meaning you cannot use it on other cloud providers.",
       "Limited to Apache Hadoop and Apache Spark: Cloud Dataproc only supports Apache Hadoop and Apache Spark workloads, meaning you cannot use it for other workloads such as Apache Flink."
     ],
     "useCases": [
@@ -211,7 +211,7 @@
   {
     "service": "Cloud Spanner",
     "description": "Used for globally distributed, strongly consistent, relational database services.",
-    "detail": "Cloud Spanner is a fully managed, mission-critical, relational database service that offers transactional consistency, high availability, and global scalability for applications built on GCP.",
+    "detail": "Cloud Spanner is a fully managed, mission-critical, relational database service that offers transactional consistency, high availability, and global scalability for applications built on the GCP.",
     "benefits": [
       "Supports ACID (Atomicity, Consistency, Isolation, and Durability) transactions to ensure data integrity.",
       "Highly available (99.999% SLA) and globally scalable, allowing you to replicate your data across multiple regions.",
@@ -732,7 +732,7 @@
   {
     "service": "Cloud Private Access",
     "description": "A service to securely connect users to their private cloud applications.",
-    "detail": "Cloud Private Access is a service that enables secure access to applications in GCP from inside an organization's private network. It provides secure network access to specific services and applications, while keeping the rest of the organization's resources private and secure. It can be used to securely access applications that are hosted in GCP, such as Compute Engine, Cloud Storage, and Cloud SQL.",
+    "detail": " Cloud Private Access is a service that enables secure access to applications in GCP from inside an organization's private network. It provides secure network access to specific services and applications, while keeping the rest of the organization's resources private and secure. It can be used to securely access applications that are hosted in GCP, such as Compute Engine, Cloud Storage, and Cloud SQL.",
     "benefits": [
       "Secure access to applications inside an organization's private network.",
       "Access to applications hosted in GCP.",
@@ -749,12 +749,12 @@
       "Control the level of access to applications hosted in GCP."
     ],
     "link": "",
-    "example": "A company that wants to securely access their applications hosted in GCP can use Cloud Private Access to securely connect their users to their private cloud applications."
+    "example": "A company that wants to securely access their applications hosted in GCP can use  Cloud Private Access to securely connect their users to their private cloud applications."
   },
   {
     "service": "Cloud SQL",
     "description": "A fully-managed database service for MySQL and PostgreSQL",
-    "detail": "Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage and administer your relational databases on GCP. It provides a highly available, scalable and secure environment for running your MySQL and PostgreSQL databases in the cloud. It supports relational databases such as MySQL, PostgreSQL and SQL Server, as well as NoSQL databases such as MongoDB and Bigtable.",
+    "detail": "Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage and administer your relational databases on Google Cloud Platform. It provides a highly available, scalable and secure environment for running your MySQL and PostgreSQL databases in the cloud. It supports relational databases such as MySQL, PostgreSQL and SQL Server, as well as NoSQL databases such as MongoDB and Bigtable.",
     "benefits": [
       "Easy to set up, maintain, manage and administer",
       "Highly available, scalable and secure",
@@ -771,7 +771,7 @@
       "Data lakes"
     ],
     "link": "https://cloud.google.com/sql",
-    "example": "A company needing a highly available and secure environment for storing and analyzing large datasets would benefit from using Cloud SQL. It allows them to easily manage and maintain their database, while providing scalability and flexibility. The company could use Cloud SQL to store and analyze their data, as well as use other GCP services to process and analyze the data."
+    "example": "A company needing a highly available and secure environment for storing and analyzing large datasets would benefit from using Cloud SQL. It allows them to easily manage and maintain their database, while providing scalability and flexibility. The company could use Cloud SQL to store and analyze their data, as well as use other Google Cloud Platform services to process and analyze the data."
   },
   {
     "service": "Cloud Datastore",
@@ -788,7 +788,7 @@
     "cons": [
       "Limited query capabilities: Cloud Datastore has some limitations in terms of querying and indexing data, especially when compared to other NoSQL document database services like MongoDB or Amazon DynamoDB. For example, Datastore only supports indexing up to 200 properties per entity, and querying by inequality (e.g., greater than, less than) on multiple properties is not possible.",
       "Higher costs for large datasets: Cloud Datastore uses a 'pay-as-you-go' pricing model based on usage, which can become expensive for large datasets or high traffic applications. Additionally, some features like Cloud Datastore backups and Cloud Datastore exports can also increase costs.",
-      "Learning curve for developers: Cloud Datastore uses its own data modeling and querying language called GQL (Query Language), which can be different from other databases and require some learning curve for developers who are not familiar with it. Also, compared to other cloud providers, Cloud Datastore has a smaller community and resources available for developers."
+      "Learning curve for developers: Cloud Datastore uses its own data modeling and querying language called GQL (Google Query Language), which can be different from other databases and require some learning curve for developers who are not familiar with it. Also, compared to other cloud providers, Cloud Datastore has a smaller community and resources available for developers."
     ],
     "useCases": [
       "Data warehousing",
@@ -811,7 +811,7 @@
     "cons": [
       "Limited Availability: Cloud Spanner is currently only available in a few regions, which may be a limitation for customers who require a presence in other parts of the world. For example, as of March 2023, Spanner is only available in 16 regions, while AWS RDS and Azure SQL Database are available in more than 25 regions.",
       "High Cost: Spanner can be significantly more expensive than other cloud databases, particularly for smaller workloads. Spanner's pricing model includes costs for storage, read/write operations, and network egress, which can quickly add up. This can make Spanner less attractive for smaller applications or those with more modest budgets.",
-      "Limited Ecosystem: While Cloud offers a wide range of tools and services, the Spanner ecosystem is still relatively limited compared to other cloud databases like AWS RDS or Azure SQL Database. This can make it more challenging to find third-party tools or integrations that work seamlessly with Spanner, which may require more development effort or customization to achieve the desired functionality."
+      "Limited Ecosystem: While Google Cloud offers a wide range of tools and services, the Spanner ecosystem is still relatively limited compared to other cloud databases like AWS RDS or Azure SQL Database. This can make it more challenging to find third-party tools or integrations that work seamlessly with Spanner, which may require more development effort or customization to achieve the desired functionality."
     ],
     "useCases": [
       "Web and mobile applications.",
@@ -945,9 +945,9 @@
     "description": "Fully managed and highly available cloud storage service.",
     "detail": "Cloud Storage is a fully managed and highly available cloud storage service. It provides a secure, reliable, and durable storage solution with automatic replication and versioning for data protection. It also supports industry-standard APIs for accessing and managing data.",
     "benefits": [
-      "Scalability: Cloud Storage offers unlimited storage capacity, which means that you can store as much data as you need without worrying about running out of space. This makes it ideal for businesses of all sizes that need to store large amounts of data.",
-      "Cost-Effective: Cloud Storage is very cost-effective compared to other cloud storage providers. With a pay-as-you-go pricing model, you only pay for the storage you use, and there are no upfront costs or termination fees. Additionally, offers a free tier, which allows you to store up to 5GB of data for free.",
-      "Security: Cloud Storage provides a high level of security for your data. It uses advanced encryption technologies to ensure that your data is protected both in transit and at rest. Additionally, Cloud Storage is compliant with several industry standards and regulations, such as HIPAA and GDPR, which makes it a suitable option for businesses that require high levels of security and compliance.",
+      "Scalability: Google Cloud Storage offers unlimited storage capacity, which means that you can store as much data as you need without worrying about running out of space. This makes it ideal for businesses of all sizes that need to store large amounts of data.",
+      "Cost-Effective: Google Cloud Storage is very cost-effective compared to other cloud storage providers. With a pay-as-you-go pricing model, you only pay for the storage you use, and there are no upfront costs or termination fees. Additionally, Google offers a free tier, which allows you to store up to 5GB of data for free.",
+      "Security: Google Cloud Storage provides a high level of security for your data. It uses advanced encryption technologies to ensure that your data is protected both in transit and at rest. Additionally, Google Cloud Storage is compliant with several industry standards and regulations, such as HIPAA and GDPR, which makes it a suitable option for businesses that require high levels of security and compliance.",
       "Automatic replication and versioning.",
       "Industry-standard APIs for accessing and managing data."
     ],
@@ -971,7 +971,7 @@
     "benefits": [
       "Scalability: Pub/Sub is highly scalable, which means it can handle large amounts of data without any performance issues. It is designed to handle millions of messages per second, making it ideal for applications that require high throughput.",
       "Reliability: Pub/Sub is a highly reliable messaging service, with guarantees for message delivery and ordering. It ensures that messages are delivered exactly once, and in the order in which they were sent. This makes it a reliable option for critical applications that require a high level of reliability.",
-      "Integration: GPub/Sub is well-integrated with other Cloud services, such as BigQuery, Dataflow, and Cloud Functions. This allows developers to build complex data processing pipelines using these services without having to worry about managing the underlying infrastructure. Additionally, Cloud Pub/Sub is also compatible with other messaging protocols such as Apache Kafka, which makes it easy to integrate with other systems."
+      "Integration: GPub/Sub is well-integrated with other Google Cloud services, such as BigQuery, Dataflow, and Cloud Functions. This allows developers to build complex data processing pipelines using these services without having to worry about managing the underlying infrastructure. Additionally, Cloud Pub/Sub is also compatible with other messaging protocols such as Apache Kafka, which makes it easy to integrate with other systems."
     ],
     "cons": [
       "Complexity: Pub/Sub may be more complex to set up and use compared to other cloud providers, especially for those who are new to the platform. There are many options and configurations available, which can make it overwhelming for beginners.",
@@ -989,7 +989,7 @@
   {
     "service": "Cloud Identity and Access Management (IAM)",
     "description": "Manage access to GCP resources and services by creating and managing roles and permissions.",
-    "detail": "Cloud Identity and Access Management (IAM) enables you to manage access to GCP resources and services by creating and managing roles and permissions. IAM allows you to grant and revoke access to resources, create custom roles with specific permissions, and delegate administration to other users.",
+    "detail": "Google Cloud Identity and Access Management (IAM) enables you to manage access to GCP resources and services by creating and managing roles and permissions. IAM allows you to grant and revoke access to resources, create custom roles with specific permissions, and delegate administration to other users.",
     "benefits": [
       "Allows you to control who has access to your GCP resources and services",
       "Enables you to create custom roles with specific permissions",
@@ -1013,7 +1013,7 @@
   {
     "service": "Cloud Security Command Center",
     "description": "Provides security and risk visibility for your GCP resources, including vulnerabilities, threats, and security-related events.",
-    "detail": "Cloud Security Command Center provides a comprehensive view of your GCP resources, including vulnerabilities, threats, and security-related events. It allows you to monitor your GCP environment in real-time, and provides insights and recommendations to help you improve your security posture.",
+    "detail": "Google Cloud Security Command Center provides a comprehensive view of your GCP resources, including vulnerabilities, threats, and security-related events. It allows you to monitor your GCP environment in real-time, and provides insights and recommendations to help you improve your security posture.",
     "benefits": [
       "Provides a comprehensive view of your GCP resources and their security status",
       "Enables real-time monitoring of your GCP environment",
@@ -1036,7 +1036,7 @@
   {
     "service": "Cloud Data Loss Prevention (DLP)",
     "description": "Provides a range of tools and techniques for identifying and preventing data loss and data leakage across your GCP resources.",
-    "detail": "Cloud Data Loss Prevention (DLP) is a service that helps you prevent sensitive data from being disclosed or leaked. It uses machine learning and pattern matching to automatically identify and classify sensitive data, such as credit card numbers or social security numbers, and provides tools for managing and protecting that data.",
+    "detail": "Google Cloud Data Loss Prevention (DLP) is a service that helps you prevent sensitive data from being disclosed or leaked. It uses machine learning and pattern matching to automatically identify and classify sensitive data, such as credit card numbers or social security numbers, and provides tools for managing and protecting that data.",
     "benefits": [
       "Helps prevent data breaches and leaks of sensitive information",
       "Uses machine learning and pattern matching to identify and classify sensitive data",
@@ -1060,7 +1060,7 @@
   {
     "service": "Cloud Security Scanner",
     "description": "Scans your App Engine applications for common web vulnerabilities, such as cross-site scripting (XSS) and cross-site request forgery (CSRF).",
-    "detail": "Cloud Security Scanner is a web vulnerability scanner that enables you to identify and fix security vulnerabilities in your web applications. It scans your App Engine applications for common web vulnerabilities, such as cross-site scripting (XSS) and cross-site request forgery (CSRF), and provides recommendations for remediation.",
+    "detail": "Google Cloud Security Scanner is a web vulnerability scanner that enables you to identify and fix security vulnerabilities in your web applications. It scans your App Engine applications for common web vulnerabilities, such as cross-site scripting (XSS) and cross-site request forgery (CSRF), and provides recommendations for remediation.",
     "benefits": [
       "Automatically scans web applications for common vulnerabilities",
       "Provides recommendations for remediation of vulnerabilities",
@@ -1084,7 +1084,7 @@
   {
     "service": "Cloud Armor",
     "description": "Centralized defense against DDoS attacks and other web attacks with a web application firewall (WAF) for GCP resources.",
-    "detail": "Cloud Armor provides a web application firewall (WAF) for your GCP resources, offering centralized defense against DDoS attacks and other web attacks. It enables you to define rules to protect against common web application vulnerabilities, including cross-site scripting (XSS) and SQL injection attacks. Cloud Armor also integrates with other GCP services, such as Load Balancing and Identity-Aware Proxy, to provide additional layers of protection.",
+    "detail": "Google Cloud Armor provides a web application firewall (WAF) for your GCP resources, offering centralized defense against DDoS attacks and other web attacks. It enables you to define rules to protect against common web application vulnerabilities, including cross-site scripting (XSS) and SQL injection attacks. Cloud Armor also integrates with other GCP services, such as Load Balancing and Identity-Aware Proxy, to provide additional layers of protection.",
     "benefits": [
       "Centralized defense against web attacks and DDoS attacks",
       "Customizable rules and policies to protect against common web application vulnerabilities",
@@ -1108,7 +1108,7 @@
   {
     "service": "Key Management Service",
     "description": "Centralized key management system for GCP resources, allowing creation, use, and management of cryptographic keys.",
-    "detail": "Cloud Key Management Service (KMS) provides a centralized key management system for your GCP resources, enabling you to create, use, and manage cryptographic keys. KMS offers a variety of key types and key management options, including customer-managed keys, Google-managed keys, and external key providers. KMS also integrates with other GCP services, such as Compute Engine and Cloud Storage, to provide additional security for your data and resources.",
+    "detail": "Google Cloud Key Management Service (KMS) provides a centralized key management system for your GCP resources, enabling you to create, use, and manage cryptographic keys. KMS offers a variety of key types and key management options, including customer-managed keys, Google-managed keys, and external key providers. KMS also integrates with other GCP services, such as Compute Engine and Cloud Storage, to provide additional security for your data and resources.",
     "benefits": [
       "Centralized key management system for GCP resources",
       "Flexible key management options, including customer-managed keys, Google-managed keys, and external key providers",
@@ -1131,13 +1131,13 @@
   },
   {
     "service": "VPC Service Controls",
-    "description": "VPC Service Controls allows customers to define a security perimeter around Cloud resources, reducing the risk of data exfiltration and other security threats. ",
-    "detail": "VPC Service Controls enables customers to define a security perimeter around Cloud resources, including Kubernetes Engine clusters, Cloud Storage buckets, and BigQuery datasets. This allows customers to enforce policies around resource access, such as blocking access to resources from outside a defined perimeter or only allowing access from specific IP addresses. VPC Service Controls integrates with other Cloud services, such as Cloud Audit Logging and Cloud Data Loss Prevention, to provide a comprehensive security solution. ",
+    "description": "VPC Service Controls allows customers to define a security perimeter around Google Cloud resources, reducing the risk of data exfiltration and other security threats. ",
+    "detail": "VPC Service Controls enables customers to define a security perimeter around Google Cloud resources, including Google Kubernetes Engine clusters, Cloud Storage buckets, and BigQuery datasets. This allows customers to enforce policies around resource access, such as blocking access to resources from outside a defined perimeter or only allowing access from specific IP addresses. VPC Service Controls integrates with other Google Cloud services, such as Cloud Audit Logging and Cloud Data Loss Prevention, to provide a comprehensive security solution. ",
     "benefits": [
       "Reduces the risk of data exfiltration and other security threats",
-      "Enables customers to define a security perimeter around Cloud resources, including Kubernetes Engine clusters, Cloud Storage buckets, and BigQuery datasets",
+      "Enables customers to define a security perimeter around Google Cloud resources, including Google Kubernetes Engine clusters, Cloud Storage buckets, and BigQuery datasets",
       "Allows customers to enforce policies around resource access, such as blocking access to resources from outside a defined perimeter or only allowing access from specific IP addresses",
-      "Integrates with other Cloud services, such as Cloud Audit Logging and Cloud Data Loss Prevention, to provide a comprehensive security solution",
+      "Integrates with other Google Cloud services, such as Cloud Audit Logging and Cloud Data Loss Prevention, to provide a comprehensive security solution",
       "Provides a scalable and flexible solution that can be customized to meet the needs of any organization"
     ],
     "cons": [
@@ -1151,16 +1151,16 @@
       "Meeting compliance requirements and security best practices"
     ],
     "link": "https://cloud.google.com/vpc-service-controls",
-    "example": "A great example of a company that can benefit from VPC Service Controls is a financial services organization that needs to protect sensitive customer data. VPC Service Controls can help ensure that only authorized users within the defined security perimeter can access the data, reducing the risk of data exfiltration and other security threats. Additionally, VPC Service Controls integrates with other Cloud services, such as Cloud Audit Logging and Cloud Data Loss Prevention, to provide a comprehensive security solution. By using VPC Service Controls, the financial services organization can focus on providing quality financial services to customers, while leaving the management of security perimeters to Google's secure and scalable infrastructure."
+    "example": "A great example of a company that can benefit from VPC Service Controls is a financial services organization that needs to protect sensitive customer data. VPC Service Controls can help ensure that only authorized users within the defined security perimeter can access the data, reducing the risk of data exfiltration and other security threats. Additionally, VPC Service Controls integrates with other Google Cloud services, such as Cloud Audit Logging and Cloud Data Loss Prevention, to provide a comprehensive security solution. By using VPC Service Controls, the financial services organization can focus on providing quality financial services to customers, while leaving the management of security perimeters to Google's secure and scalable infrastructure."
   },
   {
     "service": "Identity-Aware Proxy",
     "description": "Identity-Aware Proxy is a web security layer that enables organizations to provide secure access to their web applications and services. ",
-    "detail": "Identity-Aware Proxy provides an additional layer of security to protect web applications and services from unauthorized access. With Identity-Aware Proxy, you can control access to your web applications and services based on user identity and context. Identity-Aware Proxy integrates with Cloud Identity and Access Management (IAM), allowing you to manage access to your web applications and services using Cloud IAM roles and permissions. Identity-Aware Proxy also supports multi-factor authentication (MFA), providing an additional layer of security to protect your web applications and services. ",
+    "detail": "Identity-Aware Proxy provides an additional layer of security to protect web applications and services from unauthorized access. With Identity-Aware Proxy, you can control access to your web applications and services based on user identity and context. Identity-Aware Proxy integrates with Google Cloud Identity and Access Management (IAM), allowing you to manage access to your web applications and services using Google Cloud IAM roles and permissions. Identity-Aware Proxy also supports multi-factor authentication (MFA), providing an additional layer of security to protect your web applications and services. ",
     "benefits": [
       "Provides an additional layer of security to protect web applications and services from unauthorized access",
       "Allows organizations to control access to web applications and services based on user identity and context",
-      "Integrates with Cloud IAM, allowing you to manage access to your web applications and services using Cloud IAM roles and permissions",
+      "Integrates with Google Cloud IAM, allowing you to manage access to your web applications and services using Google Cloud IAM roles and permissions",
       "Supports multi-factor authentication (MFA), providing an additional layer of security to protect your web applications and services",
       "Provides a user-friendly interface for managing access to web applications and services"
     ],

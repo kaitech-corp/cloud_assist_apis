@@ -9,7 +9,10 @@
       "Cost savings:VPC helps businesses reduce operational costs by allowing them to design their own cloud infrastructure to meet their specific needs.",
       "Flexibility:VPC allows businesses to customize their network and access services from multiple cloud providers, enabling them to scale and adjust their infrastructure to meet changing needs."
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Limited customization options",
       "Costly for large-scale applications",
@@ -28,7 +31,10 @@
       "Secure connection between customer's on-premises network and Google's Cloud Platform",
       "Greater control over the flow of traffic between on-premises network and GCP"
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Secure data transfer between on-premises network and GCP",
       "Connecting multiple on-premises networks to GCP",
@@ -46,7 +52,10 @@
       "Route traffic to different VMs based on type of request",
       "Optimize performance of applications"
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Distributing incoming traffic across multiple VMs",
       "Routing traffic to different VMs based on type of request",
@@ -64,7 +73,10 @@
       "Different levels of network performance depending on customer requirements",
       "Reliability and availability"
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Optimizing network performance",
       "Ensuring reliability and availability of applications"
@@ -81,7 +93,10 @@
       "Low latency and high performance",
       "Optimize delivery of static and dynamic content"
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Delivering content quickly and securely",
       "Optimizing the delivery of static and dynamic content"
@@ -97,7 +112,10 @@
       "Secure, reliable, and scalable environment for managing domain names and IP addresses",
       "Quick and easy updating of DNS records"
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Managing domain names and IP addresses",
       "Updating DNS records quickly and easily"
@@ -114,7 +132,10 @@
       "Utilize advanced security technologies",
       "Identify and block malicious traffic"
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Protecting applications from malicious online threats",
       "Identifying and blocking malicious traffic"
@@ -342,7 +363,7 @@
   {
     "service": "Cloud Partner Interconnect",
     "description": "A solution for securely and reliably connecting to GCP (GCP) from on-premises networks",
-    "detail": "Cloud Partner Interconnect is a service that provides secure and reliable connections to GCP from on-premises networks. It allows customers to connect to GCP with higher throughput, lower latency, and improved security. The service is enabled by Google’s resilient and reliable global network and provides customers with improved network performance and control over their connections.",
+    "detail": "Cloud Partner Interconnect is a service that provides secure and reliable connections to GCP from on-premises networks. It allows customers to connect to GCP with higher throughput, lower latency, and improved security. The service is enabled by Google\u2019s resilient and reliable global network and provides customers with improved network performance and control over their connections.",
     "benefits": [
       "Higher throughput and lower latency",
       "Improved security",
