@@ -1,6 +1,6 @@
 [
   {
-    "service": "Cloud Identity and Access Management (IAM)",
+    "service": "Identity and Access Management (IAM)",
     "description": "Manage access to GCP resources and services by creating and managing roles and permissions.",
     "detail": "Google Cloud Identity and Access Management (IAM) enables you to manage access to GCP resources and services by creating and managing roles and permissions. IAM allows you to grant and revoke access to resources, create custom roles with specific permissions, and delegate administration to other users.",
     "benefits": [
