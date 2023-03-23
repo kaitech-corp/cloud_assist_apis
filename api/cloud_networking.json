@@ -1,6 +1,6 @@
 [
   {
-    "service": "Cloud Virtual Private Network (VPN)",
+    "service": "Virtual Private Network (VPN)",
     "description": "Secure connection between two or more networks via the internet.",
     "detail": "Cloud Virtual Private Network (VPN) is a secure connection between two or more networks via the internet. It is used to connect private networks such as local area networks (LANs), wide area networks (WANs), and intranets to the public internet. VPNs provide a secure, encrypted connection for data transmission, enabling businesses to securely connect to private networks from any location. Additionally, VPNs can be used to access resources on a private network from a remote location.",
     "benefits": [
@@ -45,7 +45,7 @@
     "example": "A company that wants to securely transfer data between its on-premises network and GCP can use Cloud Interconnect to establish a private connection between them. This will enable the company to securely transfer data between its on-premises network and GCP, as well as optimize the performance of its applications running on GCP."
   },
   {
-    "service": "Cloud Load Balancing",
+    "service": "Load Balancing",
     "description": "A service for distributing incoming traffic across multiple virtual machines (VMs).",
     "detail": "Cloud Load Balancing is a service for distributing incoming traffic across multiple virtual machines (VMs). It enables customers to evenly distribute incoming traffic across multiple VMs, improving the efficiency and performance of their applications. Additionally, Cloud Load Balancing can be used to route traffic to different VMs based on the type of request, allowing customers to optimize the performance of their applications.",
     "benefits": [
