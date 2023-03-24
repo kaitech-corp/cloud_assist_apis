@@ -1,139 +1,77 @@
 [
-    {
-      "question": "What type of data will be stored in the cloud?",
-      "answers": [
-        {
-          "a": "Structured Data (e.g., numbers, dates, text)"
-        },
-        {
-          "b": "Unstructured Data (e.g., images, videos, audio)"
-        }
-      ]
-    },
-    {
-      "question": "How much data will be stored in the cloud?",
-      "answers": [
-        {
-          "a": "Less than 100GB"
-        },
-        {
-          "b": "Between 100GB and 1TB"
-        },
-        {
-          "c": "More than 1TB"
-        }
-      ]
-    },
-    {
-      "question": "How frequently will data be accessed and updated in the cloud?",
-      "answers": [
-        {
-          "a": "Infrequently (less than once per day)"
-        },
-        {
-          "b": "Occasionally (once per day or more)"
-        },
-        {
-          "c": "Frequently (multiple times per day)"
-        }
-      ]
-    },
-    {
-      "question": "How important is data consistency and durability?",
-      "answers": [
-        {
-          "a": "High (data must always be consistent and durable)"
-        },
-        {
-          "b": "Medium (occasional data loss or inconsistency is acceptable)"
-        },
-        {
-          "c": "Low (data loss or inconsistency is acceptable)"
-        }
-      ]
-    },
-    {
-      "question": "What level of security is required for the data?",
-      "answers": [
-        {
-          "a": "Low (no sensitive data is being stored)"
-        },
-        {
-          "b": "Medium (data is sensitive but not highly classified)"
-        },
-        {
-          "c": "High (data is highly classified or sensitive)"
-        }
-      ]
-    },
-    {
-      "question": "What is the budget for cloud storage/database?",
-      "answers": [
-        {
-          "a": "Low (less than $100 per month)"
-        },
-        {
-          "b": "Medium (between $100 and $500 per month)"
-        },
-        {
-          "c": "High (more than $500 per month)"
-        }
-      ]
-    },
-    {
-      "question": "What kind of access is required for the data?",
-      "answers": [
-        {
-          "a": "Read-Only (users can only view data)"
-        },
-        {
-          "b": "Read/Write (users can view and modify data)"
-        },
-        {
-          "c": "Read/Write/Delete (users can view, modify, and delete data)"
-        }
-      ]
-    },
-    {
-      "question": "What is the expected growth rate of the data?",
-      "answers": [
-        {
-          "a": "Slow (less than 10% growth per year)"
-        },
-        {
-          "b": "Moderate (between 10% and 50% growth per year)"
-        },
-        {
-          "c": "High (more than 50% growth per year)"
-        }
-      ]
-    },
-    {
-      "question": "What is the expected workload of the application that will be using the cloud storage/database?",
-      "answers": [
-        {
-          "a": "Low (minimal workload, few users)"
-        },
-        {
-          "b": "Moderate (moderate workload, several users)"
-        },
-        {
-          "c": "High (heavy workload, many users)"
-        }
-      ]
-    },
-    {
-      "question": "What kind of architecture is the application running on?",
-      "answers": [
-        {
-          "a": "Serverless (e.g., AWS Lambda, Azure Functions)"
-        },
-        {
-          "b": "Containerized (e.g., Kubernetes, Docker Swarm)"
-        },
-        {
-          "c": "Virtual Machines (e.g., EC2, Azure VMs)"
-        }
-      ]
-    }
-  ]
+  {
+    "question": "What type of data will be stored in the cloud?",
+    "answers": [
+      "Structured Data (e.g., numbers, dates, text)",
+      "Unstructured Data (e.g., images, videos, audio)"
+    ]
+  },
+  {
+    "question": "How much data will be stored in the cloud?",
+    "answers": ["Less than 100GB", "Between 100GB and 1TB", "More than 1TB"]
+  },
+  {
+    "question": "How frequently will data be accessed and updated in the cloud?",
+    "answers": [
+      "Infrequently (less than once per day)",
+      "Occasionally (once per day or more)",
+      "Frequently (multiple times per day)"
+    ]
+  },
+  {
+    "question": "How important is data consistency and durability?",
+    "answers": [
+      "High (data must always be consistent and durable)",
+      "Medium (occasional data loss or inconsistency is acceptable)",
+      "Low (data loss or inconsistency is acceptable)"
+    ]
+  },
+  {
+    "question": "What level of security is required for the data?",
+    "answers": [
+      "Low (no sensitive data is being stored)",
+      "Medium (data is sensitive but not highly classified)",
+      "High (data is highly classified or sensitive)"
+    ]
+  },
+  {
+    "question": "What is the budget for cloud storage/database?",
+    "answers": [
+      "Low (less than $100 per month)",
+      "Medium (between $100 and $500 per month)",
+      "High (more than $500 per month)"
+    ]
+  },
+  {
+    "question": "What kind of access is required for the data?",
+    "answers": [
+      "Read-Only (users can only view data)",
+      "Read/Write (users can view and modify data)",
+      "Read/Write/Delete (users can view, modify, and delete data)"
+    ]
+  },
+  {
+    "question": "What is the expected growth rate of the data?",
+    "answers": [
+      "Slow (less than 10% growth per year)",
+      "Moderate (between 10% and 50% growth per year)",
+      "High (more than 50% growth per year)"
+    ]
+  },
+  {
+    "question": "What is the expected workload of the application that will be using the cloud storage/database?",
+    "answers": [
+      "Low (minimal workload, few users)",
+      "Moderate (moderate workload, several users)",
+      "High (heavy workload, many users)"
+    ]
+  },
+  {
+    "question": "What kind of architecture is the application running on?",
+    "answers": [
+      "Serverless (e.g., AWS Lambda, Azure Functions)",
+      "Containerized (e.g., Kubernetes, Docker Swarm)",
+      "Virtual Machines (e.g., EC2, Azure VMs)"
+    ]
+  }
+]
