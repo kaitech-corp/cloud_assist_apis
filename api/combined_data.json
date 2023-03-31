@@ -328,7 +328,7 @@
     "example": "ABC Ltd. is deploying a new product on GCP and needs to ensure that it meets the latest security standards and best practices. Cloud Security Scanner can be used to scan GCP resources before deployment to ensure that there are no potential security risks or vulnerabilities, as well as to identify any misconfigurations or weak authentication. Additionally, it can be used to scan open source libraries and frameworks used in GCP to ensure they are up to date and secure."
   },
   {
-    "service": "Cloud Virtual Private Network (VPN)",
+    "service": "Virtual Private Network (VPN)",
     "description": "Secure connection between two or more networks via the internet.",
     "detail": "Cloud Virtual Private Network (VPN) is a secure connection between two or more networks via the internet. It is used to connect private networks such as local area networks (LANs), wide area networks (WANs), and intranets to the public internet. VPNs provide a secure, encrypted connection for data transmission, enabling businesses to securely connect to private networks from any location. Additionally, VPNs can be used to access resources on a private network from a remote location.",
     "benefits": [
@@ -338,8 +338,9 @@
       "Flexibility:VPC allows businesses to customize their network and access services from multiple cloud providers, enabling them to scale and adjust their infrastructure to meet changing needs."
     ],
     "cons": [
-      "High cost of implementation",
-      "Limited scalability"
+      "Dependence on Internet Connectivity: Cloud VPN relies on internet connectivity to establish and maintain connections between remote devices and corporate networks. Any issues with internet connectivity, such as network outages or bandwidth limitations, can affect the performance of the VPN, leading to slow connections or dropped connections.",
+      "Security Risks: Although Cloud VPN provides an encrypted tunnel to protect data traffic, there are still potential security risks. Cloud VPN connections are vulnerable to attacks such as Distributed Denial of Service (DDoS) and Man-in-the-Middle (MITM) attacks, which can compromise data privacy and security.",
+      "Subscription Costs: Using Cloud VPN services often incurs subscription costs, which can be a significant expense for businesses, especially those with large numbers of remote employees or branch offices. Additionally, subscription costs may increase as businesses scale up their VPN usage, adding to the overall cost of using Cloud VPN."
     ],
     "useCases": [
       "Secure Remote Access: One of the primary use cases for Cloud VPN is providing secure remote access to corporate networks, data, and applications. Cloud VPN allows remote employees to connect to the corporate network from anywhere in the world using an encrypted tunnel, thus ensuring data privacy and security.",
@@ -359,8 +360,9 @@
       "Greater control over the flow of traffic between on-premises network and GCP"
     ],
     "cons": [
-      "High cost of implementation",
-      "Limited scalability"
+      "Complexity: Cloud Interconnect can be complex to set up and configure, requiring specialized knowledge and expertise. This can result in longer deployment times, increased costs, and potential errors if not properly implemented.",
+      "Higher Cost: Cloud Interconnect can also be more expensive than traditional internet connectivity options, particularly for small and medium-sized businesses. There may be additional fees for data transfer, usage, and network access, which can quickly add up.",
+      "Limited Coverage: Another potential disadvantage of Cloud Interconnect is limited coverage. Not all cloud service providers support Cloud Interconnect, and not all locations may be eligible for connectivity. This can be particularly challenging for businesses with a global presence or those that operate in remote areas with limited infrastructure."
     ],
     "useCases": [
       "Secure data transfer between on-premises network and GCP",
@@ -371,7 +373,7 @@
     "example": "A company that wants to securely transfer data between its on-premises network and GCP can use Cloud Interconnect to establish a private connection between them. This will enable the company to securely transfer data between its on-premises network and GCP, as well as optimize the performance of its applications running on GCP."
   },
   {
-    "service": "Cloud Load Balancing",
+    "service": "Load Balancing",
     "description": "A service for distributing incoming traffic across multiple virtual machines (VMs).",
     "detail": "Cloud Load Balancing is a service for distributing incoming traffic across multiple virtual machines (VMs). It enables customers to evenly distribute incoming traffic across multiple VMs, improving the efficiency and performance of their applications. Additionally, Cloud Load Balancing can be used to route traffic to different VMs based on the type of request, allowing customers to optimize the performance of their applications.",
     "benefits": [
@@ -436,16 +438,19 @@
     "description": "A domain name system (DNS) service for managing domain names and IP addresses.",
     "detail": "Cloud DNS is a domain name system (DNS) service for managing domain names and IP addresses. It enables customers to manage their domain names and IP addresses in a secure, reliable, and scalable environment. Additionally, Cloud DNS can be used to quickly and easily update DNS records, allowing customers to keep their domain names and IP addresses up-to-date.",
     "benefits": [
-      "Secure, reliable, and scalable environment for managing domain names and IP addresses",
-      "Quick and easy updating of DNS records"
+      "SHigh Availability: Google Cloud DNS offers a highly available and globally distributed infrastructure, which ensures that DNS queries are processed quickly and reliably from any location. Google's infrastructure is designed to handle large-scale traffic and mitigate DDoS attacks, which helps to ensure high availability and uptime.",
+      "Integration with Google Cloud Platform: Google Cloud DNS integrates seamlessly with other Google Cloud Platform services, such as Compute Engine, Kubernetes, and Load Balancing, making it easy to manage DNS configurations and automate DNS-related tasks. Additionally, Google Cloud DNS supports API-based management, which allows users to manage DNS records programmatically.",
+      "Scalability: Google Cloud DNS is highly scalable, allowing users to easily manage large DNS zones with millions of records. Google's infrastructure is designed to handle high traffic volumes and can automatically scale resources up or down based on demand. This ensures that DNS queries are processed quickly and efficiently, even during periods of high traffic or spikes in demand."
     ],
     "cons": [
-      "High cost of implementation",
-      "Limited scalability"
+      "Limited DNS Record Types:  This can be a problem for users who need to manage more complex DNS configurations. For example, Google Cloud DNS does not support NAPTR or SRV record types.",
+      "No Zone File Import: This can be a problem for users who need to migrate DNS configurations from other providers or systems. Instead, users must manually create DNS records in the Google Cloud DNS console.",
+      "Reliance on Google Cloud Platform: This can be a disadvantage for users who prefer to have more control over their DNS configurations or who are concerned about vendor lock-in. Additionally, users must have a Google Cloud Platform account and be familiar with Google's console and API to use Google Cloud DNS."
     ],
     "useCases": [
-      "Managing domain names and IP addresses",
-      "Updating DNS records quickly and easily"
+      "Hosting Public Websites: Google Cloud DNS can be used to host public websites with high availability and DNSSEC support, ensuring fast and secure access from any location.",
+      "Managing Private Networks: Google Cloud DNS can be used to manage DNS configurations for private networks hosted on Google Cloud Platform, ensuring that private IP addresses and hostnames are routed correctly.",
+      "Load Balancing: Google Cloud DNS can be used to distribute traffic across multiple instances of an application or service, ensuring even traffic distribution, improving performance, and scalability of applications and services hosted on Google Cloud Platform."
     ],
     "link": "",
     "example": "A company that wants to keep its domain names and IP addresses up-to-date can use Cloud DNS to manage them. This will enable the company to manage its domain names and IP addresses in a secure, reliable, and scalable environment, as well as quickly and easily update its DNS records, allowing it to keep its domain names and IP addresses up-to-date."
@@ -460,8 +465,9 @@
       "Identify and block malicious traffic"
     ],
     "cons": [
-      "High cost of implementation",
-      "Limited scalability"
+      "Complexity: One of the main disadvantages of Cloud Armor is that it can be complex to set up and configure, especially for users who are not familiar with Google Cloud Platform. This can result in longer deployment times and higher costs.",
+      "Limited Integration: Another limitation of Cloud Armor is that it has limited integration with third-party security tools and services. This can be a disadvantage for users who already have an existing security stack or who require specific security features that are not supported by Cloud Armor.",
+      "Costs: Cloud Armor pricing is based on the amount of traffic and rules configured, which can result in higher costs for users with high traffic volumes or complex rule sets. This can be a disadvantage for users with limited budgets or those who are looking for more cost-effective security solutions."
     ],
     "useCases": [
       "Protecting applications from malicious online threats",
@@ -986,7 +992,7 @@
     "example": "A financial services company is looking for a reliable and scalable real-time messaging service for their real-time data streaming needs. Cloud Pub/Sub could provide them with a secure, reliable, and scalable messaging platform with global reach, low latency, and automatic encryption for data in transit. This solution would ensure their applications have access to the data they need with delivery of messages to multiple subscribers in parallel."
   },
   {
-    "service": "Cloud Identity and Access Management (IAM)",
+    "service": "Identity and Access Management (IAM)",
     "description": "Manage access to GCP resources and services by creating and managing roles and permissions.",
     "detail": "Google Cloud Identity and Access Management (IAM) enables you to manage access to GCP resources and services by creating and managing roles and permissions. IAM allows you to grant and revoke access to resources, create custom roles with specific permissions, and delegate administration to other users.",
     "benefits": [

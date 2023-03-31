@@ -53,7 +53,10 @@
       "Route traffic to different VMs based on type of request",
       "Optimize performance of applications"
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Distributing incoming traffic across multiple VMs",
       "Routing traffic to different VMs based on type of request",
@@ -71,7 +74,10 @@
       "Different levels of network performance depending on customer requirements",
       "Reliability and availability"
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Optimizing network performance",
       "Ensuring reliability and availability of applications"
@@ -88,7 +94,10 @@
       "Low latency and high performance",
       "Optimize delivery of static and dynamic content"
     ],
-    "cons": ["High cost of implementation", "Limited scalability"],
+    "cons": [
+      "High cost of implementation",
+      "Limited scalability"
+    ],
     "useCases": [
       "Delivering content quickly and securely",
       "Optimizing the delivery of static and dynamic content"
