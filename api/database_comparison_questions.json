@@ -69,7 +69,7 @@
   {
     "question": "What kind of architecture is the application running on?",
     "answers": [
-      "Serverless (e.g., AWS Lambda, Azure Functions)",
+      "Serverless (e.g., AWS Lambda, Google Cloud Functions)",
       "Containerized (e.g., Kubernetes, Docker Swarm)",
       "Virtual Machines (e.g., EC2, Azure VMs)"
     ]
