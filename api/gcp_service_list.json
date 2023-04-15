@@ -1,0 +1,413 @@
+{
+  "Management": {
+    "description": "Control costs, establish identity and access management, and use APIs",
+    "services": [
+      {
+        "service": "APIs & Services",
+        "description": "API management for cloud services"
+      },
+      {
+        "service": "Billing",
+        "description": "Assortment of billing and cost management tools"
+      },
+      {
+        "service": "IAM & Admin",
+        "description": "Resource access control"
+      }
+    ]
+  },
+
+  "Compute": {
+    "description": "Run scalable virtual machines and containers",
+    "services": [
+      {
+        "service": "Compute Engine",
+        "description": "VMs, GPUs, TPUs, disks"
+      },
+      {
+        "service": "Kubernetes Engine",
+        "description": "Managed Kubernetes / containers"
+      },
+      {
+        "service": "VMware Engine",
+        "description": "VMware as a service"
+      },
+      {
+        "service": "Anthos",
+        "description": "Enterprise hybrid multi-cloud platform"
+      },
+      {
+        "service": "Batch",
+        "description": "Jobs as a service"
+      }
+    ]
+  },
+  "Storage": {
+    "description": "Store long-term, short-term, VM, and Filestore securely",
+    "services": [
+      {
+        "service": "Cloud Storage",
+        "description": "Enterprise-ready object storage"
+      },
+      {
+        "service": "Filestore",
+        "description": "Fully managed NFS server"
+      },
+      {
+        "service": "Data Transfer",
+        "description": "Secure and flexible way to move data"
+      },
+      {
+        "service": "PowerScale",
+        "description": "Cloud-native enterprise-grade file service"
+      }
+    ]
+  },
+  "Analytics": {
+    "description": "Collect, store, process, and analyze large amounts of data",
+    "services": [
+      {
+        "service": "BigQuery",
+        "description": "Data warehouse/analytics"
+      },
+      {
+        "service": "Pub/Sub",
+        "description": "Global real-time messaging"
+      },
+      {
+        "service": "Dataflow",
+        "description": "Streaming analytics service"
+      },
+      {
+        "service": "Composer",
+        "description": "Managed workflow orchestration service"
+      },
+      {
+        "service": "Dataproc",
+        "description": "Managed Apache Hadoop"
+      },
+      {
+        "service": "Dataprep",
+        "description": "Visual data wrangling"
+      },
+      {
+        "service": "IoT Core",
+        "description": "Device management and data ingestion"
+      },
+      {
+        "service": "Data Fusion",
+        "description": "Data pipeline management"
+      },
+      {
+        "service": "Looker",
+        "description": "Enterprise BI and Analytics"
+      },
+      {
+        "service": "Healthcare",
+        "description": "Healthcare data storage and processing"
+      },
+      {
+        "service": "Financial Services",
+        "description": "Revenue growth through the cloud"
+      },
+      {
+        "service": "Datastream",
+        "description": "Managed CDC service"
+      },
+      {
+        "service": "Life Sciences",
+        "description": "Biomedical data at scale"
+      },
+      {
+        "service": "Data Catalog",
+        "description": "Metadata management service"
+      },
+      {
+        "service": "Elastic Cloud",
+        "description": "Data power to uncover actionable intelligence"
+      },
+      {
+        "service": "Databricks",
+        "description": "Platform for data, analytics, and AI workloads"
+      },
+      {
+        "service": "Dataplex",
+        "description": "Intelligent data fabric"
+      }
+    ]
+  },
+  "Networking": {
+    "description": "Manage, connect, secure, and scale your networks",
+    "services": [
+      {
+        "service": "VPC network",
+        "description": "Virtual private cloud"
+      },
+      {
+        "service": "Network services",
+        "description": "Network management tools"
+      },
+      {
+        "service": "Hybrid Connectivity",
+        "description": "Network connectivity options"
+      },
+      {
+        "service": "Network Security",
+        "description": "Tools that power safe networking"
+      },
+      {
+        "service": "Network Intelligence",
+        "description": "Network monitoring and topology"
+      },
+      {
+        "service": "Network Service Tiers",
+        "description": "Price vs performance tiering"
+      }
+    ]
+  },
+  "Distributed Cloud": {
+    "description": null,
+    "services": [
+      {
+        "service": "Edge",
+        "description": "Managed edge infrastructure"
+      },
+      {
+        "service": "Appliances",
+        "description": "Devices for edge and transfer workloads"
+      }
+    ]
+  },
+  "Serverless": {
+    "description": "Build applications powered by serverless functions and containers",
+    "services": [
+      {
+        "service": "Cloud Run",
+        "description": "Serverless for containerized applications"
+      },
+      {
+        "service": "Cloud Functions",
+        "description": "Event-driven serverless functions"
+      },
+      {
+        "service": "App Engine",
+        "description": "Managed app platform"
+      },
+      {
+        "service": "API Gateway",
+        "description": "API development,and management"
+      },
+      {
+        "service": "Endpoints",
+        "description": "Cloud API gateway"
+      }
+    ]
+  },
+  "Databases": {
+    "description": "Database services.",
+    "services": [
+      {
+        "name": "SQL",
+        "description": "Managed MySQL, PostgreSQL, SQL Server"
+      },
+      {
+        "name": "Datastore",
+        "description": "NoSQL database for your web and mobile apps"
+      },
+      {
+        "name": "Firestore",
+        "description": "Serverless NoSQL document DB"
+      },
+      {
+        "name": "Spanner",
+        "description": "Horizontally scalable relational DB"
+      },
+      {
+        "name": "Bigtable",
+        "description": "Petabyte-scale, low-latency, non-relational"
+      },
+      {
+        "name": "Memorystore",
+        "description": "Managed Redis and Memcached"
+      },
+      {
+        "name": "Database Migration",
+        "description": "Cloud SQL migrations simplified"
+      },
+      {
+        "name": "MongoDB Atlas",
+        "description": "JSON-like data models, querying, & scaling"
+      },
+      {
+        "name": "Neo4j Aura",
+        "description": "Integrated, fully managed graph databases"
+      },
+      {
+        "name": "Redis Enterprise",
+        "description": "Robust in-memory database platform"
+      },
+      {
+        "name": "AlloyDB",
+        "description": "Enterprise-grade, PostgreSQL-compatible databases"
+      }
+    ]
+  },
+  "Operations": {
+    "description": "Monitor, troubleshoot, and improve application performance.",
+    "services": [
+      {
+        "name": "Logging",
+        "description": "Real-time log management and analysis"
+      },
+      {
+        "name": "Monitoring",
+        "description": "Infrastructure and application quality checks"
+      },
+      {
+        "name": "Error Reporting",
+        "description": "Dashboard for app errors"
+      },
+      {
+        "name": "Trace",
+        "description": "App latency insights"
+      },
+      {
+        "name": "Profiler",
+        "description": "CPU and heap profiling"
+      },
+      {
+        "name": "Debugger",
+        "description": "Code investigation in production"
+      }
+    ]
+  },
+
+  "Security": {
+    "description": "Meet your policy and compliance objectives.",
+    "services": [
+      {
+        "name": "Security",
+        "description": "Security management controls and capabilities"
+      },
+      {
+        "name": "Compliance",
+        "description": "Tools that help support data regulations"
+      }
+    ]
+  },
+  "CI/CD": {
+    "description": "Continuous integration delivery platform.",
+    "services": [
+      {
+        "name": "Cloud Build",
+        "description": "Continuous integration delivery platform"
+      },
+      {
+        "name": "Container Registry",
+        "description": "Private container registry storage"
+      },
+      {
+        "name": "Source Repositories",
+        "description": "Hosted private git repos"
+      },
+      {
+        "name": "Artifact Registry",
+        "description": "Universal build artifact management"
+      },
+      {
+        "name": "Cloud Deploy",
+        "description": "Managed continuous delivery to GKE"
+      }
+    ]
+  },
+  "Artificial Intelligence": {
+    "description": "Leverage machine learning products on a trusted platform",
+    "services": [
+      {
+        "name": "Vertex AI",
+        "description": "One AI platform, every ML tool you need"
+      },
+      {
+        "name": "Natural Language",
+        "description": "Custom text models"
+      },
+      {
+        "name": "Tables",
+        "description": "Custom data models, now also in Vertex AI"
+      },
+      {
+        "name": "Translation",
+        "description": "Language detection and translation"
+      },
+      {
+        "name": "Document AI",
+        "description": "Document analysis, classification, and searches"
+      },
+      {
+        "name": "Recommendations AI",
+        "description": "Custom recommendations for products"
+      },
+      {
+        "name": "Retail",
+        "description": "Data-driven solutions for retailers"
+      },
+      {
+        "name": "Talent Solution",
+        "description": "Job search with ML"
+      },
+      {
+        "name": "DocAI Warehouse",
+        "description": "AI-integrated cloud-native document management platform."
+      },
+      {
+        "name": "Discovery Engine",
+        "description": "Cross-industry discovery solutions"
+      },
+      {
+        "name": "Gen App Builder",
+        "description": "A platform for gen apps"
+      },
+      {
+        "name": "Speech",
+        "description": "Audio-to-text & text-to-audio conversion"
+      },
+      {
+        "name": "Vertex AI Vision",
+        "description": "Custom image models, now also in Vertex AI"
+      }
+    ],
+    "Integration Services": {
+      "description": "Enable applications and microservices to work together seamlessly.",
+      "services": [
+        {
+          "name": "Cloud Scheduler",
+          "description": "Managed cron job service"
+        },
+        {
+          "name": "Cloud Tasks",
+          "description": "Asynchronous task execution"
+        },
+        {
+          "name": "Workflows",
+          "description": "HTTP services orchestration"
+        },
+        {
+          "name": "Eventarc",
+          "description": "Modern event delivery"
+        },
+        {
+          "name": "Application Integration",
+          "description": "Enterprise application integrations"
+        },
+        {
+          "name": "Integration Connectors",
+          "description": "Enterprise Application Connectivity"
+        },
+        {
+          "name": "Apigee API Management",
+          "description": "API Management"
+        }
+      ]
+    }
+  }
+}
