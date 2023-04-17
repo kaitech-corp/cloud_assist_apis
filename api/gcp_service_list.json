@@ -215,47 +215,47 @@
     "description": "Database services.",
     "services": [
       {
-        "name": "SQL",
+        "service": "SQL",
         "description": "Managed MySQL, PostgreSQL, SQL Server"
       },
       {
-        "name": "Datastore",
+        "service": "Datastore",
         "description": "NoSQL database for your web and mobile apps"
       },
       {
-        "name": "Firestore",
+        "service": "Firestore",
         "description": "Serverless NoSQL document DB"
       },
       {
-        "name": "Spanner",
+        "service": "Spanner",
         "description": "Horizontally scalable relational DB"
       },
       {
-        "name": "Bigtable",
+        "service": "Bigtable",
         "description": "Petabyte-scale, low-latency, non-relational"
       },
       {
-        "name": "Memorystore",
+        "service": "Memorystore",
         "description": "Managed Redis and Memcached"
       },
       {
-        "name": "Database Migration",
+        "service": "Database Migration",
         "description": "Cloud SQL migrations simplified"
       },
       {
-        "name": "MongoDB Atlas",
+        "service": "MongoDB Atlas",
         "description": "JSON-like data models, querying, & scaling"
       },
       {
-        "name": "Neo4j Aura",
+        "service": "Neo4j Aura",
         "description": "Integrated, fully managed graph databases"
       },
       {
-        "name": "Redis Enterprise",
+        "service": "Redis Enterprise",
         "description": "Robust in-memory database platform"
       },
       {
-        "name": "AlloyDB",
+        "service": "AlloyDB",
         "description": "Enterprise-grade, PostgreSQL-compatible databases"
       }
     ]
@@ -265,27 +265,27 @@
     "description": "Monitor, troubleshoot, and improve application performance.",
     "services": [
       {
-        "name": "Logging",
+        "service": "Logging",
         "description": "Real-time log management and analysis"
       },
       {
-        "name": "Monitoring",
+        "service": "Monitoring",
         "description": "Infrastructure and application quality checks"
       },
       {
-        "name": "Error Reporting",
+        "service": "Error Reporting",
         "description": "Dashboard for app errors"
       },
       {
-        "name": "Trace",
+        "service": "Trace",
         "description": "App latency insights"
       },
       {
-        "name": "Profiler",
+        "service": "Profiler",
         "description": "CPU and heap profiling"
       },
       {
-        "name": "Debugger",
+        "service": "Debugger",
         "description": "Code investigation in production"
       }
     ]
@@ -296,11 +296,11 @@
     "description": "Meet your policy and compliance objectives.",
     "services": [
       {
-        "name": "Security",
+        "service": "Security",
         "description": "Security management controls and capabilities"
       },
       {
-        "name": "Compliance",
+        "service": "Compliance",
         "description": "Tools that help support data regulations"
       }
     ]
@@ -310,23 +310,23 @@
     "description": "Continuous integration delivery platform.",
     "services": [
       {
-        "name": "Cloud Build",
+        "service": "Cloud Build",
         "description": "Continuous integration delivery platform"
       },
       {
-        "name": "Container Registry",
+        "service": "Container Registry",
         "description": "Private container registry storage"
       },
       {
-        "name": "Source Repositories",
+        "service": "Source Repositories",
         "description": "Hosted private git repos"
       },
       {
-        "name": "Artifact Registry",
+        "service": "Artifact Registry",
         "description": "Universal build artifact management"
       },
       {
-        "name": "Cloud Deploy",
+        "service": "Cloud Deploy",
         "description": "Managed continuous delivery to GKE"
       }
     ]
@@ -336,55 +336,55 @@
     "description": "Leverage machine learning products on a trusted platform",
     "services": [
       {
-        "name": "Vertex AI",
+        "service": "Vertex AI",
         "description": "One AI platform, every ML tool you need"
       },
       {
-        "name": "Natural Language",
+        "service": "Natural Language",
         "description": "Custom text models"
       },
       {
-        "name": "Tables",
+        "service": "Tables",
         "description": "Custom data models, now also in Vertex AI"
       },
       {
-        "name": "Translation",
+        "service": "Translation",
         "description": "Language detection and translation"
       },
       {
-        "name": "Document AI",
+        "service": "Document AI",
         "description": "Document analysis, classification, and searches"
       },
       {
-        "name": "Recommendations AI",
+        "service": "Recommendations AI",
         "description": "Custom recommendations for products"
       },
       {
-        "name": "Retail",
+        "service": "Retail",
         "description": "Data-driven solutions for retailers"
       },
       {
-        "name": "Talent Solution",
+        "service": "Talent Solution",
         "description": "Job search with ML"
       },
       {
-        "name": "DocAI Warehouse",
+        "service": "DocAI Warehouse",
         "description": "AI-integrated cloud-native document management platform."
       },
       {
-        "name": "Discovery Engine",
+        "service": "Discovery Engine",
         "description": "Cross-industry discovery solutions"
       },
       {
-        "name": "Gen App Builder",
+        "service": "Gen App Builder",
         "description": "A platform for gen apps"
       },
       {
-        "name": "Speech",
+        "service": "Speech",
         "description": "Audio-to-text & text-to-audio conversion"
       },
       {
-        "name": "Vertex AI Vision",
+        "service": "Vertex AI Vision",
         "description": "Custom image models, now also in Vertex AI"
       }
     ]
@@ -394,31 +394,31 @@
     "description": "Enable applications and microservices to work together seamlessly.",
     "services": [
       {
-        "name": "Cloud Scheduler",
+        "service": "Cloud Scheduler",
         "description": "Managed cron job service"
       },
       {
-        "name": "Cloud Tasks",
+        "service": "Cloud Tasks",
         "description": "Asynchronous task execution"
       },
       {
-        "name": "Workflows",
+        "service": "Workflows",
         "description": "HTTP services orchestration"
       },
       {
-        "name": "Eventarc",
+        "service": "Eventarc",
         "description": "Modern event delivery"
       },
       {
-        "name": "Application Integration",
+        "service": "Application Integration",
         "description": "Enterprise application integrations"
       },
       {
-        "name": "Integration Connectors",
+        "service": "Integration Connectors",
         "description": "Enterprise Application Connectivity"
       },
       {
-        "name": "Apigee API Management",
+        "service": "Apigee API Management",
         "description": "API Management"
       }
     ]
