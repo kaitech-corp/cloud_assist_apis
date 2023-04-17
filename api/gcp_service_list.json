@@ -166,7 +166,7 @@
     ]
   },
   "Distributed Cloud": {
-    "description": null,
+    "description": "Distributed cloud services",
     "services": [
       {
         "service": "Edge",
