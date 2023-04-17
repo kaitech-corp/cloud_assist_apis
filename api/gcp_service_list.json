@@ -1,5 +1,6 @@
-{
-  "Management": {
+[
+  {
+    "category": "Management",
     "description": "Control costs, establish identity and access management, and use APIs",
     "services": [
       {
@@ -17,7 +18,8 @@
     ]
   },
 
-  "Compute": {
+  {
+    "category": "Compute",
     "description": "Run scalable virtual machines and containers",
     "services": [
       {
@@ -42,7 +44,8 @@
       }
     ]
   },
-  "Storage": {
+  {
+    "category": "Storage",
     "description": "Store long-term, short-term, VM, and Filestore securely",
     "services": [
       {
@@ -63,7 +66,8 @@
       }
     ]
   },
-  "Analytics": {
+  {
+    "category": "Analytics",
     "description": "Collect, store, process, and analyze large amounts of data",
     "services": [
       {
@@ -136,7 +140,8 @@
       }
     ]
   },
-  "Networking": {
+  {
+    "category": "Networking",
     "description": "Manage, connect, secure, and scale your networks",
     "services": [
       {
@@ -165,7 +170,8 @@
       }
     ]
   },
-  "Distributed Cloud": {
+  {
+    "category": "Distributed Cloud",
     "description": "Distributed cloud services",
     "services": [
       {
@@ -178,7 +184,8 @@
       }
     ]
   },
-  "Serverless": {
+  {
+    "category": "Serverless",
     "description": "Build applications powered by serverless functions and containers",
     "services": [
       {
@@ -203,7 +210,8 @@
       }
     ]
   },
-  "Databases": {
+  {
+    "category": "Databases",
     "description": "Database services.",
     "services": [
       {
@@ -252,7 +260,8 @@
       }
     ]
   },
-  "Operations": {
+  {
+    "category": "Operations",
     "description": "Monitor, troubleshoot, and improve application performance.",
     "services": [
       {
@@ -282,7 +291,8 @@
     ]
   },
 
-  "Security": {
+  {
+    "category": "Security",
     "description": "Meet your policy and compliance objectives.",
     "services": [
       {
@@ -295,7 +305,8 @@
       }
     ]
   },
-  "CI/CD": {
+  {
+    "category": "CICD",
     "description": "Continuous integration delivery platform.",
     "services": [
       {
@@ -320,7 +331,8 @@
       }
     ]
   },
-  "Artificial Intelligence": {
+  {
+    "category": "Artificial Intelligence",
     "description": "Leverage machine learning products on a trusted platform",
     "services": [
       {
@@ -375,39 +387,40 @@
         "name": "Vertex AI Vision",
         "description": "Custom image models, now also in Vertex AI"
       }
-    ],
-    "Integration Services": {
-      "description": "Enable applications and microservices to work together seamlessly.",
-      "services": [
-        {
-          "name": "Cloud Scheduler",
-          "description": "Managed cron job service"
-        },
-        {
-          "name": "Cloud Tasks",
-          "description": "Asynchronous task execution"
-        },
-        {
-          "name": "Workflows",
-          "description": "HTTP services orchestration"
-        },
-        {
-          "name": "Eventarc",
-          "description": "Modern event delivery"
-        },
-        {
-          "name": "Application Integration",
-          "description": "Enterprise application integrations"
-        },
-        {
-          "name": "Integration Connectors",
-          "description": "Enterprise Application Connectivity"
-        },
-        {
-          "name": "Apigee API Management",
-          "description": "API Management"
-        }
-      ]
-    }
+    ]
+  },
+  {
+    "category": "Integrated Services",
+    "description": "Enable applications and microservices to work together seamlessly.",
+    "services": [
+      {
+        "name": "Cloud Scheduler",
+        "description": "Managed cron job service"
+      },
+      {
+        "name": "Cloud Tasks",
+        "description": "Asynchronous task execution"
+      },
+      {
+        "name": "Workflows",
+        "description": "HTTP services orchestration"
+      },
+      {
+        "name": "Eventarc",
+        "description": "Modern event delivery"
+      },
+      {
+        "name": "Application Integration",
+        "description": "Enterprise application integrations"
+      },
+      {
+        "name": "Integration Connectors",
+        "description": "Enterprise Application Connectivity"
+      },
+      {
+        "name": "Apigee API Management",
+        "description": "API Management"
+      }
+    ]
   }
-}
+]
