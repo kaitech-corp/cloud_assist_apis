@@ -1,0 +1,318 @@
+[
+  {
+    "category": "Management",
+    "description": "Services for managing AWS resources",
+    "services": [
+      {
+        "service": "AWS Identity and Access Management",
+        "description": "Access management and control for AWS resources"
+      },
+      {
+        "service": "AWS CloudFormation",
+        "description": "Infrastructure as Code for AWS resource provisioning"
+      },
+      {
+        "service": "AWS CloudTrail",
+        "description": "Logging and monitoring of API activity"
+      },
+      {
+        "service": "AWS Config",
+        "description": "Continuous monitoring and recording of AWS resource configurations"
+      },
+      {
+        "service": "AWS Systems Manager",
+        "description": "Operational management for AWS resources"
+      },
+      {
+        "service": "AWS CloudWatch",
+        "description": "Monitoring and observability service for AWS resources"
+      }
+    ]
+  },
+  {
+    "category": "Compute",
+    "description": "Services for computing and running applications",
+    "services": [
+      {
+        "service": "Amazon EC2",
+        "description": "Virtual servers in the cloud"
+      },
+      {
+        "service": "AWS Lambda",
+        "description": "Run code without provisioning or managing servers"
+      },
+      {
+        "service": "Amazon ECS",
+        "description": "Container orchestration service"
+      },
+      {
+        "service": "AWS Batch",
+        "description": "Run batch computing workloads on AWS"
+      },
+      {
+        "service": "AWS Elastic Beanstalk",
+        "description": "Platform as a Service (PaaS) for deploying applications"
+      }
+    ]
+  },
+  {
+    "category": "Storage",
+    "description": "Services for storing and managing data",
+    "services": [
+      {
+        "service": "Amazon S3",
+        "description": "Scalable object storage for files and data"
+      },
+      {
+        "service": "Amazon EBS",
+        "description": "Block-level storage volumes for EC2 instances"
+      },
+      {
+        "service": "Amazon EFS",
+        "description": "Fully managed file system for EC2 instances"
+      },
+      {
+        "service": "AWS Glacier",
+        "description": "Low-cost archive storage"
+      },
+      {
+        "service": "AWS Storage Gateway",
+        "description": "Hybrid cloud storage integration"
+      }
+    ]
+  },
+  {
+    "category": "Analytics",
+    "description": "Services for analyzing data and gaining insights",
+    "services": [
+      {
+        "service": "Amazon Athena",
+        "description": "Interactive query service for S3"
+      },
+      {
+        "service": "Amazon Redshift",
+        "description": "Fast, simple, cost-effective data warehousing"
+      },
+      {
+        "service": "AWS Glue",
+        "description": "Extract, transform, and load (ETL) service"
+      },
+      {
+        "service": "Amazon Kinesis",
+        "description": "Real-time streaming and analytics"
+      },
+      {
+        "service": "AWS Data Pipeline",
+        "description": "Orchestration service for data processing workflows"
+      }
+    ]
+  },
+  {
+    "category": "Networking",
+    "description": "Services for networking and content delivery",
+    "services": [
+      {
+        "service": "Amazon VPC",
+        "description": "Isolated virtual network for resources"
+      },
+      {
+        "service": "Amazon Route 53",
+        "description": "Scalable domain name system (DNS) web service"
+      },
+      {
+        "service": "AWS Direct Connect",
+        "description": "Dedicated network connection to AWS"
+      },
+      {
+        "service": "Amazon CloudFront",
+        "description": "Global content delivery network (CDN)"
+      },
+      {
+        "service": "AWS Global Accelerator",
+        "description": "Improve global application availability and performance"
+      }
+    ]
+  },
+  {
+    "category": "Serverless",
+    "description": "Services for building and running serverless applications",
+    "services": [
+      {
+        "service": "AWS Lambda",
+        "description": "Run code without provisioning or managing servers"
+      },
+      {
+        "service": "Amazon API Gateway",
+        "description": "Create, publish, and manage APIs"
+      },
+      {
+        "service": "AWS Step Functions",
+        "description": "Coordinate distributed applications using visual workflows"
+      },
+      {
+        "service": "Amazon EventBridge",
+        "description": "Serverless event bus for event-driven architectures"
+      },
+      {
+        "service": "AWS AppSync",
+        "description": "Managed GraphQL service"
+      }
+    ]
+  },
+  {
+    "category": "Databases",
+    "description": "Services for managing databases",
+    "services": [
+      {
+        "service": "Amazon RDS",
+        "description": "Relational Database Service"
+      },
+      {
+        "service": "Amazon DynamoDB",
+        "description": "Managed NoSQL database"
+      },
+      {
+        "service": "Amazon Aurora",
+        "description": "MySQL and PostgreSQL-compatible relational database"
+      },
+      {
+        "service": "Amazon Neptune",
+        "description": "Fully managed graph database service"
+      },
+      {
+        "service": "Amazon ElastiCache",
+        "description": "In-memory data store and cache"
+      }
+    ]
+  },
+  {
+    "category": "Operations",
+    "description": "Services for managing and automating operations",
+    "services": [
+      {
+        "service": "AWS CloudFormation",
+        "description": "Infrastructure as Code for AWS resource provisioning"
+      },
+      {
+        "service": "AWS Systems Manager",
+        "description": "Operational management for AWS resources"
+      },
+      {
+        "service": "AWS OpsWorks",
+        "description": "Configuration management service"
+      },
+      {
+        "service": "Amazon CloudWatch",
+        "description": "Monitoring and observability service for AWS resources"
+      },
+      {
+        "service": "AWS X-Ray",
+        "description": "Analyze and debug applications in production"
+      }
+    ]
+  },
+  {
+    "category": "Security",
+    "description": "Services for securing applications and data",
+    "services": [
+      {
+        "service": "AWS Identity and Access Management",
+        "description": "Access management and control for AWS resources"
+      },
+      {
+        "service": "AWS Secrets Manager",
+        "description": "Securely store and manage secrets"
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "description": "Threat detection service"
+      },
+      {
+        "service": "AWS WAF",
+        "description": "Web Application Firewall"
+      },
+      {
+        "service": "AWS Shield",
+        "description": "DDoS protection service"
+      }
+    ]
+  },
+  {
+    "category": "CICD",
+    "description": "Services for continuous integration and deployment",
+    "services": [
+      {
+        "service": "AWS CodePipeline",
+        "description": "Continuous delivery service"
+      },
+      {
+        "service": "AWS CodeBuild",
+        "description": "Fully managed build service"
+      },
+      {
+        "service": "AWS CodeDeploy",
+        "description": "Automated application deployments"
+      },
+      {
+        "service": "AWS CodeCommit",
+        "description": "Fully managed source control service"
+      },
+      {
+        "service": "AWS CodeStar",
+        "description": "Fully managed development service"
+      }
+    ]
+  },
+  {
+    "category": "AI",
+    "description": "Services for artificial intelligence and machine learning",
+    "services": [
+      {
+        "service": "Amazon SageMaker",
+        "description": "Build, train, and deploy machine learning models"
+      },
+      {
+        "service": "Amazon Rekognition",
+        "description": "Image and video analysis"
+      },
+      {
+        "service": "Amazon Comprehend",
+        "description": "Natural language processing (NLP)"
+      },
+      {
+        "service": "Amazon Polly",
+        "description": "Text-to-speech service"
+      },
+      {
+        "service": "Amazon Lex",
+        "description": "Conversational interfaces for applications"
+      }
+    ]
+  },
+  {
+    "category": "Integrated Services",
+    "description": "Services that integrate multiple AWS capabilities",
+    "services": [
+      {
+        "service": "AWS IoT Core",
+        "description": "Connect devices to the cloud"
+      },
+      {
+        "service": "Amazon AppSync",
+        "description": "Managed GraphQL service"
+      },
+      {
+        "service": "AWS Amplify",
+        "description": "Development platform for building mobile and web apps"
+      },
+      {
+        "service": "AWS DataSync",
+        "description": "Data transfer service"
+      },
+      {
+        "service": "AWS IoT Greengrass",
+        "description": "Edge computing service"
+      }
+    ]
+  }
+]
