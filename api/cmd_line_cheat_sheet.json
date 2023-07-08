@@ -139,7 +139,8 @@
       "gcloud compute images list": "List available VM images.",
       "gcloud compute networks list": "List Compute Engine networks.",
       "gcloud compute firewall-rules list": "List firewall rules in a project.",
-      "gcloud compute firewall-rules create": "Create a new firewall rule."
+      "gcloud compute firewall-rules create": "Create a new firewall rule.",
+      "gcloud compute instances create INSTANCE_NAME --preemptible --no-auto-delete": "Create a new VM instance that will not be automatically deleted."
     }
   },
   {
