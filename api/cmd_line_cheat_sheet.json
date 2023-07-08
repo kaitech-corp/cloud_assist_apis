@@ -2,130 +2,187 @@
   {
     "topic": "Getting started",
     "title": "Get setup with google cloud command lines",
-    "commands": 
-      {
-        "gcloud init": "Initialize, authorize, and configure the gcloud tool.",
-        "gcloud version": "Display version and installed components.",
-        "gcloud components install": "Install specific components.",
-        "gcloud components update": "Update your Google Cloud CLI to the latest version.",
-        "gcloud config set project": "Set a default Google Cloud project to work on.",
-        "gcloud info": "Display current gcloud tool environment details."
-      }
-      
-    },
+    "commands": {
+      "gcloud init": "Initialize, authorize, and configure the gcloud tool.",
+      "gcloud version": "Display version and installed components.",
+      "gcloud components install": "Install specific components.",
+      "gcloud components update": "Update your Google Cloud CLI to the latest version.",
+      "gcloud config set project": "Set a default Google Cloud project to work on.",
+      "gcloud info": "Display current gcloud tool environment details."
+    }
+  },
   {
     "topic": "Help",
     "title": "Google Cloud CLI is happy to help",
-    "commands": 
-      {
-        "gcloud help": "Search the gcloud tool reference documents for specific terms.",
-        "gcloud feedback": "Provide feedback for the Google Cloud CLI team.",
-        "gcloud topic": "Supplementary help material for non-command topics like accessibility, filtering, and formatting."
-      }
-      
-      },
+    "commands": {
+      "gcloud help": "Search the gcloud tool reference documents for specific terms.",
+      "gcloud feedback": "Provide feedback for the Google Cloud CLI team.",
+      "gcloud topic": "Supplementary help material for non-command topics like accessibility, filtering, and formatting."
+    }
+  },
   {
     "topic": "Personalization",
     "title": "Personalize your configuration with properties",
-    "commands": 
-      {
-        "gcloud config set": "Define a property (like compute/zone) for the current configuration.",
-        "gcloud config get": "Fetch value of a Google Cloud CLI property.",
-        "gcloud config list": "Display all the properties for the current configuration.",
-        "gcloud config configurations create": "Create a new named configuration.",
-        "gcloud config configurations list": "Display a list of all available configurations.",
-        "gcloud config configurations activate": "Switch to an existing named configuration."
-      }
-    
+    "commands": {
+      "gcloud config set": "Define a property (like compute/zone) for the current configuration.",
+      "gcloud config get": "Fetch value of a Google Cloud CLI property.",
+      "gcloud config list": "Display all the properties for the current configuration.",
+      "gcloud config configurations create": "Create a new named configuration.",
+      "gcloud config configurations list": "Display a list of all available configurations.",
+      "gcloud config configurations activate": "Switch to an existing named configuration."
+    }
   },
   {
     "topic": "Credentials",
     "title": "Grant and revoke authorization to Google Cloud CLI",
-    "commands": 
-      {
-        "gcloud auth login": "Authorize Google Cloud access for the gcloud tool with Google user credentials and set current account as active.",
-        "gcloud auth activate-service-account": "Like gcloud auth login but with service account credentials.",
-        "gcloud auth list": "List all credentialed accounts.",
-        "gcloud auth print-access-token": "Display the current account's access token.",
-        "gcloud auth revoke": "Remove access credentials for an account."
-      }
-    
+    "commands": {
+      "gcloud auth login": "Authorize Google Cloud access for the gcloud tool with Google user credentials and set current account as active.",
+      "gcloud auth activate-service-account": "Like gcloud auth login but with service account credentials.",
+      "gcloud auth list": "List all credentialed accounts.",
+      "gcloud auth print-access-token": "Display the current account's access token.",
+      "gcloud auth revoke": "Remove access credentials for an account.",
+      "gcloud auth application-default login": "Authorize Google Cloud access for Application Default Credentials (ADC) with Google user credentials.",
+      "gcloud auth application-default logout": "Revoke the authorization for Application Default Credentials (ADC).",
+      "gcloud auth application-default print-access-token": "Display the access token for Application Default Credentials (ADC).",
+      "gcloud auth application-default print-identity-token": "Display the identity token for Application Default Credentials (ADC).",
+      "gcloud auth configure-docker": "Configure Docker to use Google Cloud credentials for authentication and authorization when pushing or pulling container images."
+    }
   },
   {
     "topic": "Projects",
     "title": "Manage project access policies",
-    "commands": 
-      {
-        "gcloud projects describe": "Display metadata for a project (including its ID).",
-        "gcloud projects add-iam-policy-binding": "Add an IAM policy binding toa specified project."
-      }
-    
+    "commands": {
+      "gcloud projects describe": "Display metadata for a project (including its ID).",
+      "gcloud projects add-iam-policy-binding": "Add an IAM policy binding toa specified project.",
+      "gcloud projects list": "List projects in the authenticated user's account.",
+      "gcloud projects get-iam-policy": "Get the IAM policy for a project.",
+      "gcloud projects set-iam-policy": "Set the IAM policy for a project.",
+      "gcloud projects remove-iam-policy-binding": "Remove an IAM policy binding from a project.",
+      "gcloud projects get-ancestors": "Get the ancestors of a project.",
+      "gcloud projects set-default": "Set the default project for the gcloud command-line tool.",
+      "gcloud projects delete": "Delete a project.",
+      "gcloud projects undelete": "Undelete a previously deleted project.",
+      "gcloud projects move": "Move a project to a different folder or organization.",
+      "gcloud projects create": "Create a new project.",
+      "gcloud projects update": "Update project attributes.",
+      "gcloud projects enable": "Enable a service on a project.",
+      "gcloud projects disable": "Disable a service on a project."
+    }
   },
   {
     "topic": "Identity & Access Management",
     "title": "Configuring Cloud Identity & Access Management (IAM)",
-    "commands": 
-      {
-        "gcloud iam list-grantable-roles": "List IAM grantable roles for a resource.",
-        "gcloud iam roles create": "Create a custom role for a project or org.",
-        "gcloud iam service-accounts create": "Create a service account for a project.",
-        "gcloud iam service-accounts add-iam-policy-binding": "Add an IAM policy binding to a service account.",
-        "gcloud iam service-accounts set-iam-policy": "Replace existing IAM policy binding.",
-        "gcloud iam service-accounts keys list": "List a service account's keys."
-      }
-    
+    "commands": {
+      "gcloud iam list-grantable-roles": "List IAM grantable roles for a resource.",
+      "gcloud iam roles create": "Create a custom role for a project or org.",
+      "gcloud iam service-accounts create": "Create a service account for a project.",
+      "gcloud iam service-accounts add-iam-policy-binding": "Add an IAM policy binding to a service account.",
+      "gcloud iam service-accounts set-iam-policy": "Replace existing IAM policy binding.",
+      "gcloud iam service-accounts keys list": "List a service account's keys.",
+      "gcloud organizations list": "List organizations associated with the authenticated user.",
+      "gcloud projects create": "Create a new project.",
+      "gcloud projects list": "List projects in the authenticated user's account.",
+      "gcloud projects describe": "Display information about a specific project.",
+      "gcloud projects set-iam-policy": "Set the IAM policy for a project.",
+      "gcloud projects add-iam-policy-binding": "Add an IAM policy binding to a project.",
+      "gcloud projects remove-iam-policy-binding": "Remove an IAM policy binding from a project.",
+      "gcloud projects delete": "Delete a project.",
+      "gcloud organizations get-iam-policy": "Get the IAM policy for an organization.",
+      "gcloud organizations set-iam-policy": "Set the IAM policy for an organization.",
+      "gcloud organizations add-iam-policy-binding": "Add an IAM policy binding to an organization.",
+      "gcloud organizations remove-iam-policy-binding": "Remove an IAM policy binding from an organization."
+    }
   },
   {
     "topic": "Docker & Google Kubernetes Engine (GKE)",
     "title": "Manage containerized applications on Kubernetes",
-    "commands": 
-      {
-        "gcloud auth configure-docker": "Register the gcloud tool as a Docker credential helper.",
-        "gcloud container clusters create": "Create a cluster to run GKE containers.",
-        "gcloud container clusters list": "List clusters for running GKE containers.",
-        "gcloud container clusters get-credentials": "Update kubeconfig to get kubectl to use a GKE cluster.",
-        "gcloud container images list-tags": "List tag and digest metadata for a container image."
-      }
-    
+    "commands": {
+      "gcloud auth configure-docker": "Register the gcloud tool as a Docker credential helper.",
+      "gcloud container clusters create": "Create a cluster to run GKE containers.",
+      "gcloud container clusters list": "List clusters for running GKE containers.",
+      "gcloud container clusters get-credentials": "Update kubeconfig to get kubectl to use a GKE cluster.",
+      "gcloud container images list-tags": "List tag and digest metadata for a container image.",
+      "gcloud container clusters resize": "Resize the node pool of a GKE cluster.",
+      "gcloud container clusters delete": "Delete a GKE cluster.",
+      "gcloud container clusters describe": "Display details of a GKE cluster.",
+      "gcloud container clusters update": "Update the properties of a GKE cluster.",
+      "gcloud container node-pools list": "List node pools in a GKE cluster.",
+      "gcloud container node-pools create": "Create a node pool in a GKE cluster.",
+      "gcloud container node-pools delete": "Delete a node pool from a GKE cluster.",
+      "gcloud container node-pools update": "Update the properties of a node pool in a GKE cluster.",
+      "kubectl get pods": "List pods in a Kubernetes cluster.",
+      "kubectl describe pod": "Display details of a specific pod in a Kubernetes cluster.",
+      "kubectl logs": "Retrieve logs from a pod in a Kubernetes cluster.",
+      "kubectl exec": "Execute a command in a running container within a pod.",
+      "kubectl apply": "Apply a configuration to a Kubernetes cluster.",
+      "kubectl delete": "Delete resources from a Kubernetes cluster."
+    }
   },
   {
     "topic": "Virtual Machines & Compute Engine",
     "title": "Create, run, and manage VMs on Google infrastructure",
-    "commands": 
-      {
-        "gcloud compute zones list": "List Compute Engine zones.",
-        "gcloud compute instances describe": "Display a VM instance's details.",
-        "gcloud compute instances list": "List all VM instances in a project.",
-        "gcloud compute disks snapshot": "Create snapshot of persistent disks.",
-        "gcloud compute snapshots describe": "Display a snapshot's details.",
-        "gcloud compute snapshots delete": "Delete a snapshot.",
-        "gcloud compute ssh": "Connect to a VM instance by using SSH."
-      }
-    
+    "commands": {
+      "gcloud compute zones list": "List Compute Engine zones.",
+      "gcloud compute instances describe": "Display a VM instance's details.",
+      "gcloud compute instances list": "List all VM instances in a project.",
+      "gcloud compute disks snapshot": "Create snapshot of persistent disks.",
+      "gcloud compute snapshots describe": "Display a snapshot's details.",
+      "gcloud compute snapshots delete": "Delete a snapshot.",
+      "gcloud compute ssh": "Connect to a VM instance by using SSH.",
+      "gcloud compute instances create": "Create a new VM instance.",
+      "gcloud compute instances start": "Start a stopped VM instance.",
+      "gcloud compute instances stop": "Stop a running VM instance.",
+      "gcloud compute instances delete": "Delete a VM instance.",
+      "gcloud compute instances set-machine-type": "Change the machine type of a VM instance.",
+      "gcloud compute instances add-metadata": "Add metadata to a VM instance.",
+      "gcloud compute instances get-serial-port-output": "Retrieve serial port output of a VM instance.",
+      "gcloud compute images list": "List available VM images.",
+      "gcloud compute networks list": "List Compute Engine networks.",
+      "gcloud compute firewall-rules list": "List firewall rules in a project.",
+      "gcloud compute firewall-rules create": "Create a new firewall rule."
+    }
   },
   {
     "topic": "Serverless & App Engine",
     "title": "Build highly scalable applications on a fully managed serverless platform",
-    "commands": 
-      {
-        "gcloud app deploy": "Deploy your app's code and configuration to the App Engine server.",
-        "gcloud app versions list": "List all versions of all services deployed to the App Engine server.",
-        "gcloud app browse": "Open the current app in a web browser.",
-        "gcloud app create": "Create an App Engine app within your current project.",
-        "gcloud app logs read": "Display the latest App Engine app logs."
-      }
-    
+    "commands": {
+      "gcloud app deploy": "Deploy your app's code and configuration to the App Engine server.",
+      "gcloud app versions list": "List all versions of all services deployed to the App Engine server.",
+      "gcloud app browse": "Open the current app in a web browser.",
+      "gcloud app create": "Create an App Engine app within your current project.",
+      "gcloud app logs read": "Display the latest App Engine app logs.",
+      "gcloud app services list": "List all services within an App Engine app.",
+      "gcloud app services update": "Update the configuration of a service within an App Engine app.",
+      "gcloud app services delete": "Delete a service within an App Engine app.",
+      "gcloud app versions describe": "Display details of a specific version of a service in an App Engine app.",
+      "gcloud app versions delete": "Delete a specific version of a service in an App Engine app.",
+      "gcloud app traffic split": "Split traffic between multiple versions of a service in an App Engine app.",
+      "gcloud app domain-mappings list": "List domain mappings for an App Engine app.",
+      "gcloud app domain-mappings create": "Create a new domain mapping for an App Engine app.",
+      "gcloud app domain-mappings delete": "Delete a domain mapping from an App Engine app.",
+      "gcloud app firewall-rules list": "List firewall rules for an App Engine app.",
+      "gcloud app firewall-rules create": "Create a new firewall rule for an App Engine app.",
+      "gcloud app firewall-rules delete": "Delete a firewall rule from an App Engine app."
+    }
   },
   {
     "topic": "Miscellaneous",
     "title": "Commands that might come in handy",
-    "commands": 
-      {
-        "gcloud kms decrypt": "Decrypt ciphertext (to a plaintext file) using aCloud Key Management Service (Cloud KMS) key.",
-        "gcloud logging logs list": "List your project's logs.",
-        "gcloud sql backups describe": "Display info about a Cloud SQL instance backup.",
-        "gcloud sql export sql": "Export data from a Cloud SQL instance to a SQL file."
-      }
-    
+    "commands": {
+      "gcloud kms decrypt": "Decrypt ciphertext (to a plaintext file) using aCloud Key Management Service (Cloud KMS) key.",
+      "gcloud logging logs list": "List your project's logs.",
+      "gcloud sql backups describe": "Display info about a Cloud SQL instance backup.",
+      "gcloud sql export sql": "Export data from a Cloud SQL instance to a SQL file.",
+      "gcloud source repos list": "List source code repositories in Cloud Source Repositories.",
+      "gcloud source repos clone": "Clone a source code repository from Cloud Source Repositories.",
+      "gcloud source repos create": "Create a new source code repository in Cloud Source Repositories.",
+      "gcloud source repos delete": "Delete a source code repository from Cloud Source Repositories.",
+      "gcloud pubsub topics list": "List topics in Cloud Pub/Sub.",
+      "gcloud pubsub topics create": "Create a new topic in Cloud Pub/Sub.",
+      "gcloud pubsub topics delete": "Delete a topic from Cloud Pub/Sub.",
+      "gcloud pubsub subscriptions list": "List subscriptions in Cloud Pub/Sub.",
+      "gcloud pubsub subscriptions create": "Create a new subscription in Cloud Pub/Sub.",
+      "gcloud pubsub subscriptions delete": "Delete a subscription from Cloud Pub/Sub."
+    }
   }
 ]
