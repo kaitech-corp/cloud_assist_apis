@@ -420,8 +420,11 @@
       {
         "service": "Apigee API Management",
         "description": "API Management"
+      },
+      {
+        "service": "Firebase",
+        "description": "Platform for building web and mobile applications"
       }
     ]
   }
 ]
-
