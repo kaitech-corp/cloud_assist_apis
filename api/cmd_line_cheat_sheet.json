@@ -1,37 +1,55 @@
 [
   {
     "topic": "Getting started",
-    "title": "Get setup with google cloud command lines",
+    "title": "Get setup with Google Cloud command lines",
     "commands": {
       "gcloud init": "Initialize, authorize, and configure the gcloud tool.",
       "gcloud version": "Display version and installed components.",
       "gcloud components install": "Install specific components.",
-      "gcloud components update": "Update your Google Cloud CLI to the latest version.",
-      "gcloud config set project": "Set a default Google Cloud project to work on.",
-      "gcloud info": "Display current gcloud tool environment details."
+      "gcloud components update": "Update Google Cloud CLI to the latest version.",
+      "gcloud config set project": "Set a default Google Cloud project.",
+      "gcloud info": "Display current gcloud tool environment details.",
+      "gcloud auth login": "Authenticate with Google Cloud.",
+      "gcloud auth list": "List active credentials.",
+      "gcloud config list": "Show current configuration settings.",
+      "gcloud projects list": "List available projects."
     }
   },
   {
     "topic": "Help",
     "title": "Google Cloud CLI is happy to help",
     "commands": {
-      "gcloud help": "Search the gcloud tool reference documents for specific terms.",
-      "gcloud feedback": "Provide feedback for the Google Cloud CLI team.",
-      "gcloud topic": "Supplementary help material for non-command topics like accessibility, filtering, and formatting."
+      "gcloud help": "Search reference documents for specific terms.",
+      "gcloud feedback": "Provide feedback to the Google Cloud CLI team.",
+      "gcloud topic": "Help for non-command topics (e.g., filtering).",
+      "gcloud --help": "Display general help for gcloud CLI.",
+      "gcloud <command> --help": "Get help for a specific command."
     }
   },
   {
     "topic": "Personalization",
     "title": "Personalize your configuration with properties",
     "commands": {
-      "gcloud config set": "Define a property (like compute/zone) for the current configuration.",
-      "gcloud config get": "Fetch value of a Google Cloud CLI property.",
-      "gcloud config list": "Display all the properties for the current configuration.",
+      "gcloud config set": "Define a property (e.g., compute/zone).",
+      "gcloud config get": "Fetch the value of a property.",
+      "gcloud config list": "Display all properties of the current config.",
       "gcloud config configurations create": "Create a new named configuration.",
-      "gcloud config configurations list": "Display a list of all available configurations.",
-      "gcloud config configurations activate": "Switch to an existing named configuration."
+      "gcloud config configurations list": "List all available configurations.",
+      "gcloud config configurations activate": "Switch to a named configuration.",
+      "gcloud config configurations describe": "Show details of a specific config.",
+      "gcloud config configurations delete": "Delete a named configuration."
     }
   },
+  {
+    "topic": "Billing",
+    "title": "Manage billing for your Google Cloud account",
+    "commands": {
+      "gcloud billing accounts list": "List all billing accounts.",
+      "gcloud billing projects link": "Link a project to a billing account.",
+      "gcloud billing accounts describe": "Show details of a billing account.",
+      "gcloud billing projects unlink": "Unlink a project from billing."
+    }
+  }
   {
     "topic": "Credentials",
     "title": "Grant and revoke authorization to Google Cloud CLI",
