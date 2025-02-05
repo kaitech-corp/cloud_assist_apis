@@ -1,0 +1,183 @@
+[
+    {
+      "category": "Compute",
+      "description": "Cloud computing platforms for running applications and workloads",
+      "services": [
+        {
+          "service": "Docker",
+          "description": "Containerization platform for application deployment"
+        },
+        {
+          "service": "Kubernetes",
+          "description": "Open-source container orchestration system"
+        },
+        {
+          "service": "HashiCorp Nomad",
+          "description": "Flexible workload orchestrator for containers and VMs"
+        }
+      ]
+    },
+    {
+      "category": "Storage",
+      "description": "Cloud storage solutions for object, block, and file storage",
+      "services": [
+        {
+          "service": "MinIO",
+          "description": "High-performance object storage compatible with S3"
+        },
+        {
+          "service": "Ceph",
+          "description": "Distributed storage system for block, object, and file storage"
+        },
+        {
+          "service": "GlusterFS",
+          "description": "Scale-out network-attached storage (NAS)"
+        }
+      ]
+    },
+    {
+      "category": "Networking",
+      "description": "Cloud networking solutions for connectivity and security",
+      "services": [
+        {
+          "service": "Cloudflare",
+          "description": "CDN, DDoS protection, and security services"
+        },
+        {
+          "service": "Traefik",
+          "description": "Cloud-native edge router and reverse proxy"
+        },
+        {
+          "service": "NGINX",
+          "description": "Web server, load balancer, and reverse proxy"
+        }
+      ]
+    },
+    {
+      "category": "Databases",
+      "description": "Cloud database solutions for structured and unstructured data",
+      "services": [
+        {
+          "service": "PostgreSQL",
+          "description": "Open-source relational database with advanced features"
+        },
+        {
+          "service": "MariaDB",
+          "description": "Fork of MySQL with additional performance improvements"
+        },
+        {
+          "service": "Cassandra",
+          "description": "Distributed NoSQL database for scalability and performance"
+        }
+      ]
+    },
+    {
+      "category": "Monitoring & Logging",
+      "description": "Cloud observability tools for logs, metrics, and tracing",
+      "services": [
+        {
+          "service": "Prometheus",
+          "description": "Monitoring and alerting toolkit for cloud applications"
+        },
+        {
+          "service": "Grafana",
+          "description": "Visualization and dashboard tool for monitoring data"
+        },
+        {
+          "service": "ELK Stack",
+          "description": "Log management stack (Elasticsearch, Logstash, Kibana)"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "description": "Cloud security tools for authentication, encryption, and compliance",
+      "services": [
+        {
+          "service": "HashiCorp Vault",
+          "description": "Secrets management and data protection platform"
+        },
+        {
+          "service": "Let’s Encrypt",
+          "description": "Free SSL/TLS certificate authority"
+        },
+        {
+          "service": "Falco",
+          "description": "Runtime security monitoring for containers"
+        }
+      ]
+    },
+    {
+      "category": "CI/CD & DevOps",
+      "description": "Continuous integration and deployment tools for automation",
+      "services": [
+        {
+          "service": "Jenkins",
+          "description": "Open-source automation server for CI/CD"
+        },
+        {
+          "service": "GitLab CI/CD",
+          "description": "Integrated DevOps pipeline within GitLab"
+        },
+        {
+          "service": "ArgoCD",
+          "description": "GitOps continuous delivery tool for Kubernetes"
+        }
+      ]
+    },
+    {
+      "category": "Identity & Access Management",
+      "description": "Tools for authentication, authorization, and user management",
+      "services": [
+        {
+          "service": "Keycloak",
+          "description": "Open-source identity and access management"
+        },
+        {
+          "service": "Auth0",
+          "description": "Cloud identity management and authentication"
+        },
+        {
+          "service": "Okta",
+          "description": "Identity and access management for enterprises"
+        }
+      ]
+    },
+    {
+      "category": "AI & Machine Learning",
+      "description": "Cloud-based AI and machine learning platforms",
+      "services": [
+        {
+          "service": "TensorFlow",
+          "description": "Open-source machine learning framework"
+        },
+        {
+          "service": "Hugging Face",
+          "description": "AI model repository and NLP tools"
+        },
+        {
+          "service": "MLflow",
+          "description": "Platform for managing ML lifecycle"
+        }
+      ]
+    },
+    {
+      "category": "Collaboration & Productivity",
+      "description": "Cloud-based tools for communication and workflow management",
+      "services": [
+        {
+          "service": "Mattermost",
+          "description": "Open-source team collaboration and messaging"
+        },
+        {
+          "service": "Nextcloud",
+          "description": "Self-hosted cloud storage and collaboration suite"
+        },
+        {
+          "service": "ONLYOFFICE",
+          "description": "Online document editing and collaboration platform"
+        }
+      ]
+    }
+  ]
+  
