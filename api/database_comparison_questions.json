@@ -1,77 +1,138 @@
 [
   {
-    "question": "What type of data will be stored in the cloud?",
+    "question": "What type of data will you be storing?",
     "answers": [
-      "Structured Data (e.g., numbers, dates, text)",
-      "Unstructured Data (e.g., images, videos, audio)"
+      "Structured (numeric, text, dates)",
+      "Unstructured (images, audio, video)",
+      "Mixed data types"
     ]
   },
   {
-    "question": "How much data will be stored in the cloud?",
-    "answers": ["Less than 100GB", "Between 100GB and 1TB", "More than 1TB"]
-  },
-  {
-    "question": "How frequently will data be accessed and updated in the cloud?",
+    "question": "How much data do you expect to store?",
     "answers": [
-      "Infrequently (less than once per day)",
-      "Occasionally (once per day or more)",
-      "Frequently (multiple times per day)"
+      "Small (<100GB)",
+      "Medium (100GB-1TB)",
+      "Large (>1TB)"
     ]
   },
   {
-    "question": "How important is data consistency and durability?",
+    "question": "How often will your app access/update data?",
     "answers": [
-      "High (data must always be consistent and durable)",
-      "Medium (occasional data loss or inconsistency is acceptable)",
-      "Low (data loss or inconsistency is acceptable)"
+      "Rarely (≤ once daily)",
+      "Occasionally (few times daily)",
+      "Frequently (many times daily)"
     ]
   },
   {
-    "question": "What level of security is required for the data?",
+    "question": "How critical is consistency and durability?",
     "answers": [
-      "Low (no sensitive data is being stored)",
-      "Medium (data is sensitive but not highly classified)",
-      "High (data is highly classified or sensitive)"
+      "Very high (strict consistency)",
+      "Medium (minor inconsistencies ok)",
+      "Low (eventual consistency ok)"
     ]
   },
   {
-    "question": "What is the budget for cloud storage/database?",
+    "question": "What level of security do you need?",
     "answers": [
-      "Low (less than $100 per month)",
-      "Medium (between $100 and $500 per month)",
-      "High (more than $500 per month)"
+      "Basic (non-sensitive)",
+      "Moderate (some sensitivity)",
+      "High (highly sensitive)"
     ]
   },
   {
-    "question": "What kind of access is required for the data?",
+    "question": "What is your database budget?",
     "answers": [
-      "Read-Only (users can only view data)",
-      "Read/Write (users can view and modify data)",
-      "Read/Write/Delete (users can view, modify, and delete data)"
+      "Low (<$100/month)",
+      "Medium ($100-$500/month)",
+      "High (>$500/month)"
     ]
   },
   {
-    "question": "What is the expected growth rate of the data?",
+    "question": "How will users interact with your data?",
     "answers": [
-      "Slow (less than 10% growth per year)",
-      "Moderate (between 10% and 50% growth per year)",
-      "High (more than 50% growth per year)"
+      "Read-only",
+      "Read/Write",
+      "Full control"
     ]
   },
   {
-    "question": "What is the expected workload of the application that will be using the cloud storage/database?",
+    "question": "How quickly will your data grow?",
     "answers": [
-      "Low (minimal workload, few users)",
-      "Moderate (moderate workload, several users)",
-      "High (heavy workload, many users)"
+      "Slow (<10%/year)",
+      "Moderate (10-50%/year)",
+      "Rapid (>50%/year)"
     ]
   },
   {
-    "question": "What kind of architecture is the application running on?",
+    "question": "What workload will your app have?",
     "answers": [
-      "Serverless (e.g., AWS Lambda, Google Cloud Functions)",
-      "Containerized (e.g., Kubernetes, Docker Swarm)",
-      "Virtual Machines (e.g., EC2, Azure VMs)"
+      "Light workload",
+      "Moderate workload",
+      "Heavy workload"
+    ]
+  },
+  {
+    "question": "What is your application's architecture?",
+    "answers": [
+      "Serverless",
+      "Containerized",
+      "Traditional (servers/VMs)"
+    ]
+  },
+  {
+    "question": "Do you require ACID transaction support?",
+    "answers": [
+      "Yes (full ACID)",
+      "Partial (some ACID)",
+      "No (eventual consistency)"
+    ]
+  },
+  {
+    "question": "What are your latency requirements?",
+    "answers": [
+      "Low (<1ms)",
+      "Moderate (few ms)",
+      "Not critical"
+    ]
+  },
+  {
+    "question": "Need multi-region replication/global distribution?",
+    "answers": [
+      "Global replication",
+      "Regional replication",
+      "Single region"
+    ]
+  },
+  {
+    "question": "What are your backup/disaster recovery needs?",
+    "answers": [
+      "Frequent automated backups",
+      "Regular backups",
+      "Minimal backups"
+    ]
+  },
+  {
+    "question": "Any regulatory compliance or data residency?",
+    "answers": [
+      "Strict compliance",
+      "Some compliance",
+      "No compliance"
+    ]
+  },
+  {
+    "question": "How important is management and integration?",
+    "answers": [
+      "Very important",
+      "Somewhat important",
+      "Not important"
+    ]
+  },
+  {
+    "question": "Will you perform complex queries/analytics?",
+    "answers": [
+      "Complex queries needed",
+      "Basic analytics",
+      "Simple queries"
     ]
   }
 ]
