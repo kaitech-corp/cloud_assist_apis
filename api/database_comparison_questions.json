@@ -1,138 +1,74 @@
 [
   {
-    "question": "What type of data will you be storing?",
+    "question": "What are you building?",
     "answers": [
-      "Structured (numeric, text, dates)",
-      "Unstructured (images, audio, video)",
-      "Mixed data types"
+      "Web or mobile app",
+      "Analytics or reporting system",
+      "Migration from an existing database"
     ]
   },
   {
-    "question": "How much data do you expect to store?",
+    "question": "What shape is your data?",
     "answers": [
-      "Small (<100GB)",
-      "Medium (100GB-1TB)",
-      "Large (>1TB)"
+      "Tables with rows and relationships",
+      "Documents or JSON-like records",
+      "Events, metrics, or time-series data"
     ]
   },
   {
-    "question": "How often will your app access/update data?",
+    "question": "Do you need SQL joins and transactions?",
     "answers": [
-      "Rarely (≤ once daily)",
-      "Occasionally (few times daily)",
-      "Frequently (many times daily)"
+      "Yes, standard relational SQL",
+      "Some transactions, but simple queries",
+      "No, simple lookups or analytics are enough"
     ]
   },
   {
-    "question": "How critical is consistency and durability?",
+    "question": "How will the data be used most often?",
     "answers": [
-      "Very high (strict consistency)",
-      "Medium (minor inconsistencies ok)",
-      "Low (eventual consistency ok)"
+      "App reads and writes",
+      "Dashboards and large queries",
+      "Fast cache or session lookups"
     ]
   },
   {
-    "question": "What level of security do you need?",
+    "question": "How much scale do you expect soon?",
     "answers": [
-      "Basic (non-sensitive)",
-      "Moderate (some sensitivity)",
-      "High (highly sensitive)"
+      "Small app or prototype",
+      "Production app with steady growth",
+      "Large or high-throughput workload"
     ]
   },
   {
-    "question": "What is your database budget?",
+    "question": "Do users need real-time sync or offline support?",
     "answers": [
-      "Low (<$100/month)",
-      "Medium ($100-$500/month)",
-      "High (>$500/month)"
+      "Yes, real-time or offline app data",
+      "Maybe later",
+      "No, normal request/response access is fine"
     ]
   },
   {
-    "question": "How will users interact with your data?",
+    "question": "Do you need global availability or strong consistency?",
     "answers": [
-      "Read-only",
-      "Read/Write",
-      "Full control"
+      "Yes, global and strongly consistent",
+      "Regional high availability is enough",
+      "Single region is fine"
     ]
   },
   {
-    "question": "How quickly will your data grow?",
+    "question": "Is this data the system of record?",
     "answers": [
-      "Slow (<10%/year)",
-      "Moderate (10-50%/year)",
-      "Rapid (>50%/year)"
+      "Yes, it must be durable",
+      "No, it is temporary or cached",
+      "It is copied from another source"
     ]
   },
   {
-    "question": "What workload will your app have?",
+    "question": "Do you have compliance or data residency needs?",
     "answers": [
-      "Light workload",
-      "Moderate workload",
-      "Heavy workload"
-    ]
-  },
-  {
-    "question": "What is your application's architecture?",
-    "answers": [
-      "Serverless",
-      "Containerized",
-      "Traditional (servers/VMs)"
-    ]
-  },
-  {
-    "question": "Do you require ACID transaction support?",
-    "answers": [
-      "Yes (full ACID)",
-      "Partial (some ACID)",
-      "No (eventual consistency)"
-    ]
-  },
-  {
-    "question": "What are your latency requirements?",
-    "answers": [
-      "Low (<1ms)",
-      "Moderate (few ms)",
-      "Not critical"
-    ]
-  },
-  {
-    "question": "Need multi-region replication/global distribution?",
-    "answers": [
-      "Global replication",
-      "Regional replication",
-      "Single region"
-    ]
-  },
-  {
-    "question": "What are your backup/disaster recovery needs?",
-    "answers": [
-      "Frequent automated backups",
-      "Regular backups",
-      "Minimal backups"
-    ]
-  },
-  {
-    "question": "Any regulatory compliance or data residency?",
-    "answers": [
-      "Strict compliance",
-      "Some compliance",
-      "No compliance"
-    ]
-  },
-  {
-    "question": "How important is management and integration?",
-    "answers": [
-      "Very important",
-      "Somewhat important",
-      "Not important"
-    ]
-  },
-  {
-    "question": "Will you perform complex queries/analytics?",
-    "answers": [
-      "Complex queries needed",
-      "Basic analytics",
-      "Simple queries"
+      "Yes, strict requirements",
+      "Some internal requirements",
+      "No special requirements"
     ]
   }
 ]

@@ -1,183 +1,336 @@
 [
-    {
-      "category": "Compute",
-      "description": "Cloud computing platforms for running applications and workloads",
-      "services": [
+  {
+    "category": "Compute",
+    "description": "Run scalable virtual machines and containers with open source and third-party solutions.",
+    "services": [
+      {
+        "service": "OpenStack",
+        "description": "Open source cloud computing infrastructure for creating private and public clouds."
+      },
+      {
+        "service": "Kubernetes",
+        "description": "Open-source container orchestration system for automating application deployment, scaling, and management. (Can be self-hosted or using distributions like Rancher, OpenShift, etc.)"
+      },
+      {
+        "service": "Rancher",
+        "description": "Complete software stack for teams adopting containers. Manages Kubernetes clusters."
+      },
+      {
+        "service": "OpenShift",
+        "description": "Red Hat's enterprise Kubernetes platform with developer-centric tooling."
+      },
+      {
+        "service": "HashiCorp Nomad",
+        "description": "Scheduler for deploying applications and infrastructure across a cluster of machines."
+      },
+       {
+        "service": "Proxmox VE",
+        "description": "Open-source server virtualization environment."
+      },
+      {
+        "service": "Cloud Foundry",
+        "description": "Open source platform as a service (PaaS)."
+      },
+      {
+        "service": "Hetzner Cloud",
+        "description": "IaaS cloud provider offering virtual machines and other compute resources."
+      },
+       {
+        "service": "DigitalOcean",
+        "description": "IaaS cloud provider offering simple and scalable virtual machines (Droplets)."
+      },
+       {
+        "service": "Linode",
+        "description": "IaaS cloud provider specializing in Linux virtual machines, storage, and networking."
+      }
+    ]
+  },
+  {
+    "category": "Storage",
+    "description": "Store data with open source and third-party cloud storage solutions.",
+    "services": [
+      {
+        "service": "Ceph",
+        "description": "Open source distributed object storage, block storage, and file system."
+      },
+      {
+        "service": "MinIO",
+        "description": "High-performance, S3 compatible object storage."
+      },
+      {
+        "service": "GlusterFS",
+        "description": "Open source distributed file system."
+      },
+      {
+        "service": "Seafile",
+        "description": "Open source file syncing and sharing solution."
+      },
+      {
+        "service": "Nextcloud",
+        "description": "Open source self-hosted file sync and share and collaboration platform."
+      },
+      {
+        "service": "Owncloud",
+        "description": "Open source self-hosted file sync and share and collaboration platform (fork of Nextcloud)."
+      },
+      {
+        "service": "Storj",
+        "description": "Decentralized cloud storage platform."
+      },
+      {
+        "service": "Backblaze B2",
+        "description": "Simple cloud storage"
+      }
+    ]
+  },
+  {
+    "category": "Databases",
+    "description": "Database solutions, both SQL and NoSQL, from open source projects and third-party providers.",
+    "services": [
+      {
+        "service": "PostgreSQL",
+        "description": "Open source object-relational database system."
+      },
+      {
+        "service": "MySQL",
+        "description": "Open source relational database management system."
+      },
+      {
+        "service": "MariaDB",
+        "description": "Open source relational database (binary drop-in replacement for MySQL)."
+      },
+      {
+        "service": "MongoDB",
+        "description": "Open source document database."
+      },
+      {
+        "service": "Redis",
+        "description": "Open source, in-memory data structure store, used as a database, cache and message broker."
+      },
+      {
+        "service": "Cassandra",
+        "description": "Open source, distributed, wide-column store, NoSQL database."
+      },
+      {
+        "service": "Couchbase",
+        "description": "Open source, NoSQL multi-model document-oriented database."
+      },
+      {
+        "service": "InfluxDB",
+        "description": "Open source time series database."
+      },
+      {
+        "service": "TimescaleDB",
+        "description": "Open-source time-series database optimized for fast ingest and complex queries; built as an extension on PostgreSQL."
+      },
+      {
+        "service": "FaunaDB",
+        "description": "Serverless, globally distributed, transactional database."
+      },
+      {
+        "service": "CockroachDB",
+        "description": "Distributed SQL database built on a transactional and strongly consistent key-value store."
+      }
+    ]
+  },
+  {
+    "category": "Analytics",
+    "description": "Tools for collecting, processing, and analyzing data, focusing on open source and specialized providers.",
+    "services": [
+      {
+        "service": "Apache Kafka",
+        "description": "Open source distributed event streaming platform."
+      },
+      {
+        "service": "Apache Spark",
+        "description": "Open source distributed computing system for big data processing."
+      },
+      {
+        "service": "Elasticsearch",
+        "description": "Distributed, RESTful search and analytics engine."
+      },
+      {
+        "service": "Grafana",
+        "description": "Open source data visualization and monitoring tool."
+      },
+      {
+        "service": "Prometheus",
+        "description": "Open source systems monitoring and alerting toolkit."
+      },
+      {
+        "service": "Metabase",
+        "description": "Open source business intelligence tool."
+      },
+      {
+        "service": "Superset",
+        "description": "Open source data exploration and visualization platform."
+      },
+      {
+        "service": "Snowflake",
+        "description": "Cloud-based data warehouse."
+      },
+       {
+        "service": "Rockset",
+        "description": "Real-time analytics in the cloud."
+      }
+    ]
+  },
+  {
+    "category": "Networking",
+    "description": "Manage and secure networks with these open source and third-party solutions.",
+    "services": [
+      {
+        "service": "pfSense",
+        "description": "Open source firewall and routing platform."
+      },
+      {
+        "service": "OPNsense",
+        "description": "Open source firewall and routing platform (fork of pfSense)."
+      },
+      {
+        "service": "WireGuard",
+        "description": "Open source VPN protocol."
+      },
+      {
+        "service": "Tailscale",
+        "description": "Zero config VPN based on WireGuard."
+      },
+      {
+        "service": "Cloudflare",
+        "description": "CDN, DNS, DDoS protection, and security services."
+      },
+      {
+        "service": "Akamai",
+        "description": "CDN, cloud security, and web performance solutions."
+      },
+      {
+        "service": "Fastly",
+        "description": "CDN, edge cloud platform."
+      },
+       {
+        "service": "HAProxy",
+        "description": "Open source load balancer."
+      }
+    ]
+  },
+  {
+    "category": "Management",
+    "description": "Tools for managing costs, access, and infrastructure as code.",
+    "services": [
+      {
+        "service": "Terraform",
+        "description": "Open source infrastructure as code tool."
+      },
+      {
+        "service": "Ansible",
+        "description": "Open source automation engine."
+      },
+      {
+        "service": "Chef",
+        "description": "Infrastructure automation framework."
+      },
+       {
+        "service": "Puppet",
+        "description": "Infrastructure automation framework."
+      },
+      {
+        "service": "Vault",
+        "description": "Open source tool for secrets management and data protection."
+      },
+       {
+        "service": "CloudQuery",
+        "description": "Open-source cloud asset inventory."
+      }
+    ]
+  },
+  {
+    "category": "Security",
+    "description": "Solutions for security, compliance, and vulnerability management.",
+    "services": [
+      {
+        "service": "OWASP ZAP",
+        "description": "Open source web application security scanner."
+      },
+      {
+        "service": "Nessus",
+        "description": "Vulnerability scanner."
+      },
+      {
+        "service": "Snort",
+        "description": "Open source intrusion detection system (IDS)."
+      },
+      {
+        "service": "Suricata",
+        "description": "Open source intrusion detection system (IDS)."
+      },
+      {
+        "service": "OpenVAS",
+        "description": "Open source vulnerability scanner."
+      },
+      {
+        "service": "Lacework",
+        "description": "Cloud security platform."
+      },
+       {
+        "service": "Sysdig",
+        "description": "Cloud native visibility and security platform."
+      }
+    ]
+  },
+  {
+    "category": "CICD",
+    "description": "Continuous integration and delivery platforms, both open source and commercial.",
+    "services": [
+      {
+        "service": "Jenkins",
+        "description": "Open source automation server."
+      },
+      {
+        "service": "GitLab CI",
+        "description": "CI/CD integrated into GitLab."
+      },
+      {
+        "service": "CircleCI",
+        "description": "Cloud-based CI/CD platform."
+      },
+      {
+        "service": "Travis CI",
+        "description": "Cloud-based CI/CD platform."
+      },
+      {
+        "service": "Argo CD",
+        "description": "Declarative, GitOps continuous delivery tool for Kubernetes."
+      },
+      {
+        "service": "Flux",
+        "description": "GitOps operator for Kubernetes."
+      }
+    ]
+  },
+  {
+     "category": "Serverless",
+     "description": "Serverless functions and container platforms.",
+     "services":[
         {
-          "service": "Docker",
-          "description": "Containerization platform for application deployment"
+           "service": "OpenFaaS",
+           "description": "Open source serverless functions framework."
         },
         {
-          "service": "Kubernetes",
-          "description": "Open-source container orchestration system"
+           "service": "Knative",
+           "description": "Kubernetes-based platform to deploy and manage serverless workloads."
         },
         {
-          "service": "HashiCorp Nomad",
-          "description": "Flexible workload orchestrator for containers and VMs"
+           "service": "Apache OpenWhisk",
+           "description": "Open source serverless cloud platform."
+        },
+        {
+           "service": "Netlify",
+           "description": "Platform for building and deploying web applications."
+        },
+        {
+           "service": "Vercel",
+           "description": "Platform for building and deploying web applications."
         }
-      ]
-    },
-    {
-      "category": "Storage",
-      "description": "Cloud storage solutions for object, block, and file storage",
-      "services": [
-        {
-          "service": "MinIO",
-          "description": "High-performance object storage compatible with S3"
-        },
-        {
-          "service": "Ceph",
-          "description": "Distributed storage system for block, object, and file storage"
-        },
-        {
-          "service": "GlusterFS",
-          "description": "Scale-out network-attached storage (NAS)"
-        }
-      ]
-    },
-    {
-      "category": "Networking",
-      "description": "Cloud networking solutions for connectivity and security",
-      "services": [
-        {
-          "service": "Cloudflare",
-          "description": "CDN, DDoS protection, and security services"
-        },
-        {
-          "service": "Traefik",
-          "description": "Cloud-native edge router and reverse proxy"
-        },
-        {
-          "service": "NGINX",
-          "description": "Web server, load balancer, and reverse proxy"
-        }
-      ]
-    },
-    {
-      "category": "Databases",
-      "description": "Cloud database solutions for structured and unstructured data",
-      "services": [
-        {
-          "service": "PostgreSQL",
-          "description": "Open-source relational database with advanced features"
-        },
-        {
-          "service": "MariaDB",
-          "description": "Fork of MySQL with additional performance improvements"
-        },
-        {
-          "service": "Cassandra",
-          "description": "Distributed NoSQL database for scalability and performance"
-        }
-      ]
-    },
-    {
-      "category": "Monitoring & Logging",
-      "description": "Cloud observability tools for logs, metrics, and tracing",
-      "services": [
-        {
-          "service": "Prometheus",
-          "description": "Monitoring and alerting toolkit for cloud applications"
-        },
-        {
-          "service": "Grafana",
-          "description": "Visualization and dashboard tool for monitoring data"
-        },
-        {
-          "service": "ELK Stack",
-          "description": "Log management stack (Elasticsearch, Logstash, Kibana)"
-        }
-      ]
-    },
-    {
-      "category": "Security",
-      "description": "Cloud security tools for authentication, encryption, and compliance",
-      "services": [
-        {
-          "service": "HashiCorp Vault",
-          "description": "Secrets management and data protection platform"
-        },
-        {
-          "service": "Let’s Encrypt",
-          "description": "Free SSL/TLS certificate authority"
-        },
-        {
-          "service": "Falco",
-          "description": "Runtime security monitoring for containers"
-        }
-      ]
-    },
-    {
-      "category": "CI/CD & DevOps",
-      "description": "Continuous integration and deployment tools for automation",
-      "services": [
-        {
-          "service": "Jenkins",
-          "description": "Open-source automation server for CI/CD"
-        },
-        {
-          "service": "GitLab CI/CD",
-          "description": "Integrated DevOps pipeline within GitLab"
-        },
-        {
-          "service": "ArgoCD",
-          "description": "GitOps continuous delivery tool for Kubernetes"
-        }
-      ]
-    },
-    {
-      "category": "Identity & Access Management",
-      "description": "Tools for authentication, authorization, and user management",
-      "services": [
-        {
-          "service": "Keycloak",
-          "description": "Open-source identity and access management"
-        },
-        {
-          "service": "Auth0",
-          "description": "Cloud identity management and authentication"
-        },
-        {
-          "service": "Okta",
-          "description": "Identity and access management for enterprises"
-        }
-      ]
-    },
-    {
-      "category": "AI & Machine Learning",
-      "description": "Cloud-based AI and machine learning platforms",
-      "services": [
-        {
-          "service": "TensorFlow",
-          "description": "Open-source machine learning framework"
-        },
-        {
-          "service": "Hugging Face",
-          "description": "AI model repository and NLP tools"
-        },
-        {
-          "service": "MLflow",
-          "description": "Platform for managing ML lifecycle"
-        }
-      ]
-    },
-    {
-      "category": "Collaboration & Productivity",
-      "description": "Cloud-based tools for communication and workflow management",
-      "services": [
-        {
-          "service": "Mattermost",
-          "description": "Open-source team collaboration and messaging"
-        },
-        {
-          "service": "Nextcloud",
-          "description": "Self-hosted cloud storage and collaboration suite"
-        },
-        {
-          "service": "ONLYOFFICE",
-          "description": "Online document editing and collaboration platform"
-        }
-      ]
-    }
-  ]
-  
+     ]
+  }
+]

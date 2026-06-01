@@ -1,431 +1,278 @@
 [
   {
-    "service": "Virtual Private Network (VPN)",
-    "description": "Secure connection between two or more networks via the internet.",
-    "detail": "Cloud Virtual Private Network (VPN) is a secure connection between two or more networks via the internet. It is used to connect private networks such as local area networks (LANs), wide area networks (WANs), and intranets to the public internet. VPNs provide a secure, encrypted connection for data transmission, enabling businesses to securely connect to private networks from any location. Additionally, VPNs can be used to access resources on a private network from a remote location.",
+    "service": "Virtual Private Cloud",
+    "description": "Global software-defined networking for Google Cloud resources.",
+    "detail": "Virtual Private Cloud (VPC) provides isolated, global private networks for Compute Engine, Google Kubernetes Engine, Cloud Run, and managed services. Teams use it to define subnets, routes, firewall policies, private connectivity, and IP addressing across regions while keeping workloads on Google's backbone.",
     "benefits": [
-      "Improved security:VPC provides secure connectivity between cloud resources and a firewall to protect against malicious traffic.",
-      "High performance:VPC provides high-speed access to cloud resources, allowing businesses to quickly access data and resources.",
-      "Cost savings:VPC helps businesses reduce operational costs by allowing them to design their own cloud infrastructure to meet their specific needs.",
-      "Flexibility:VPC allows businesses to customize their network and access services from multiple cloud providers, enabling them to scale and adjust their infrastructure to meet changing needs."
+      "Global network with regional subnets",
+      "Granular routing, firewall, and IP address controls",
+      "Private connectivity for Google Cloud and hybrid workloads"
     ],
     "cons": [
-      "Dependence on Internet Connectivity: Cloud VPN relies on internet connectivity to establish and maintain connections between remote devices and corporate networks. Any issues with internet connectivity, such as network outages or bandwidth limitations, can affect the performance of the VPN, leading to slow connections or dropped connections.",
-      "Security Risks: Although Cloud VPN provides an encrypted tunnel to protect data traffic, there are still potential security risks. Cloud VPN connections are vulnerable to attacks such as Distributed Denial of Service (DDoS) and Man-in-the-Middle (MITM) attacks, which can compromise data privacy and security.",
-      "Subscription Costs: Using Cloud VPN services often incurs subscription costs, which can be a significant expense for businesses, especially those with large numbers of remote employees or branch offices. Additionally, subscription costs may increase as businesses scale up their VPN usage, adding to the overall cost of using Cloud VPN."
+      "Requires careful IP address and route planning",
+      "Misconfigured firewall rules can block valid traffic or expose workloads"
     ],
     "useCases": [
-      "Secure Remote Access: One of the primary use cases for Cloud VPN is providing secure remote access to corporate networks, data, and applications. Cloud VPN allows remote employees to connect to the corporate network from anywhere in the world using an encrypted tunnel, thus ensuring data privacy and security.",
-      "Multi-Cloud Connectivity: Another important use case for Cloud VPN is connecting multiple cloud environments. This allows businesses to securely exchange data between different cloud environments such as AWS, Azure, and Google Cloud. By using Cloud VPN, businesses can avoid the costs and complexity of setting up their own physical infrastructure to connect different cloud environments.",
-      "Difficult to integrate with other services",
-      "Branch Office Connectivity: Cloud VPN can also be used to securely connect branch offices to a central corporate network. This is particularly useful for businesses with multiple offices in different geographic locations. By using Cloud VPN, businesses can establish secure and reliable connections between the central corporate network and branch offices without the need for expensive dedicated infrastructure."
+      "Isolating production, staging, and shared-service networks",
+      "Running private GKE and Compute Engine workloads",
+      "Building hub-and-spoke network topologies"
     ],
-    "link": "",
-    "example": "A company that needs to securely access its on-premises resources from remote locations can use Cloud VPN to establish a secure connection between its remote offices and its on-premises network. This will enable the company to securely share data between its remote offices and its on-premises network, as well as access resources on its on-premises network from any remote location."
+    "link": "https://cloud.google.com/vpc",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A SaaS company creates separate VPCs for production and development, connects them through a shared services hub, and applies firewall policies so only approved service ports are reachable."
   },
   {
-    "service": "Cloud Interconnect",
-    "description": "A private connection from a customer's on-premises network to Google's Cloud Platform.",
-    "detail": "Cloud Interconnect is a private connection from a customer's on-premises network to Google's Cloud Platform. It enables customers to securely connect their on-premises network to GCP and extend their network into the cloud. Additionally, Cloud Interconnect provides customers with greater control over the flow of traffic between their on-premises network and GCP.",
+    "service": "Cloud Load Balancing",
+    "description": "Global and regional load balancing for applications and services.",
+    "detail": "Cloud Load Balancing distributes HTTP(S), TCP, SSL proxy, UDP, and internal traffic across backends. It supports global anycast front ends, health checks, autoscaling integrations, Cloud CDN, Cloud Armor, and private service delivery patterns.",
     "benefits": [
-      "Secure connection between customer's on-premises network and Google's Cloud Platform",
-      "Greater control over the flow of traffic between on-premises network and GCP"
+      "Global front ends with a single anycast IP",
+      "Built-in health checks and backend failover",
+      "Works with Cloud CDN, Cloud Armor, GKE, Compute Engine, and serverless backends"
     ],
     "cons": [
-      "Complexity: Cloud Interconnect can be complex to set up and configure, requiring specialized knowledge and expertise. This can result in longer deployment times, increased costs, and potential errors if not properly implemented.",
-      "Higher Cost: Cloud Interconnect can also be more expensive than traditional internet connectivity options, particularly for small and medium-sized businesses. There may be additional fees for data transfer, usage, and network access, which can quickly add up.",
-      "Limited Coverage: Another potential disadvantage of Cloud Interconnect is limited coverage. Not all cloud service providers support Cloud Interconnect, and not all locations may be eligible for connectivity. This can be particularly challenging for businesses with a global presence or those that operate in remote areas with limited infrastructure."
+      "Several load balancer types require correct selection up front",
+      "Advanced routing and certificate setup can add operational complexity"
     ],
     "useCases": [
-      "Secure data transfer between on-premises network and GCP",
-      "Connecting multiple on-premises networks to GCP",
-      "Optimizing performance of applications running on GCP"
+      "Serving global web applications",
+      "Balancing internal microservice traffic",
+      "Modernizing traffic management across regions"
     ],
-    "link": "",
-    "example": "A company that wants to securely transfer data between its on-premises network and GCP can use Cloud Interconnect to establish a private connection between them. This will enable the company to securely transfer data between its on-premises network and GCP, as well as optimize the performance of its applications running on GCP."
-  },
-  {
-    "service": "Load Balancing",
-    "description": "A service for distributing incoming traffic across multiple virtual machines (VMs).",
-    "detail": "Cloud Load Balancing is a service for distributing incoming traffic across multiple virtual machines (VMs). It enables customers to evenly distribute incoming traffic across multiple VMs, improving the efficiency and performance of their applications. Additionally, Cloud Load Balancing can be used to route traffic to different VMs based on the type of request, allowing customers to optimize the performance of their applications.",
-    "benefits": [
-      "Evenly distribute incoming traffic across multiple virtual machines",
-      "Route traffic to different VMs based on type of request",
-      "Optimize performance of applications"
-    ],
-    "cons": [
-      "High cost of implementation",
-      "Limited scalability"
-    ],
-    "useCases": [
-      "Distributing incoming traffic across multiple VMs",
-      "Routing traffic to different VMs based on type of request",
-      "Optimizing performance of applications"
-    ],
-    "link": "",
-    "example": "A company that wants to improve the performance of its applications can use Cloud Load Balancing to distribute incoming traffic across multiple VMs. This will enable the company to evenly distribute incoming traffic across multiple VMs, as well as route traffic to different VMs based on the type of request, allowing it to optimize the performance of its applications."
-  },
-  {
-    "service": "Cloud Network Service Tiers",
-    "description": "Network service tiers for optimizing network performance.",
-    "detail": "Cloud Network Service Tiers are network service tiers designed to optimize network performance. These tiers provide customers with different levels of network performance depending on their requirements. Customers can choose from Standard, Premium, or High Performance tiers, each of which provides different levels of performance, reliability, and availability.",
-    "benefits": [
-      "Optimize network performance",
-      "Different levels of network performance depending on customer requirements",
-      "Reliability and availability"
-    ],
-    "cons": [
-      "High cost of implementation",
-      "Limited scalability"
-    ],
-    "useCases": [
-      "Optimizing network performance",
-      "Ensuring reliability and availability of applications"
-    ],
-    "link": "",
-    "example": "A company that wants to ensure the reliability and availability of its applications can use Cloud Network Service Tiers to optimize its network performance. This will enable the company to choose from different levels of network performance that best fits its requirements, as well as ensure reliability and availability of its applications."
+    "link": "https://cloud.google.com/load-balancing",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "An ecommerce platform uses an external Application Load Balancer with managed certificates, Cloud CDN, and Cloud Armor to serve customers globally while failing over unhealthy backends."
   },
   {
     "service": "Cloud CDN",
-    "description": "A content delivery network (CDN) for delivering content quickly and securely.",
-    "detail": "Cloud CDN is a content delivery network (CDN) for delivering content quickly and securely. It enables customers to quickly and securely deliver content to users with low latency and high performance. Additionally, Cloud CDN can be used to optimize the delivery of static and dynamic content, allowing customers to improve the performance of their applications.",
+    "description": "Content delivery network for cacheable web and media content.",
+    "detail": "Cloud CDN caches static and dynamic cacheable content at Google's edge locations. It integrates with external Application Load Balancers and backend services to reduce latency, lower origin load, and improve availability for global users.",
     "benefits": [
-      "Quick and secure delivery of content",
-      "Low latency and high performance",
-      "Optimize delivery of static and dynamic content"
+      "Lower latency for global users",
+      "Reduced origin traffic and serving cost",
+      "Integrated with Google Cloud load balancing and security controls"
     ],
     "cons": [
-      "High cost of implementation",
-      "Limited scalability"
+      "Best results require cache-aware application design",
+      "Cache invalidation and TTL settings must be managed carefully"
     ],
     "useCases": [
-      "Delivering content quickly and securely",
-      "Optimizing the delivery of static and dynamic content"
+      "Accelerating images, scripts, downloads, and static assets",
+      "Reducing origin load during traffic spikes",
+      "Serving web applications to distributed users"
     ],
-    "link": "",
-    "example": "A company that wants to improve the performance of its applications can use Cloud CDN to quickly and securely deliver content to users. This will enable the company to deliver content quickly and securely with low latency and high performance, as well as optimize the delivery of static and dynamic content, allowing it to improve the performance of its applications."
+    "link": "https://cloud.google.com/cdn",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A training site uses Cloud CDN in front of Cloud Storage and an Application Load Balancer so course videos and assets load quickly for students in different regions."
   },
   {
     "service": "Cloud DNS",
-    "description": "A domain name system (DNS) service for managing domain names and IP addresses.",
-    "detail": "Cloud DNS is a domain name system (DNS) service for managing domain names and IP addresses. It enables customers to manage their domain names and IP addresses in a secure, reliable, and scalable environment. Additionally, Cloud DNS can be used to quickly and easily update DNS records, allowing customers to keep their domain names and IP addresses up-to-date.",
+    "description": "Managed authoritative DNS on Google's infrastructure.",
+    "detail": "Cloud DNS hosts public and private DNS zones with low-latency serving, APIs, IAM controls, DNSSEC support, and integration with VPC private name resolution. It is used to manage production domains, internal service names, and hybrid DNS patterns.",
     "benefits": [
-      "SHigh Availability: Google Cloud DNS offers a highly available and globally distributed infrastructure, which ensures that DNS queries are processed quickly and reliably from any location. Google's infrastructure is designed to handle large-scale traffic and mitigate DDoS attacks, which helps to ensure high availability and uptime.",
-      "Integration with Google Cloud Platform: Google Cloud DNS integrates seamlessly with other Google Cloud Platform services, such as Compute Engine, Kubernetes, and Load Balancing, making it easy to manage DNS configurations and automate DNS-related tasks. Additionally, Google Cloud DNS supports API-based management, which allows users to manage DNS records programmatically.",
-      "Scalability: Google Cloud DNS is highly scalable, allowing users to easily manage large DNS zones with millions of records. Google's infrastructure is designed to handle high traffic volumes and can automatically scale resources up or down based on demand. This ensures that DNS queries are processed quickly and efficiently, even during periods of high traffic or spikes in demand."
+      "Reliable managed DNS with API and CLI automation",
+      "Supports public and private zones",
+      "Integrates with VPC and hybrid name resolution"
     ],
     "cons": [
-      "Limited DNS Record Types:  This can be a problem for users who need to manage more complex DNS configurations. For example, Google Cloud DNS does not support NAPTR or SRV record types.",
-      "No Zone File Import: This can be a problem for users who need to migrate DNS configurations from other providers or systems. Instead, users must manually create DNS records in the Google Cloud DNS console.",
-      "Reliance on Google Cloud Platform: This can be a disadvantage for users who prefer to have more control over their DNS configurations or who are concerned about vendor lock-in. Additionally, users must have a Google Cloud Platform account and be familiar with Google's console and API to use Google Cloud DNS."
+      "DNS design mistakes can affect every dependent service",
+      "Split-horizon and hybrid DNS require disciplined naming conventions"
     ],
     "useCases": [
-      "Hosting Public Websites: Google Cloud DNS can be used to host public websites with high availability and DNSSEC support, ensuring fast and secure access from any location.",
-      "Managing Private Networks: Google Cloud DNS can be used to manage DNS configurations for private networks hosted on Google Cloud Platform, ensuring that private IP addresses and hostnames are routed correctly.",
-      "Load Balancing: Google Cloud DNS can be used to distribute traffic across multiple instances of an application or service, ensuring even traffic distribution, improving performance, and scalability of applications and services hosted on Google Cloud Platform."
+      "Hosting public application DNS records",
+      "Managing private names for internal services",
+      "Automating DNS changes in deployment pipelines"
     ],
-    "link": "",
-    "example": "A company that wants to keep its domain names and IP addresses up-to-date can use Cloud DNS to manage them. This will enable the company to manage its domain names and IP addresses in a secure, reliable, and scalable environment, as well as quickly and easily update its DNS records, allowing it to keep its domain names and IP addresses up-to-date."
+    "link": "https://cloud.google.com/dns",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A platform team manages private zones for internal APIs and public zones for customer-facing domains, applying IAM so only deployment automation can change production records."
+  },
+  {
+    "service": "Cloud NAT",
+    "description": "Managed outbound internet access for private resources.",
+    "detail": "Cloud NAT lets private Compute Engine and GKE workloads reach the internet for updates and external APIs without assigning external IP addresses. It is managed, scalable, and configured at the VPC and Cloud Router level.",
+    "benefits": [
+      "Keeps workloads private while allowing controlled egress",
+      "No NAT instances to patch or scale",
+      "Works with Cloud Router and VPC routes"
+    ],
+    "cons": [
+      "Only handles outbound connections and return traffic",
+      "Port allocation and logging settings need review for high-scale workloads"
+    ],
+    "useCases": [
+      "Allowing private VMs to download patches",
+      "Giving private GKE nodes outbound access",
+      "Reducing exposure from public IP addresses"
+    ],
+    "link": "https://cloud.google.com/nat",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A security-conscious team removes external IPs from its worker nodes and uses Cloud NAT for package updates and outbound API calls."
+  },
+  {
+    "service": "Cloud VPN",
+    "description": "Encrypted IPsec VPN connectivity for hybrid networks.",
+    "detail": "Cloud VPN connects Google Cloud VPC networks to on-premises or other cloud networks over IPsec tunnels. HA VPN provides high availability with multiple interfaces and dynamic routing through Cloud Router.",
+    "benefits": [
+      "Encrypted connectivity over the public internet",
+      "High-availability design options",
+      "Useful for quick hybrid or multicloud connections"
+    ],
+    "cons": [
+      "Throughput and latency depend on internet path quality",
+      "Less predictable than dedicated interconnect options"
+    ],
+    "useCases": [
+      "Connecting branch offices to Google Cloud",
+      "Creating backup connectivity for Interconnect",
+      "Linking small hybrid environments quickly"
+    ],
+    "link": "https://cloud.google.com/network-connectivity/docs/vpn",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A company uses HA VPN and dynamic routing to connect a regional office to private services running in a Google Cloud VPC."
+  },
+  {
+    "service": "Cloud Interconnect",
+    "description": "Dedicated or partner-assisted private connectivity to Google Cloud.",
+    "detail": "Cloud Interconnect provides private, high-throughput connectivity between on-premises networks and Google Cloud. Dedicated Interconnect uses physical connections to Google, while Partner Interconnect uses supported service providers for flexible capacity and locations.",
+    "benefits": [
+      "Private connectivity with more predictable performance",
+      "High bandwidth options for enterprise workloads",
+      "Can reduce reliance on public internet paths"
+    ],
+    "cons": [
+      "Requires network provider coordination and lead time",
+      "Costs and redundancy design are higher than simple VPN setups"
+    ],
+    "useCases": [
+      "Hybrid enterprise applications",
+      "Large data transfer and replication",
+      "Private access from data centers to Google Cloud"
+    ],
+    "link": "https://cloud.google.com/network-connectivity/docs/interconnect",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A bank uses redundant Dedicated Interconnect links to connect its data centers to Google Cloud with predictable latency for core application traffic."
+  },
+  {
+    "service": "Private Service Connect",
+    "description": "Private access to Google, third-party, and producer services.",
+    "detail": "Private Service Connect lets consumers privately access services over internal IP addresses while service producers publish managed endpoints. It supports private access to Google APIs, third-party services, and internal services across VPC boundaries.",
+    "benefits": [
+      "Private service access without exposing traffic to the public internet",
+      "Clear producer and consumer network separation",
+      "Works well for managed service and shared platform patterns"
+    ],
+    "cons": [
+      "Endpoint and DNS design must be planned",
+      "Service publishing patterns can be unfamiliar for smaller teams"
+    ],
+    "useCases": [
+      "Privately consuming Google APIs",
+      "Publishing internal platform services",
+      "Connecting tenants to managed services"
+    ],
+    "link": "https://cloud.google.com/vpc/docs/private-service-connect",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A platform team publishes a payments API through Private Service Connect so application teams can consume it privately from separate VPCs."
+  },
+  {
+    "service": "Network Connectivity Center",
+    "description": "Central hub for managing enterprise network connectivity.",
+    "detail": "Network Connectivity Center provides a hub-and-spoke model for connecting VPCs, on-premises networks, branch locations, and other clouds. It helps teams simplify topology management, routing, and operational visibility across distributed networks.",
+    "benefits": [
+      "Centralizes hybrid and multicloud connectivity",
+      "Supports scalable hub-and-spoke architecture",
+      "Improves operational consistency for large networks"
+    ],
+    "cons": [
+      "Requires clear routing and segmentation strategy",
+      "Can be more capability than small deployments need"
+    ],
+    "useCases": [
+      "Enterprise hub-and-spoke networking",
+      "Connecting branch offices and cloud VPCs",
+      "Standardizing network operations across teams"
+    ],
+    "link": "https://cloud.google.com/network-connectivity/docs/network-connectivity-center",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A multinational organization uses Network Connectivity Center as a central hub for regional VPCs, data centers, and branch networks."
   },
   {
     "service": "Cloud Armor",
-    "description": "A service for protecting applications from malicious online threats.",
-    "detail": "Cloud Armor is a service for protecting applications from malicious online threats. It enables customers to protect their applications from malicious attacks, such as DDoS attacks and malicious traffic, by utilizing advanced security technologies. Additionally, Cloud Armor can be used to identify and block malicious traffic, allowing customers to secure their applications from attacks.",
+    "description": "DDoS defense and web application firewall for internet-facing apps.",
+    "detail": "Cloud Armor protects applications behind supported Google Cloud load balancers with DDoS mitigation, WAF rules, preconfigured protections, rate limiting, geo controls, and adaptive protection features.",
     "benefits": [
-      "Protect applications from malicious online threats",
-      "Utilize advanced security technologies",
-      "Identify and block malicious traffic"
+      "Edge-based DDoS and WAF protection",
+      "Preconfigured and custom security rules",
+      "Integrates with external Application Load Balancers"
     ],
     "cons": [
-      "Complexity: One of the main disadvantages of Cloud Armor is that it can be complex to set up and configure, especially for users who are not familiar with Google Cloud Platform. This can result in longer deployment times and higher costs.",
-      "Limited Integration: Another limitation of Cloud Armor is that it has limited integration with third-party security tools and services. This can be a disadvantage for users who already have an existing security stack or who require specific security features that are not supported by Cloud Armor.",
-      "Costs: Cloud Armor pricing is based on the amount of traffic and rules configured, which can result in higher costs for users with high traffic volumes or complex rule sets. This can be a disadvantage for users with limited budgets or those who are looking for more cost-effective security solutions."
+      "Rules must be tested to avoid blocking valid users",
+      "Advanced policies require ongoing tuning"
     ],
     "useCases": [
-      "Protecting applications from malicious online threats",
-      "Identifying and blocking malicious traffic"
+      "Protecting public web applications",
+      "Rate limiting abusive clients",
+      "Adding OWASP-style WAF controls"
     ],
-    "link": "",
-    "example": "A company that wants to secure its applications from malicious attacks can use Cloud Armor to protect them. This will enable the company to protect its applications from malicious attacks, such as DDoS attacks and malicious traffic, by utilizing advanced security technologies. Additionally, Cloud Armor can be used to identify and block malicious traffic, allowing the company to secure its applications from attacks."
+    "link": "https://cloud.google.com/armor",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A media site uses Cloud Armor preconfigured WAF rules and rate limiting to reduce malicious traffic before requests reach application backends."
   },
   {
-    "service": "Cloud Network Telemetry",
-    "description": "Network monitoring and analytics service.",
-    "detail": "Cloud Network Telemetry is an analytics and monitoring service that provides visibility into the performance and health of Cloud networks. It offers network-level metrics, insights, and troubleshooting tools to help users understand their Cloud networks and take action to improve performance.",
+    "service": "Cloud NGFW",
+    "description": "Next-generation firewall controls for Google Cloud workloads.",
+    "detail": "Cloud NGFW provides distributed firewall capabilities, hierarchical firewall policies, threat prevention options, and granular network security controls for VPC workloads. It helps enforce consistent segmentation and protection across projects and environments.",
     "benefits": [
-      "Provides visibility into the performance and health of Cloud networks",
-      "Offers network-level metrics, insights, and troubleshooting tools",
-      "Helps users understand their Cloud networks"
+      "Centralized firewall policy management",
+      "Granular segmentation for cloud workloads",
+      "Advanced threat prevention options"
     ],
     "cons": [
-      "Not suitable for all use cases",
-      "May require additional setup and configuration",
-      "Not all features may be available in all regions"
+      "Policy hierarchy requires governance",
+      "Advanced inspection features can add cost and design considerations"
     ],
     "useCases": [
-      "Network performance monitoring",
-      "Network troubleshooting",
-      "Network analytics"
+      "Enforcing organization-wide firewall rules",
+      "Segmenting application tiers",
+      "Adding intrusion prevention to cloud networks"
     ],
-    "link": "",
-    "example": "A large online retail company uses Cloud Network Telemetry to monitor their networks and gain insights into the performance and health of their Cloud networks. This helps them identify any performance issues and take action to improve their network performance."
+    "link": "https://cloud.google.com/firewall",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "A regulated business uses hierarchical firewall policies to enforce baseline deny rules across projects while allowing application teams to manage approved local rules."
   },
   {
-    "service": "Cloud Network Intelligence",
-    "description": "Network analytics and optimization service.",
-    "detail": "Cloud Network Intelligence is an analytics and optimization service that provides visibility into the performance, security, and health of Cloud networks. It offers network-level metrics, insights, and optimization tools to help users understand their Cloud networks and take action to improve their performance.",
+    "service": "Network Intelligence Center",
+    "description": "Network observability, diagnostics, and topology analysis.",
+    "detail": "Network Intelligence Center helps teams visualize topology, test connectivity, inspect firewall reachability, monitor performance, and troubleshoot network issues across Google Cloud environments.",
     "benefits": [
-      "Provides visibility into the performance, security, and health of Cloud networks",
-      "Offers network-level metrics, insights, and optimization tools",
-      "Helps users understand their Cloud networks"
+      "Improves visibility into complex cloud networks",
+      "Helps diagnose routing and firewall issues",
+      "Supports proactive network operations"
     ],
     "cons": [
-      "Not suitable for all use cases",
-      "May require additional setup and configuration",
-      "Not all features may be available in all regions"
+      "Insights depend on available telemetry and logging",
+      "Teams still need networking expertise to act on findings"
     ],
     "useCases": [
-      "Network performance optimization",
-      "Network security monitoring",
-      "Network analytics"
+      "Troubleshooting unreachable services",
+      "Validating firewall and route changes",
+      "Monitoring network health and performance"
     ],
-    "link": "",
-    "example": "A large financial services firm uses Cloud Network Intelligence to monitor their networks and gain insights into the performance, security, and health of their Cloud networks. This helps them identify any performance or security issues and take action to improve their network performance and security."
-  },
-  {
-    "service": "Cloud Network Security",
-    "description": "Network security and threat detection service.",
-    "detail": "Cloud Network Security is a security and threat detection service that provides visibility into the performance, security, and health of Cloud networks. It offers network-level security tools, insights, and threat detection capabilities to help users understand their Cloud networks and take action to improve their security.",
-    "benefits": [
-      "Provides visibility into the performance, security, and health of Cloud networks",
-      "Offers network-level security tools, insights, and threat detection capabilities",
-      "Helps users understand their Cloud networks"
-    ],
-    "cons": [
-      "Not suitable for all use cases",
-      "May require additional setup and configuration",
-      "Not all features may be available in all regions"
-    ],
-    "useCases": [
-      "Network security monitoring",
-      "Threat detection",
-      "Network analytics"
-    ],
-    "link": "",
-    "example": "A large healthcare organization uses Cloud Network Security to monitor their networks and gain insights into the performance, security, and health of their Cloud networks. This helps them identify any security threats and take action to improve their network security."
-  },
-  {
-    "service": "Cloud Identity-Aware Proxy",
-    "description": "Identity and access management service.",
-    "detail": "Cloud Identity-Aware Proxy is an identity and access management service that enables secure access to Cloud resources. It provides identity and access control tools to help users control access to their Cloud resources and protect their data.",
-    "benefits": [
-      "Enables secure access to Cloud resources",
-      "Provides identity and access control tools",
-      "Helps users control access to their Cloud resources"
-    ],
-    "cons": [
-      "Not suitable for all use cases",
-      "May require additional setup and configuration",
-      "Not all features may be available in all regions"
-    ],
-    "useCases": [
-      "Identity and access management",
-      "Access control",
-      "Data protection"
-    ],
-    "link": "",
-    "example": "A large media company uses Cloud Identity-Aware Proxy to control access to their Cloud resources and protect their data. This helps them control who has access to their resources and ensure that only authorized users can access their data."
-  },
-  {
-    "service": "Cloud Firewall",
-    "description": "Network security service.",
-    "detail": "Cloud Firewall is a network security service that provides visibility into the performance and security of Cloud networks. It offers network-level security tools, insights, and threat detection capabilities to help users protect their Cloud networks.",
-    "benefits": [
-      "Provides visibility into the performance and security of Cloud networks",
-      "Offers network-level security tools, insights, and threat detection capabilities",
-      "Helps users protect their Cloud networks"
-    ],
-    "cons": [
-      "Not suitable for all use cases",
-      "May require additional setup and configuration",
-      "Not all features may be available in all regions"
-    ],
-    "useCases": [
-      "Network security monitoring",
-      "Threat detection",
-      "Data protection"
-    ],
-    "link": "",
-    "example": "A large e-commerce company uses Cloud Firewall to monitor their networks and gain insights into the performance and security of their Cloud networks. This helps them identify any security threats and take action to protect their network and data."
-  },
-  {
-    "service": "Cloud Traffic Director",
-    "description": "Network traffic management service.",
-    "detail": "Cloud Traffic Director is a traffic management service that provides visibility into the performance and health of Cloud networks. It offers network-level traffic control tools, insights, and optimization capabilities to help users manage the performance of their Cloud networks.",
-    "benefits": [
-      "Provides visibility into the performance and health of Cloud networks",
-      "Offers network-level traffic control tools, insights, and optimization capabilities",
-      "Helps users manage the performance of their Cloud networks"
-    ],
-    "cons": [
-      "Not suitable for all use cases",
-      "May require additional setup and configuration",
-      "Not all features may be available in all regions"
-    ],
-    "useCases": [
-      "Network performance optimization",
-      "Traffic control",
-      "Network analytics"
-    ],
-    "link": "",
-    "example": "A large gaming company uses Cloud Traffic Director to monitor their networks and gain insights into the performance and health of their Cloud networks. This helps them optimize their network performance and take action to ensure their users have the best experience possible."
-  },
-  {
-    "service": "Cloud Traffic Optimizer",
-    "description": "Network optimization service.",
-    "detail": "Cloud Traffic Optimizer is an optimization service that provides visibility into the performance and health of Cloud networks. It offers network-level optimization tools, insights, and traffic control capabilities to help users optimize the performance of their Cloud networks.",
-    "benefits": [
-      "Provides visibility into the performance and health of Cloud networks",
-      "Offers network-level optimization tools, insights, and traffic control capabilities",
-      "Helps users optimize the performance of their Cloud networks"
-    ],
-    "cons": [
-      "Not suitable for all use cases",
-      "May require additional setup and configuration",
-      "Not all features may be available in all regions"
-    ],
-    "useCases": [
-      "Network performance optimization",
-      "Traffic control",
-      "Network analytics"
-    ],
-    "link": "",
-    "example": "A large streaming company uses Cloud Traffic Optimizer to monitor their networks and gain insights into the performance and health of their Cloud networks. This helps them optimize their network performance and take action to ensure their users have the best experience possible."
-  },
-  {
-    "service": "Cloud VPC Service Controls",
-    "description": "GCP service to provide secure access to virtual machines and services.",
-    "detail": "Cloud VPC Service Controls provide secure access to virtual machines and services in Cloud. This service provides granular control over network access to organizational resources with the ability to define rules based on user identity, network and application. It also provides a secure connection between GCP and on-premise resources with encryption and authentication.",
-    "benefits": [
-      "Secure access to cloud resources",
-      "Granular control over network access",
-      "Encryption and authentication between on-premise and cloud resources"
-    ],
-    "cons": [
-      "Increased complexity of network configuration",
-      "Cost of using the service"
-    ],
-    "useCases": [
-      "Secure access to virtual machines and services",
-      "Secure connection between on-premise and cloud resources"
-    ],
-    "link": "",
-    "example": "A company uses Cloud VPC Service Controls to secure access to their virtual machines and services. They use the service to define rules based on user identity, network and application. Additionally, they use the service to create a secure connection between their on-premise resources and GCP with encryption and authentication."
-  },
-  {
-    "service": "Cloud Private Access",
-    "description": "Cloud Private Access provides secure, private access to APIs and services.",
-    "detail": "Cloud Private Access is a secure, private access solution that helps customers to securely access APIs and services from their on-premises or virtual private cloud (VPC) environment. Private Access provides customers with a secure, private connection between their VPC and APIs and services. This connection allows customers to securely access APIs and services without the need for additional firewall rules or NAT configurations.",
-    "benefits": [
-      "Secure private access to APIs and services",
-      "No need for additional firewall rules or NAT configurations",
-      "Enables customers to securely access APIs and services from their VPC"
-    ],
-    "cons": [
-      "Costly compared to other access solutions",
-      "Requires customers to manage their own VPC",
-      "Can be difficult to set up and configure"
-    ],
-    "useCases": [
-      "Securely accessing APIs and services from within a VPC",
-      "Securely accessing APIs and services from an on-premises environment",
-      "Securely accessing APIs and services from a virtual private cloud (VPC)"
-    ],
-    "link": "",
-    "example": "A company needs to securely access APIs and services from within their VPC. Cloud Private Access provides a secure, private access solution that helps the company to securely access APIs and services without the need for additional firewall rules or NAT configurations."
-  },
-  {
-    "service": "Cloud Dedicated Interconnect",
-    "description": "A way to connect on-premise equipment to GCP infrastructure.",
-    "detail": "Cloud Dedicated Interconnect allows customers to establish a physical connection to using a dedicated link. This dedicated link is a private connection that is owned and operated by the customer, and is used to securely connect to GCP services. Cloud Dedicated Interconnect provides a direct connection to that is isolated from the public internet, providing increased performance and reduced latency.",
-    "benefits": [
-      "Increased performance and reduced latency.",
-      "Secure connection to GCP services.",
-      "Cost savings by reducing the need to use public internet for data transfer."
-    ],
-    "cons": [
-      "Requires additional hardware for setup.",
-      "Cost of setup and maintenance."
-    ],
-    "useCases": [
-      "Connecting on-premise equipment to GCP infrastructure.",
-      "Data transfer between GCP services and on-premise systems.",
-      "Creating private networks across multiple resources."
-    ],
-    "link": "",
-    "example": "A company that needs to transfer large amounts of data from their on-premise servers to GCP services can use Cloud Dedicated Interconnect to create a direct connection between the two. This direct connection will provide increased performance and reduced latency, as well as increased security for the data transfer."
-  },
-  {
-    "service": "Cloud Partner Interconnect",
-    "description": "A solution for securely and reliably connecting to GCP (GCP) from on-premises networks",
-    "detail": "Cloud Partner Interconnect is a service that provides secure and reliable connections to GCP from on-premises networks. It allows customers to connect to GCP with higher throughput, lower latency, and improved security. The service is enabled by Google\u2019s resilient and reliable global network and provides customers with improved network performance and control over their connections.",
-    "benefits": [
-      "Higher throughput and lower latency",
-      "Improved security",
-      "Flexible and easy-to-use",
-      "Cost-effective"
-    ],
-    "cons": [
-      "Additional cost for using the service",
-      "Possible disruption or latency due to network issues"
-    ],
-    "useCases": [
-      "Connecting to GCP from on-premises networks",
-      "Enabling high-speed, secure connections between GCP and data centers"
-    ],
-    "link": "",
-    "example": "A company needs to securely and reliably connect its on-premises network to GCP for fast and secure access to cloud services. Cloud Partner Interconnect is a solution that provides the company with faster, more reliable connections and improved security, allowing it to quickly and securely access cloud services."
-  },
-  {
-    "service": "Cloud Carrier Peering",
-    "description": "A Cloud service that provides customers with private access to the internet.",
-    "detail": "Cloud Carrier Peering enables customers to access the internet in a more secure and reliable fashion. Cloud Carrier Peering connects customers directly to the internet, bypassing the public internet, and provides a private link between customers and Google's network. This reduces latency and provides a more reliable connection.",
-    "benefits": [
-      "More secure connection",
-      "Reduced latency",
-      "More reliable connection"
-    ],
-    "cons": [
-      "May require additional setup or configuration",
-      "Cost may be higher than other options"
-    ],
-    "useCases": [
-      "Connecting to the internet in an enterprise environment",
-      "Data centers that need reliable access to the internet"
-    ],
-    "link": "",
-    "example": "A large retail company with multiple locations needs to have reliable access to the internet. They can use Cloud Carrier Peering to ensure that their connection is secure, reliable, and fast, so that their customers can access their website and applications quickly and without interruption."
-  },
-  {
-    "service": "Cloud Private Access",
-    "description": "A service to securely connect users to their private cloud applications.",
-    "detail": " Cloud Private Access is a service that enables secure access to applications in GCP from inside an organization's private network. It provides secure network access to specific services and applications, while keeping the rest of the organization's resources private and secure. It can be used to securely access applications that are hosted in GCP, such as Compute Engine, Cloud Storage, and Cloud SQL.",
-    "benefits": [
-      "Secure access to applications inside an organization's private network.",
-      "Access to applications hosted in GCP.",
-      "Ability to control the level of access to specific services and applications.",
-      "Enhanced security for the organization's resources."
-    ],
-    "cons": [
-      "Additional cost for using the service.",
-      "May require additional setup and configuration for access to specific services and applications."
-    ],
-    "useCases": [
-      "Secure access to applications hosted in GCP.",
-      "Secure access to specific services and applications within an organization's private network.",
-      "Control the level of access to applications hosted in GCP."
-    ],
-    "link": "",
-    "example": "A company that wants to securely access their applications hosted in GCP can use  Cloud Private Access to securely connect their users to their private cloud applications."
+    "link": "https://cloud.google.com/network-intelligence-center",
+    "provider": "GCP",
+    "type": "Networking",
+    "example": "An operations team uses Connectivity Tests before deploying firewall updates, reducing outages caused by unintended rule changes."
   }
 ]
